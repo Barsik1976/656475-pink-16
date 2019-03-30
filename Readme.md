@@ -1,4 +1,4 @@
-# Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
+# Личный проект «Пинк»
 
 * Студент: [Александра Мизикина](https://up.htmlacademy.ru/adaptive/16/user/656475).
 * Наставник: [Анна Лисененкова](https://htmlacademy.ru/profile/ankhena).
