@@ -1,21 +1,60 @@
 
 
 .comment-day {
-
+  position: relative;
+  width: 886px;
+  background-color: #f2f2f2;
 }
 
-.comment-day__comment-name {
-
+.comment-day--tablet {
+  position: relative;
+  width: 565px;
+  background-color: #f2f2f2;
 }
 
-.comment-data {
+.comment-day--mobile {
+  position: relative;
+  width: 246px;
+  background-color: #f2f2f2;
+}
 
+.comment-day__name {
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 700;
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.comment-day__data {
+  font-size: 12px;
+  line-height: 24px;
+  font-weight: 300;
+  text-transform: uppercase;
 }
 
 .comment-day__like-day {
+  display: flex;
+  position: absolute;
+  top: 31px;
+  right: 30px;
+  align-items: center;
+}
 
+.comment-day__like-day--mobile {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
 }
 
 .comment-day__comment-text {
-
+  font-family: inherit;
+  font-size: 14px;
+  line-height: 24px;
+  color: #283645;
+  text-align: left;
+  padding-left: 27px;
+  padding-right: 30px;
+  padding-top: 31px;
+  margin: 0;
 }
