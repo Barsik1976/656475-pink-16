@@ -2,11 +2,11 @@
 
 .page-header {
   position: relative;
-  background-image: url("../img/bg-back-desktop@1x.jpg");
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: 50% 100%;
   background-size: 320px;
+  background-color: #161e26;
 }
 
 .page-header__photo-page--tablet {
@@ -19,7 +19,6 @@
 
 .page-header__photo-page--desktop {
   position: relative;
-  background-image: url("../img/bg-back-mobile@1x.jpg");
   background-image: url("../img/bg-back-desktop@1x.jpg");
   background-repeat: no-repeat;
   background-position: 50% 100%;
@@ -36,9 +35,8 @@
   margin: 0 auto;
   padding-left: 20px;
   padding-right: 20px;
-  margin-top: 37px;
+  padding-top: 23px;
   color: #ffffff;
-  background-color: rgba(0, 0, 0, 0.3);
 }
 
 .page-header__wrapper--tablet {
@@ -62,6 +60,7 @@
 .page-header__logo-link {
   color: #283645;
   text-align: center;
+  cursor: pointer;
 }
 
 .page-header__logo-img {
@@ -87,6 +86,8 @@
 
 .page-header__title-photo--tablet {
   font-family: "Open Sans", "Arial", sans-serif;
+  font-size: inherit;
+  font-weight: inherit;
   margin: 0;
 }
 
@@ -121,4 +122,16 @@
   text-align: center;
   margin: 0;
   margin-top: 76px;
+}
+
+.page-header__iphone {
+  position: absolute;
+  width: 254px;
+  min-height: 286px;
+  left: 0;
+  bottom: 0;
+  background-image: url("../img/iphone-hand-mobile@1x.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0 0;
 }
