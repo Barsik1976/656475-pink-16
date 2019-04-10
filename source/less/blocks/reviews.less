@@ -2,7 +2,6 @@
 
 .reviews {
   position: relative;
-  width: 940px;
   padding-bottom: 45px;
   margin: 0 auto;
   overflow: hidden;
@@ -19,30 +18,106 @@
 .reviews__list::before {
   display: block;
   content: url("../img/icon-quotes.svg");
-  opacity: 0.1;
   width: 80px;
   height: 63px;
   margin: 0 auto;
   margin-top: 73px;
   margin-bottom: 57px;
+  opacity: 0.1;
 }
 
 .reviews__item {
-
+  display: none;
 }
 
 .reviews__text {
-
+  display: block;
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 400;
+  margin: 0;
+  margin-bottom: 46px;
+  padding-left: 140px;
+  padding-right: 140px;
 }
 
 .reviews__author-name {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 400;
+  margin: 0;
+}
 
+.reviews__author-name span {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 700;
+  color: #000000;
 }
 
 .reviews__prev {
-
+  width: 23px;
+  height: 41px;
+  background-image: url(../img/icon-review-arrow-left.svg);
+  background-repeat: no-repeat;
+  background-color: transparent;
+  float: left;
+  opacity: 0.3;
 }
 
 .reviews__next {
+  width: 23px;
+  height: 41px;
+  background-image: url(../img/icon-review-arrow-right.svg);
+  background-repeat: no-repeat;
+  background-color: transparent;
+  float: right;
+  opacity: 0.3;
+}
+
+.reviews__toggles {
 
 }
+
+
+#review-item-1:checked ~ .reviews__list .reviews__item:nth-child(1) {
+  display: block;
+}
+
+#review-item-2:checked ~ .reviews__list .reviews__item:nth-child(2) {
+  display: block;
+}
+
+#review-item-3:checked ~ .reviews__list .reviews__item:nth-child(3) {
+  display: block;
+}
+
+#review-item-1:checked ~ .slider label:nth-child(2),
+#review-item-2:checked ~ .slider label:nth-child(3),
+#review-item-3:checked ~ .slider label:nth-child(1) {
+  background-image: url("../img/icon-review-arrow-right.svg");
+  background-repeat: no-repeat;
+  background-color: transparent;
+  float: right;
+}
+
+#review-item-1:checked ~ .slider label:nth-child(3),
+#review-item-2:checked ~ .slider label:nth-child(1),
+#review-item-3:checked ~ .slider label:nth-child(2) {
+  background-image: url("../img/icon-review-arrow-left.svg");
+  background-repeat: no-repeat;
+  background-color: transparent;
+  float: left;
+}
+
+
+
+
+
+
+
+
+

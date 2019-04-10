@@ -74,30 +74,29 @@
       </article>
     </section>
     <section class="reviews">
-      <div class="reviews__wrapper slider">
         <h2 class="visually-hidden">Отзывы пользователей приложения</h2>
-        <div class="reviews__list slider__list">
-          <blockquote class="reviews__item slider__item">
-            <p class="reviews__text">Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!</p>
-            <cite class="reviews__author-name"><span>Николай Петров</span><br> 25 лет, водитель трамвая</cite>
-          </blockquote>
-          <blockquote class="reviews__item slider__item">
-            <p class="review-text">Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи!</p>
-            <cite class="reviews__author-name"><span>Андрей Николаев</span><br> 30 лет, менеджер</cite>
-          </blockquote>
-          <blockquote class="reviews__item slider__item">
-            <p class="review-text">А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!</p>
-            <cite class="reviews__author-name"><span>Дмитрий Алексеев</span><br> 35 лет, преподаватель</cite>
-          </blockquote>
-        </div>
-        <button class="reviews__prev" type="button">Предыдущий отзыв</button>
-        <button class="reviews__next" type="button">Следующий отзыв</button>
-        <div class="reviews__toggles slider__toggles">
-          <button class="slider__toggle" type="button">1</button>
-          <button class="slider__toggle" type="button">2</button>
-          <button class="slider__toggle" type="button">3</button>
-        </div>
-      </div>
+          <input class="visually-hidden" type="radio" id="review-item-1" name="toggle" checked>
+          <input class="visually-hidden" type="radio" id="review-item-2" name="toggle">
+          <input class="visually-hidden" type="radio" id="review-item-3" name="toggle">
+          <div class="slider">
+            <label class="slider__item slider__item--1" for="review-item-1">Первый</label>
+            <label class="slider__item slider__item--2" for="review-item-2">Второй</label>
+            <label class="slider__item slider__item--3" for="review-item-3">Третий</label>
+          </div>
+          <div class="reviews__list slider__list">
+            <blockquote class="reviews__item slider__item">
+              <p class="reviews__text">Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!</p>
+              <cite class="reviews__author-name"><span>Николай Петров</span><br> 25 лет, водитель трамвая</cite>
+            </blockquote>
+            <blockquote class="reviews__item slider__item">
+              <p class="review-text">Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи!</p>
+              <cite class="reviews__author-name"><span>Андрей Николаев</span><br> 30 лет, менеджер</cite>
+            </blockquote>
+            <blockquote class="reviews__item slider__item">
+              <p class="review-text">А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!</p>
+              <cite class="reviews__author-name"><span>Дмитрий Алексеев</span><br> 35 лет, преподаватель</cite>
+            </blockquote>
+          </div>
     </section>
     <section class="tariffs">
       <div class="tariffs__wrapper slider">
@@ -155,9 +154,9 @@
         </div>
         <div class="page-footer__map map">
           <a class="map__map-img" href="https://yandex.ru/maps/-/CBFpeHsytD" aria-label="офис студии пинк">
-            <img src="img/bg-map-desktop@1x.jpg" alt="Офис студии Пинк ул. Б. Конюшенная, д. 19/8" width="960" height="500">
+            <img src="img/bg-map-desktop@1x.jpg" alt="Офис студии Пинк ул. Б. Конюшенная, д. 19/8" width="1200">
           </a>
-          <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A298b63aeb86c7858f0b036284ee5ec6239126d72b57381b0b87772b0043836ba&amp;source=constructor"></iframe>
+          <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A298b63aeb86c7858f0b036284ee5ec6239126d72b57381b0b87772b0043836ba&amp;source=constructor" width="100%" height="500"></iframe>
         </div>
         <div class="page-footer__information social">
           <a class="social__logo-link" href="#" title="логотип пинк">
