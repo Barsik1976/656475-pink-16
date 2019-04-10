@@ -6,27 +6,8 @@
 }
 
 .purposes-application__title {
-  font-family: "Open Sans";
-  font-size: 50px;
-  line-height: 60px;
-  font-weight: 300;
-  margin: 0;
-  margin-top: 78px;
-}
-
-.purposes-application__title--tablet {
-  font-family: inherit;
-  font-size: 40px;
-  line-height: 48px;
-  font-weight: 300;
-  margin: 0;
-  margin-top: 65px;
-  margin-bottom: 48px;
-}
-
-.purposes-application__title--mobile {
   width: 280px;
-  font-family: inherit;
+  font-family: "Open Sans", "Arial", sans-serif;
   font-size: 24px;
   line-height: 30px;
   font-weight: 300;
@@ -35,24 +16,43 @@
   margin-bottom: 40px;
 }
 
-.purposes-application__subtitle {
-  width: 280px;
-  font-family: inherit;
+.purposes-application__title--tablet {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 40px;
+  line-height: 48px;
+  font-weight: 300;
+  margin: 0;
+  margin-top: 65px;
+  margin-bottom: 48px;
+}
+
+.purposes-application__title--desktop {
+  font-family: "Open Sans", "Arial", sans-serif;
   font-size: 50px;
   line-height: 60px;
   font-weight: 300;
   margin: 0;
-  margin-bottom: 80px;
+  margin-top: 78px;
 }
 
-.purposes-application__subtitle--mobile {
+.purposes-application__subtitle {
+  width: 280px;
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 50px;
+  line-height: 60px;
+  font-weight: 300;
+  margin: 0;
   margin-bottom: 33px;
+}
+
+.purposes-application__subtitle--desktop {
+  margin-bottom: 80px;
 }
 
 .purposes-application__wrapper {
   position: relative;
   width: 100%;
-  min-height: 1037px;
+  min-height: 825px;
   background-color: #f2f2f2;
 }
 
@@ -60,37 +60,34 @@
   min-height: 484px;
 }
 
-.purposes-application__wrapper--mobile {
-  min-height: 825px;
+.purposes-application__wrapper--desktop {
+  min-height: 1037px;
 }
 
 .purposes-application__wrapper::before {
-  content: "";
-  display: block;
-  height: 100px;
-  background-image: linear-gradient(to right bottom, #fff 50%, #f2f2f2 50%);
-}
-
-.purposes-application__wrapper--mobile::before {
   content: "";
   display: block;
   height: 65px;
   background-image: linear-gradient(to right bottom, #fff 50%, #f2f2f2 50%);
 }
 
+.purposes-application__wrapper--desktop::before {
+  content: "";
+  display: block;
+  height: 100px;
+  background-image: linear-gradient(to right bottom, #fff 50%, #f2f2f2 50%);
+}
+
 .purposes-application__list {
   position: absolute;
-  width: 960px;
-  top: -15px;
-  left: 50%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  width: 280px;
+  bottom: 0;
+  left: calc(50% - 140px);
   text-align: center;
-  padding-bottom: 0px;
-  padding-left: 20px;
-  padding-right: 20px;
-  transform: translateX(-50%);
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  top: 85px;
 }
 
 .purposes-application__list--tablet {
@@ -106,16 +103,19 @@
   top: 75px;
 }
 
-.purposes-application__list--mobile {
+.purposes-application__list--desktop {
   position: absolute;
-  width: 280px;
-  bottom: 0;
-  left: calc(50% - 140px);
+  width: 960px;
+  top: -15px;
+  left: 50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
   text-align: center;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  top: 85px;
+  padding-bottom: 0px;
+  padding-left: 20px;
+  padding-right: 20px;
+  transform: translateX(-50%);
 }
 
 .purposes-application__list--tablet::after {
@@ -132,7 +132,7 @@
   padding-right: 44px;
 }
 
-.purposes-application__list--mobile::after {
+.purposes-application__list::after {
   position: absolute;
   content: "";
   left: calc(50% - 78px);
@@ -149,6 +149,7 @@
   width: 262px;
   margin: 0;
   margin-top: 300px;
+  margin-bottom: 40px;
   background-color: #f2f2f2;
 }
 
@@ -156,8 +157,12 @@
   margin-bottom: 35px;
 }
 
-.purposes-application__item--mobile {
-  margin-bottom: 40px;
+.purposes-application__item--desktop {
+  position: relative;
+  width: 262px;
+  margin: 0;
+  margin-top: 300px;
+  background-color: #f2f2f2;
 }
 
 .purposes-application__item::before {
@@ -188,14 +193,15 @@
 }
 
 .purposes-application__item-title {
-  font-family: inherit;
-  font-size: 30px;
-  line-height: 30px;
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 24px;
   font-weight: 700;
   color: #000000;
   margin: 0;
   margin-bottom: 30px;
   padding-top: 60px;
+
 }
 
 .purposes-application__item-title--tablet {
@@ -203,15 +209,15 @@
   line-height: 24px;
 }
 
-.purposes-application__item-title--mobile {
-  font-size: 18px;
-  line-height: 24px;
+.purposes-application__item-title--desktop {
+  font-size: 30px;
+  line-height: 30px;
 }
 
 .purposes-application__description {
-  font-family: inherit;
-  font-size: 18px;
-  line-height: 30px;
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 24px;
   font-weight: 400;
   color: #283645;
   margin: 0;
@@ -219,6 +225,7 @@
 }
 
 .purposes-application__description--tablet {
+  font-family: "Open Sans", "Arial", sans-serif;
   font-size: 14px;
   line-height: 24px;
   font-weight: 400;
@@ -226,14 +233,15 @@
   margin-top: 15px;
 }
 
-.purposes-application__description--mobile {
-  font-size: 14px;
-  line-height: 24px;
+.purposes-application__description--desktop {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 30px;
   margin: 0;
   margin-top: 20px;
 }
 
-.purposes-application__description::after {
+.purposes-application__description--desktop::after {
   position: absolute;
   content: "";
   top: 0;

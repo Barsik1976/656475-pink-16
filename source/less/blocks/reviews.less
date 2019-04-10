@@ -17,12 +17,12 @@
 .reviews__list::before {
   display: block;
   content: url("../img/icon-quotes.svg");
-  opacity: 0.1;
   width: 80px;
   height: 63px;
   margin: 0 auto;
   margin-top: 73px;
   margin-bottom: 57px;
+  opacity: 0.1;
 }
 
 .reviews__item {
@@ -31,7 +31,7 @@
 
 .reviews__text {
   display: block;
-  font-family: inherit;
+  font-family: "Open Sans", "Arial", sans-serif;
   font-size: 18px;
   line-height: 30px;
   font-weight: 400;
@@ -42,7 +42,7 @@
 }
 
 .reviews__author-name {
-  font-family: inherit;
+  font-family: "Open Sans", "Arial", sans-serif;
   font-size: 18px;
   line-height: 30px;
   font-weight: 400;
@@ -50,6 +50,7 @@
 }
 
 .reviews__author-name span {
+  font-family: "Open Sans", "Arial", sans-serif;
   font-size: 24px;
   line-height: 30px;
   font-weight: 700;
@@ -76,39 +77,33 @@
   opacity: 0.3;
 }
 
-.reviews__toggles {
-  position: absolute;
-  top: 212px;
-}
-
-.slider__toggle--1:checked ~ .reviews__list .reviews__item--1 {
+#review-item-1:checked ~ .reviews__list .reviews__item:nth-child(1) {
   display: block;
 }
 
-.slider__toggle--2:checked ~ .reviews__list .slider__toggle--2 {
+#review-item-2:checked ~ .reviews__list .reviews__item:nth-child(2) {
   display: block;
 }
 
-.slider__toggle--3:checked ~ .reviews__list .slider__toggle--3 {
+#review-item-3:checked ~ .reviews__list .reviews__item:nth-child(3) {
   display: block;
 }
 
-.slider__toggle--1:checked ~ .slider__toggles:nth-child(2),
-.slider__toggle--2:checked ~ .slider__toggles:nth-child(3),
-.slider__toggle--3:checked ~ .slider__toggles:nth-child(1) {
+#review-item-1:checked ~ .slider label:nth-child(2),
+#review-item-2:checked ~ .slider label:nth-child(3),
+#review-item-3:checked ~ .slider label:nth-child(1) {
   background-image: url("../img/icon-review-arrow-right.svg");
   background-repeat: no-repeat;
   background-color: transparent;
   float: right;
 }
 
-.slider__toggle--1:checked ~ .slider__toggles:nth-child(3),
-.slider__toggle--2:checked ~ .slider__toggles:nth-child(1),
-.slider__toggle--3:checked ~ .slider__toggles:nth-child(2) {
+#review-item-1:checked ~ .slider label:nth-child(3),
+#review-item-2:checked ~ .slider label:nth-child(1),
+#review-item-3:checked ~ .slider label:nth-child(2) {
   background-image: url("../img/icon-review-arrow-left.svg");
   background-repeat: no-repeat;
   background-color: transparent;
   float: left;
 }
-
 
