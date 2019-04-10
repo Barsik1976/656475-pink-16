@@ -11,8 +11,14 @@
 
 .main-nav__switch {
   position: absolute;
-  top: 43px;
-  right: calc(50% - 310px);
+  top: 21px;
+  right: calc(50% - 140px);
+  background-image: url("../img/icon-menu-burger.svg");
+  background-color: transparent;
+  background-repeat: no-repeat;
+  width: 50px;
+  height: 24px;
+  border: none;
   cursor: pointer;
   margin: 0;
 }
@@ -27,6 +33,7 @@
 }
 
 .main-nav__switch--close {
+  display: block;
   background-image: url("../img/icon-menu-cross.svg");
   background-color: transparent;
   background-repeat: no-repeat;
@@ -43,7 +50,7 @@
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
-  font-family: inherit;
+  font-family: "Open Sans", "Arial", sans-serif;
   line-height: 18px;
   text-align: left;
   list-style: none;
