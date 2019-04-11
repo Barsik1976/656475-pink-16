@@ -1,22 +1,126 @@
 
 
 .tariffs {
+  position: relative;
+  background-color: #f2f2f2;
+  min-height: 470px;
+  margin-top: 45px;
+  padding-bottom: 40px;
+}
 
+.tariffs::before {
+  content: "";
+  display: block;
+  height: 100px;
+  background-image: linear-gradient(to right bottom, #fff 50%, #f2f2f2 50%);
+}
+
+.tariffs table {
+display: block;
+}
+
+.tariffs label {
+  font-size: 0;
 }
 
 .tariffs__wrapper {
-
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+  color: #283645;
+  text-align: left;
+  list-style: none;
+  margin: 0 auto;
+  background-color: #ffffff;
 }
 
 .tariffs__list {
+  position: absolute;
+  width: 276px;
+  left: 50%;
+  font-family: inherit;
+  border-top: none;
+  border-collapse: collapse;
+  padding: 0;
+  transform: translateX(-50%);
+  border-left: 2px solid #e5e5e5;
+  border-right: 2px solid #e5e5e5;
+}
+
+.tariffs__header td {
+  width: 280px;
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #283645;
+  text-align: left;
+  padding: 0;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border: 2px solid #e5e5e5;
+}
+
+.tariffs__header span {
 
 }
 
 .tariffs__header-title {
-
+  width: 280px;
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: #283645;
+  text-align: center;
+  border: 2px solid #283645;
+  padding-top: 20px;
 }
 
 .tariffs__header-title--hit {
+  position: relative;
+  overflow: hidden;
+  width: 280px;
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: #283645;
+  text-align: center;
+  border: 2px solid #e5e5e5;
+  border-bottom: 2px solid #283645;
+  border-left: 2px solid #283645;
+  border-top: none;
+  padding-top: 20px;
+}
+
+.tariffs__header-title--hit::before {
+  display: inline-block;
+  position: absolute;
+  content: "Хит";
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 30px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: #d22856;
+  height: 30px;
+  width: 120px;
+  transform: rotate(-45deg);
+  top: 5px;
+  left: -35px;
+  vertical-align: middle;
+}
+
+.tariffs__item {
 
 }
 
@@ -24,8 +128,28 @@
 
 }
 
+.tariffs__item--yes::after {
+  display: inline-block;
+  content: "";
+  width: 29px;
+  height: 15px;
+  border-left: solid 3px #3dc644;
+  border-bottom: solid 3px #3dc644;
+  transform: rotate(45deg);
+  transform: rotate(-45deg);
+  vertical-align: top;
+}
+
 .tariffs__item--no {
 
+}
+
+.tariffs__item--no::after {
+  display: inline-block;
+  content: url("../img/icon-no.svg");
+  width: 27px;
+  height: 27px;
+  vertical-align: middle;
 }
 
 .tariffs__toggles {

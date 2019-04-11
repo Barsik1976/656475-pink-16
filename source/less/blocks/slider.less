@@ -2,8 +2,8 @@
 
 .slider {
   position: absolute;
-  width: 940px;
-  top: 212px;
+  top: 295px;
+  left: calc(50% - 50px);
 }
 
 .slider__list {
@@ -11,10 +11,34 @@
 }
 
 .slider__item {
-  width: 23px;
-  height: 41px;
-  opacity: 0.3;
-  font-size: 0;
+
+}
+
+.slider label {
+  position: relative;
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  cursor: pointer;
+  vertical-align: middle;
+  background-color: #bec2c7;
+  margin-left: 18px;
+  text-align: center;
+}
+
+.slider label::after {
+  position: absolute;
+  display: inline-block;
+  content: "";
+  bottom: 0;
+  left: 0;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  cursor: pointer;
+  vertical-align: middle;
+  background-color: #bec2c7;
 }
 
 .slider__toggles {
