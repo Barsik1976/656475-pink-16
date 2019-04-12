@@ -33,7 +33,6 @@
 .choice__list {
   position: relative;
   display: flex;
-  flex-wrap: wrap;
   align-items: center;
   list-style-type: none;
   margin: 0;
@@ -43,7 +42,7 @@
   border-bottom: 1px solid #dddfe0;
   overflow: hidden;
   justify-content: center;
-  flex-grow: 1;
+  flex-grow: 0;
 }
 
 .choice__list--tablet {
@@ -65,12 +64,7 @@
 }
 
 .choice__item {
-  position: relative;
-  width: 410px;
-  border-bottom: 1px solid #dddfe0;
-  padding-bottom: 17px;
-  margin-bottom: 15px;
-  text-align: left;
+
 }
 
 .choice__item--tablet {
@@ -179,7 +173,7 @@
   margin-left: 8px;
 }
 
-.choice__option {
+div.choice__option {
   width: 274px;
   margin: 0 auto;
   margin-top: 38px;

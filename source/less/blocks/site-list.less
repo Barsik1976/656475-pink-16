@@ -1,12 +1,11 @@
 
 
 .site-list {
-
-}
-
-.site-list--open {
-  display: block;
+  display: none;
+  position: absolute;
   width: 320px;
+  top: 37px;
+  left: calc(50% - 160px);
   font-family: "Open Sans", "Arial", sans-serif;
   font-size: 18px;
   font-weight: 700;
@@ -17,8 +16,11 @@
   margin: 0;
   padding: 0;
   z-index: 5;
+}
+
+.site-list--open {
+  display: block;
   margin-top: 25px;
-  margin-left: -20px;
   border-top: 1px solid rgb(0,0,0,0.5);
   background-color: #283645;
 }
