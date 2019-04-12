@@ -1,9 +1,7 @@
 
 
 .map {
-  position: relative;
-  height: 500px;
-  margin-bottom: 75px;
+
 }
 
 .map--tablet {
@@ -12,15 +10,18 @@
   margin-bottom: 68px;
 }
 
-.map--mobile {
+.map--desktop {
   position: relative;
-  height: 200px;
+  height: 500px;
+  margin-bottom: 75px;
 }
 
 .map__map-img {
   position: absolute;
-  top: 23px;
-  left: calc(50% - 480px);
+  top: 40px;
+  left: calc(50% - 160px);
+  background-color: transparent;
+  border: none;
   outline: none;
 }
 
@@ -28,12 +29,14 @@
   position: absolute;
   top: 30px;
   left: calc(50% - 330px);
+  background-color: transparent;
   outline: none;
 }
 
-.map__map-img--mobile {
+.map__map-img--desktop {
   position: absolute;
-  top: 30px;
-  left: calc(50% - 160px);
+  top: 23px;
+  left: calc(50% - 480px);
+  background-color: transparent;
   outline: none;
 }

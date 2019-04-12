@@ -2,7 +2,12 @@
 
 .comment-day {
   position: relative;
-  width: 886px;
+  width: 246px;
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  color: #283645;
+  text-align: left;
   background-color: #f2f2f2;
 }
 
@@ -12,10 +17,15 @@
   background-color: #f2f2f2;
 }
 
-.comment-day--mobile {
+.comment-day--desktop {
   position: relative;
-  width: 246px;
+  width: 886px;
   background-color: #f2f2f2;
+}
+
+.comment-day__crop-photo {
+  width: 320px;
+  height: 137px;
 }
 
 .comment-day__name {
@@ -37,16 +47,16 @@
 
 .comment-day__like-day {
   display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.comment-day__like-day--desktop {
+  display: flex;
   position: absolute;
   top: 31px;
   right: 30px;
   align-items: center;
-}
-
-.comment-day__like-day--mobile {
-  display: flex;
-  align-items: center;
-  margin-top: 20px;
 }
 
 .comment-day__comment-text {

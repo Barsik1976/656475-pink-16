@@ -2,8 +2,7 @@
 
 .photo-users {
   position: relative;
-  width: 1200px;
-  margin: 0 auto;
+  width: 320px;
 }
 
 .photo-users--tablet {
@@ -11,12 +10,39 @@
   width: 660px;
 }
 
-.photo-users--mobile {
+.photo-users--desktop {
   position: relative;
-  width: 320px;
+  width: 1200px;
+  margin: 0 auto;
 }
 
 .photo-users::before {
+  position: absolute;
+  content: "Панорама дня";
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 12px;
+  line-height: 24px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #ffffff;
+  top: 0;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: #d22856;
+  z-index: 2;
+  margin: 0;
+  right: 20px;
+}
+
+.photo-users--tablet::before {
+  top: 57px;
+  margin: 0;
+  right: calc(52% - 310px);
+}
+
+.photo-users--desktop::before {
   position: absolute;
   content: "Панорама дня";
   font-family: "Open Sans", "Arial", sans-serif;
@@ -36,22 +62,11 @@
   right: calc(50% - 470px);
 }
 
-.photo-users--tablet::before {
-  top: 57px;
-  margin: 0;
-  right: calc(52% - 310px);
-}
-
-.photo-users--mobile::before {
-  top: 0;
-  right: 20px;
-}
-
 .photo-users__title {
-  width: 820px;
+  width: 280px;
   margin: 0 auto;
-  margin-top: 100px;
-  margin-bottom: 94px;
+  margin-top: 55px;
+  margin-bottom: 55px;
 }
 
 .photo-users__title--tablet {
@@ -61,31 +76,36 @@
   margin-bottom: 80px;
 }
 
-.photo-users__title--mobile {
-  width: 280px;
+.photo-users__title--desktop {
+  width: 820px;
   margin: 0 auto;
-  margin-top: 55px;
-  margin-bottom: 55px;
+  margin-top: 100px;
+  margin-bottom: 94px;
 }
 
 .photo-users__photo-day {
   width: 100%;
-  height: auto;
-  margin: 0;
+  height: 100%;
+  object-fit: cover;
+  object-position: 0 0;
 }
 
 .photo-users__photo-day--tablet {
 
 }
 
-.photo-users__photo-day--mobile {
-
+.photo-users__photo-day--desktop {
+  width: 100%;
+  height: auto;
+  margin: 0;
 }
 
 .photo-users__comment-day {
   margin: 0 auto;
-  margin-top: -8px;
-  padding-bottom: 28px;
+  padding-left: 17px;
+  padding-right: 17px;
+  padding-top: 25px;
+  padding-bottom: 26px;
 }
 
 .photo-users__comment-day--tablet {
@@ -95,9 +115,10 @@
   background-color: #f2f2f2;
 }
 
-.photo-users__comment-day--mobile {
+.photo-users__comment-day--desktop {
   margin: 0 auto;
-  padding-bottom: 26px;
+  margin-top: -8px;
+  padding-bottom: 28px;
 }
 
 .photo-users__wrapper {
@@ -105,20 +126,6 @@
 }
 
 .photo-users__list {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  width: 940px;
-  margin: 0 auto;
-  margin-top: 50px;
-}
-
-.photo-users__list--tablet {
-  width: 620px;
-}
-
-.photo-users__list--mobile {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -128,24 +135,39 @@
   margin-top: 20px;
 }
 
+.photo-users__list--tablet {
+  width: 620px;
+}
+
+.photo-users__list--desktop {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 940px;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+
 .photo-users__item {
-  width: 300px;
-  min-height: 555px;
+  width: 280px;
+  min-height: 323px;
+  margin-bottom: 20px;
   background-color: #f2f2f2;
-  margin-bottom: 53px;
 }
 
 .photo-users__item--tablet {
   min-height: 454px;
 }
 
-.photo-users__item--mobile {
-  width: 280px;
-  min-height: 323px;
-  margin-bottom: 20px;
+.photo-users__item--desktop {
+  width: 300px;
+  min-height: 555px;
+  background-color: #f2f2f2;
+  margin-bottom: 53px;
 }
 
-.photo-users__img {
+.photo-users__img--desktop {
   width: 300px;
   height: 400px;
 }
@@ -162,30 +184,30 @@
   height: 300px;
 }
 
-.photo-users__img--mobile {
+.photo-users__img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   object-position: 0 50%;
 }
 
-.photo-users__img--crop-mobile {
+.photo-users__img--crop {
   width: 280px;
   height: 180px;
 }
 
 .photo-users__comment {
-  padding-left: 27px;
-  padding-right: 30px;
-  padding-top: 31px;
+  padding-left: 17px;
+  padding-right: 17px;
+  padding-top: 25px;
 }
 
 .photo-users__comment--tablet {
   padding-right: 28px;
 }
 
-.photo-users__comment--mobile {
-  padding-left: 17px;
-  padding-right: 17px;
-  padding-top: 25px;
+.photo-users__comment--desktop {
+  padding-left: 27px;
+  padding-right: 30px;
+  padding-top: 31px;
 }

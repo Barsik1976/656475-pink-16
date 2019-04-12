@@ -6,12 +6,12 @@
 
 .choice__add-img {
   display: block;
-  width: 300px;
-  height: 400px;
-  background-image: url(../img/photo-road-desktop@1x.jpg);
+  width: 280px;
+  height: 374px;
+  background-image: url("../img/photo-road-mobile@1x.jpg");
   background-repeat: no-repeat;
-  margin-top: 57px;
-  margin-left: 80px;
+  margin: 0 auto;
+  margin-top: 20px;
   cursor: pointer;
 }
 
@@ -19,32 +19,18 @@
   margin-left: 20px;
 }
 
-.choice__add-img--mobile {
-  width: 280px;
-  height: 374px;
-  margin: 0 auto;
-  margin-top: 20px;
+.choice__add-img--desktop {
+  display: block;
+  width: 300px;
+  height: 400px;
+  background-image: url("../img/photo-road-desktop@1x.jpg");
+  background-repeat: no-repeat;
+  margin-top: 57px;
+  margin-left: 80px;
+  cursor: pointer;
 }
 
 .choice__list {
-  position: absolute;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  top: 55px;
-  left: 470px;
-  width: 410px;
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
-.choice__list--tablet {
-  left: 365px;
-  width: 274px;
-}
-
-.choice__list--mobile {
   position: relative;
   display: flex;
   flex-wrap: wrap;
@@ -58,6 +44,24 @@
   overflow: hidden;
   justify-content: center;
   flex-grow: 1;
+}
+
+.choice__list--tablet {
+  left: 365px;
+  width: 274px;
+}
+
+.choice__list--desktop {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  top: 55px;
+  left: 470px;
+  width: 410px;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
 .choice__item {
@@ -75,21 +79,16 @@
   margin-bottom: 26px;
 }
 
+.choice__item--desktop {
+  position: relative;
+  width: 410px;
+  border-bottom: 1px solid #dddfe0;
+  padding-bottom: 17px;
+  margin-bottom: 15px;
+  text-align: left;
+}
+
 .choice__button {
-  display: inline-block;
-  border: none;
-  background-color: transparent;
-  cursor: pointer;
-  margin-right: 48px;
-  padding: 0;
-  vertical-align: middle;
-}
-
-.choice__button--tablet {
-  margin-right: 28px;
-}
-
-.choice__button--mobile {
   display: block;
   border: none;
   background-color: transparent;
@@ -99,11 +98,25 @@
   margin-right: 16px;
 }
 
+.choice__button--tablet {
+  margin-right: 28px;
+}
+
+.choice__button--desktop {
+  display: inline-block;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  margin-right: 48px;
+  padding: 0;
+  vertical-align: middle;
+}
+
 .choice__button--crop {
   background-image: url("../img/icon-editor-crop.svg");
   background-repeat: no-repeat;
   width: 44px;
-  height: 44px;
+  height: 43px;
 }
 
 .choice__button--crop--tablet {
@@ -114,11 +127,11 @@
   margin-left: 2px;
 }
 
-.choice__button--crop--mobile {
+.choice__button--crop--desktop {
   background-image: url("../img/icon-editor-crop.svg");
   background-repeat: no-repeat;
   width: 44px;
-  height: 43px;
+  height: 44px;
 }
 
 .choice__button--fill {
@@ -136,7 +149,7 @@
   margin-left: 2px;
 }
 
-.choice__button--fill--mobile {
+.choice__button--fill--desktop {
   background-image: url("../img/icon-editor-diagram-fill.svg");
   background-repeat: no-repeat;
   width: 48px;
@@ -148,7 +161,6 @@
   background-repeat: no-repeat;
   width: 32px;
   height: 32px;
-  margin-left: 8px;
 }
 
 .choice__button--contrast--tablet {
@@ -159,21 +171,19 @@
   margin-left: 8px;
 }
 
-.choice__button--contrast--mobile {
+.choice__button--contrast--desktop {
   background-image: url("../img/icon-editor-contrast.svg");
   background-repeat: no-repeat;
   width: 32px;
   height: 32px;
+  margin-left: 8px;
 }
 
 .choice__option {
-  position: absolute;
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  width: 410px;
-  top: 403px;
-  left: 470px;
+  width: 274px;
+  margin: 0 auto;
+  margin-top: 38px;
+  padding-bottom: 40px;
 }
 
 .choice__option--tablet {
@@ -182,9 +192,12 @@
   left: 358px;
 }
 
-.choice__option--mobile {
-  width: 274px;
-  margin: 0 auto;
-  margin-top: 38px;
-  padding-bottom: 40px;
+.choice__option--desktop {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 410px;
+  top: 403px;
+  left: 470px;
 }
