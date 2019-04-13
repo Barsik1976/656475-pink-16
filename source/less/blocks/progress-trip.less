@@ -9,22 +9,14 @@
   padding: 0;
   box-sizing: border-box;
   margin-bottom: 61px;
+  border: none;
 }
 
-.progress-trip--mobile {
+.progress-trip--desktop {
   padding: 0;
 }
 
 .progress-trip__list {
-  display: flex;
-  flex-wrap: wrap;
-  margin: 0;
-  padding: 0;
-  margin-top: 52px;
-  margin-left: 60px;
-}
-
-.progress-trip__list--mobile {
   display: flex;
   flex-wrap: wrap;
   width: 280px;
@@ -34,9 +26,17 @@
   transform: translateX(90px);
 }
 
+.progress-trip__list--desktop {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  margin-top: 52px;
+  margin-left: 60px;
+}
+
 .progress-trip__item {
-  width: 230px;
-  align-items: center;
+  width: 280px;
   font-family: "Open Sans", "Arial", sans-serif;
   font-size: 18px;
   line-height: 30px;
@@ -45,7 +45,6 @@
   list-style: none;
   margin-bottom: 65px;
   text-align: left;
-  margin-left: 60px;
 }
 
 .progress-trip__item--tablet {
@@ -62,8 +61,9 @@
   margin-left: 60px;
 }
 
-.progress-trip__item--mobile {
-  width: 280px;
+.progress-trip__item--desktop {
+  width: 230px;
+  align-items: center;
   font-family: "Open Sans", "Arial", sans-serif;
   font-size: 18px;
   line-height: 30px;
@@ -72,6 +72,7 @@
   list-style: none;
   margin-bottom: 65px;
   text-align: left;
+  margin-left: 60px;
 }
 
 .progress-trip__list label {
