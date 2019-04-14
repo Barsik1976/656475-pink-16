@@ -1,13 +1,14 @@
 
 
 .contact-user {
-  width: 100%;
-  min-height: 162px;
   border: none;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-  margin-bottom: 61px;
+}
+
+.contact-user legend {
+  font-size: 0;
+  margin: 0;
 }
 
 .contact-user--desktop {
@@ -19,8 +20,6 @@
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  padding-left: 58px;
-  padding-right: 58px;
   padding-top: 45px;
   padding-bottom: 26px;
 }
@@ -52,33 +51,19 @@
   margin-top: 27px;
 }
 
+.contact-user__mail-form--tablet {
+  width: 497px;
+}
+
+.contact-user__mail-form--desktop {
+  width: 375px;
+  margin: 0;
+}
+
 .contact-user__tel,
 .contact-user__mail {
   background-color: transparent;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 .contact-user__wrapper--tablet {
   padding-left: 60px;
@@ -92,24 +77,8 @@
   padding-bottom: 23px;
 }
 
-.contact-user__wrapper p {
-  position: relative;
-  width: 280px;
-  margin: 0 auto;
-}
-
-.contact-user__wrapper p--tablet {
-  width: 497px;
-}
-
-.contact-user__wrapper p--desktop {
-  width: 375px;
-  margin: 0;
-}
-
 .contact-user__wrapper label {
   display: block;
-  margin-top: 19px;
   margin-left: 20px;
   margin-bottom: 15px;
   text-align: left;
@@ -143,7 +112,6 @@
 }
 
 .contact-user__tel {
-  box-sizing: border-box;
   width: 236px;
   border: 2px #e5e5e5 solid;
   border-radius: 3px;
@@ -158,6 +126,7 @@
   color: #283645;
   background-color: transparent;
   white-space: normal;
+  margin: 0 auto;
 }
 
 .contact-user__tel--tablet {
@@ -173,7 +142,6 @@
 }
 
 .contact-user__mail {
-  box-sizing: border-box;
   width: 236px;
   border: 2px #e5e5e5 solid;
   border-radius: 3px;
@@ -200,6 +168,3 @@
   background-repeat: no-repeat;
   background-position: 332px 50%;
 }
-
-
-
