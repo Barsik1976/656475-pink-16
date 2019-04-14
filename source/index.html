@@ -11,35 +11,40 @@
   <body>
     <header class="page-header">
       <div class="page-header__wrapper">
-      <a class="page-header__logo-link" title="логотип пинк">
-        <img class="page-header__logo-img" src="img/logo-pink-white-mobile.svg" alt="логотип пинк">
-      </a>
-      <nav class="main-nav">
-        <button class="main-nav__switch main-nav__switch--close" type="button">Закрыть меню</button>
-          <ul class="main-nav__list site-list site-list--open">
-            <li class="site-list__item site-list__item--active"><a>Главная</a></li>
-            <li class="site-list__item"><a href="photo.html">Фотографии</a></li>
-            <li class="site-list__item"><a href="form.html">Конкурс</a></li>
-            <li class="site-list__item"><a href="#">HTML Academy</a></li>
-          </ul>
+      <nav class="page-header__wrapper main-nav">
+        <div class="main-nav__wrapper">
+        <a class="main-nav__logo-link" title="логотип пинк">
+          <img class="main-nav__logo-img" src="img/logo-pink-white-mobile.svg" alt="логотип пинк">
+        </a>
+        <button class="main-nav__switch main-nav__switch--close" type="button" aria-label="Закрыть меню"></button>
+        <ul class="main-nav__list site-list site-list--open">
+          <li class="site-list__item site-list__item--active"><a>Главная</a></li>
+          <li class="site-list__item"><a href="photo.html">Фотографии</a></li>
+          <li class="site-list__item"><a href="form.html">Конкурс</a></li>
+          <li class="site-list__item"><a href="htmlacademy.ru">HTML Academy</a></li>
+        </ul>
+      </div>
       </nav>
-      <div class="page-header__iphone"></div>
-      <section class="download-app">
-          <a class="download-app__button button" href="#" title="скачать приложение">Скачать приложение</a>
-            <ul class="download-app__list application">
-              <li class="application__item application__item--apple">
-                <a href="#" title="приложение apple"></a>
-              </li>
-              <li class="application__item application__item--android">
-                <a href="#" title="приложение android"></a>
-              </li>
-              <li class="application__item application__item--microsoft">
-                <a href="#" title="приложение microsoft"></a>
-              </li>
-            </ul>
-        <p class="download-app__access">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
-      </section>
+     <div class="page-header__wrapp-iphone">
+    <div class="page-header__iphone"></div>
     </div>
+  </div>
+  <section class="download-app">
+    <h2 class="visually-hidden">Взгляните<br> на жизнь иначе!</h2>
+      <a class="download-app__button button" href="#" title="скачать приложение">Скачать приложение</a>
+        <ul class="download-app__list application">
+          <li class="application__item application__item--apple">
+            <a href="#" title="приложение apple"></a>
+          </li>
+          <li class="application__item application__item--android">
+            <a href="#" title="приложение android"></a>
+          </li>
+          <li class="application__item application__item--microsoft">
+            <a href="#" title="приложение microsoft"></a>
+          </li>
+        </ul>
+        <p class="download-app__access">Доступно для iPhone, iPad, Android,<br> Windows Phone, OS X, Windows 8</p>
+      </section>
   </header>
   <main class="page-main">
     <section class="purposes-application">
@@ -89,20 +94,19 @@
       </section>
 
 
-<!--
       <div class="tariffs">
-      <section class="tariffs__wrapper slider">
+      <section class="tariffs__wrapper tables-slider">
         <h2 class="visually-hidden">Тарифы покупки приложений</h2>
-        <input class="visually-hidden" type="radio" id="table-item-1" name="toggle" checked>
-        <input class="visually-hidden" type="radio" id="table-item-2" name="toggle">
-        <input class="visually-hidden" type="radio" id="table-item-3" name="toggle">
-        <div class="slider">
-          <label class="slider__item slider__item--1" for="table-item-1">База</label>
-          <label class="slider__item slider__item--2" for="table-item-2">Стандарт</label>
-          <label class="slider__item slider__item--3" for="table-item-3">Анлим</label>
+        <input class="visually-hidden" type="radio" id="table-item1" name="toggle-table" checked>
+        <input class="visually-hidden" type="radio" id="table-item2" name="toggle-table">
+        <input class="visually-hidden" type="radio" id="table-item3" name="toggle-table">
+        <div class="tables-slider">
+          <label class="tables-slider__item tables-slider__item--1" for="table-item1">База</label>
+          <label class="tables-slider__item tables-slider__item--2" for="table-item2">Стандарт</label>
+          <label class="tables-slider__item tables-slider__item--3" for="table-item3">Анлим</label>
         </div>
 
-        <section class="tariffs-table">
+        <section class="tariffs__table">
         <table class="tariffs-table__item-1">
           <tr class="tariffs__header">
             <th class="tariffs__header-title">База<br> <span>1,99 usd</span> </th>
@@ -148,7 +152,6 @@
       </section>
     </section>
   </div>
-    -->
 
   </main>
     <footer class="page-footer">

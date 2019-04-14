@@ -1,12 +1,12 @@
 
 
-.tables-controls {
+.tables-slider {
   position: absolute;
   top: 425px;
   left: calc(50% - 50px);
 }
 
-.tables-controls label {
+.tables-slider label {
   position: relative;
   display: inline-block;
   width: 6px;
@@ -19,7 +19,7 @@
   text-align: center;
 }
 
-.tables-controls label::after {
+.tables-slider label::after {
   position: absolute;
   display: inline-block;
   content: "";
@@ -33,21 +33,21 @@
   background-color: #bec2c7;
 }
 
-#table-item-1:checked ~ .tariffs-table .tariffs-table__item-1 {
+#table-item1:checked ~ .tariffs-table .tariffs-table__item-1 {
   display: block;
 }
 
-#table-item-2:checked ~ .tariffs-table .tariffs-table__item-2 {
+#table-item2:checked ~ .tariffs-table .tariffs-table__item-2 {
   display: block;
 }
 
-#table-item-3:checked ~ .tariffs-table .tariffs-table__item-3 {
+#table-item3:checked ~ .tariffs-table .tariffs-table__item-3 {
   display: block;
 }
 
-#table-item-1:checked ~ .slider .slider__item--1::after,
-#table-item-2:checked ~ .slider .slider__item--2::after,
-#table-item-3:checked ~ .slider .slider__item--3::after {
+#table-item1:checked ~ .tables-slider .tables-slider__item--1::after,
+#table-item2:checked ~ .tables-slider .tables-slider__item--2::after,
+#table-item3:checked ~ .tables-slider .tables-slider__item--3::after {
   position: absolute;
   content: "";
   bottom: -2px;

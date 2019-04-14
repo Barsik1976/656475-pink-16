@@ -11,20 +11,21 @@
   <body>
     <header class="page-header">
       <div class="page-header__wrapper">
-      <nav class="main-nav">
+      <nav class="page-header__wrapper main-nav">
+        <div class="main-nav__wrapper">
         <a class="main-nav__logo-link" title="логотип пинк">
-          <img class="main-nav__logo-img" src="img/logo-pink-white-mobile.svg" alt="логотип пинк" width="75" height="23">
+          <img class="main-nav__logo-img" src="img/logo-pink-white-mobile.svg" alt="логотип пинк">
         </a>
-        <button class="main-nav__switch main-nav__switch--close" type="button" aria-label="Закрыть"></button>
+        <button class="main-nav__switch main-nav__switch--close" type="button" aria-label="Закрыть меню"></button>
         <ul class="main-nav__list site-list site-list--open">
-          <li class="site-list__item"><a href="index.html">Главная</a></li>
+          <li class="site-list__item site-list__item--active"><a>Главная</a></li>
           <li class="site-list__item"><a href="photo.html">Фотографии</a></li>
-          <li class="site-list__item--active"><a href="form.html">Конкурс</a></li>
+          <li class="site-list__item"><a href="form.html">Конкурс</a></li>
           <li class="site-list__item"><a href="htmlacademy.ru">HTML Academy</a></li>
         </ul>
+      </div>
       </nav>
-    </div>
-      <h2 class="page-header__wrapper page-header__title-competition">Конкурс на самое безбашенное<br> путешествие с Пинк</h2>
+      <h2 class="page-header__title-competition">Конкурс на самое безбашенное<br> путешествие с Пинк</h2>
   </header>
   <main class="page-main">
     <section class="form-users">
