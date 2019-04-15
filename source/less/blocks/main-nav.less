@@ -51,6 +51,14 @@
   border: none;
 }
 
+.main-nav__switch--hide:active ~ .site-list--open {
+  display: block;
+}
+
+.main-nav__switch--hide:active  ~ .main-nav {
+  margin-top: 255px;
+}
+
 .main-nav__switch--close {
   display: block;
   background-image: url("../img/icon-menu-cross.svg");
@@ -79,6 +87,16 @@
   text-decoration: none;
   padding-top: 20px;
   padding-bottom: 20px;
+}
+
+.main-nav__switch--hide:active {
+  display: block;
+  background-image: url("../img/icon-menu-cross.svg");
+  background-color: transparent;
+  background-repeat: no-repeat;
+  width: 25px;
+  height: 25px;
+  border: none;
 }
 
 

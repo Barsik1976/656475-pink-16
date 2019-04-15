@@ -13,24 +13,24 @@
   display: block;
   height: 100px;
   background-image: linear-gradient(to right bottom, #fff 50%, #f2f2f2 50%);
+  margin-top: 45px;
 }
 
-.tariffs-table {
+.tariffs__table {
   display: block;
   position: absolute;
   width: 276px;
   left: 50%;
-  font-family: inherit;
+  font-family: "Open Sans", "Arial", sans-serif;
   background-color: #ffffff;
   border-top: none;
-  border-collapse: collapse;
   padding: 0;
   transform: translateX(-50%);
   border-left: 2px solid #e5e5e5;
   border-right: 2px solid #e5e5e5;
 }
 
-.tariffs__wrapper label {
+.tariffs label {
   font-size: 0;
 }
 
@@ -45,20 +45,33 @@
   margin: 0 auto;
 }
 
-.tariffs__header td {
-  width: 280px;
-  font-family: "Open Sans", "Arial", sans-serif;
-  font-size: 14px;
-  line-height: 24px;
-  font-weight: 400;
-  color: #283645;
+.tariffs__table table {
+  border-collapse: collapse;
+  border: 0;
+}
+
+.tariffs__table-list {
+  border: 0;
+}
+
+.tariffs__table-item-1,
+.tariffs__table-item-2,
+.tariffs__table-item-3 {
+  display: none;
+}
+
+.tariffs__table td {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
   text-align: left;
   padding: 0;
-  padding-left: 15px;
-  padding-right: 15px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  border: 2px solid #e5e5e5;
+  padding-top: 17px;
+  padding-bottom: 17px;
+  padding-left: 23px;
+  border-bottom: 2px solid #e5e5e5;
+  border-top: 0;
+  padding-right: 20px;
 }
 
 .tariffs__header span {
@@ -148,8 +161,7 @@
   padding-top: 17px;
   padding-bottom: 17px;
   padding-left: 23px;
-  border: 2px solid #e5e5e5;
-  border-top: 0;
+  border: 0;
   padding-right: 20px;
 }
 
@@ -175,4 +187,33 @@
 
 .tariffs__toggles {
 
+}
+
+#table-item1:checked ~ .tariffs__table .tariffs__table-item-1 {
+  display: block;
+}
+
+#table-item2:checked ~ .tariffs__table .tariffs__table-item-2 {
+  display: block;
+}
+
+#table-item3:checked ~ .tariffs__table .tariffs__table-item-3 {
+  display: block;
+}
+
+#table-item1:checked ~ .tables-slider .tables-slider__item--1::after,
+#table-item2:checked ~ .tables-slider .tables-slider__item--2::after,
+#table-item3:checked ~ .tables-slider .tables-slider__item--3::after {
+  position: absolute;
+  content: "";
+  bottom: -2px;
+  top: 425px;
+  left: calc(50% - 50px);
+    width: 6px;
+  height: 6px;
+  background-color: inherit;
+  border: 2px solid #283645;
+  background-color: #ffffff;
+  border-radius: 50%;
+  cursor: pointer;
 }

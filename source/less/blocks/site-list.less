@@ -1,11 +1,10 @@
 
 
 .site-list {
-  display: none;
+  display: block;
   position: absolute;
   width: 320px;
   top: 37px;
-  left: calc(50% - 160px);
   font-family: "Open Sans", "Arial", sans-serif;
   font-size: 18px;
   font-weight: 700;
@@ -19,9 +18,9 @@
 }
 
 .site-list--open {
-    display: none;
+  display: none;
   width: 320px;
-  font-family: inherit;
+  font-family: "Open Sans", "Arial", sans-serif;
   font-size: 18px;
   font-weight: 700;
   line-height: 32px;
@@ -41,6 +40,14 @@
   width: 320px;
   border-top: 1px solid rgb(255,255,255,0.2);
   border-bottom: 1px solid rgb(0,0,0,0.5);
+}
+
+.site-list__item a {
+  display: block;
+  color: #ffffff;
+  text-decoration: none;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .site-list__item--active {
