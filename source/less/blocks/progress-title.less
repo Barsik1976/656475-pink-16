@@ -8,8 +8,10 @@
   color: #d22856;
 }
 
-.progress-title--desktop {
-  text-align: center;
-  padding-left: 32px;
-  padding-right: 32px;
+@media (min-width: @desktop-width) {
+  .progress-title {
+    text-align: center;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
 }

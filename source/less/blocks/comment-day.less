@@ -11,16 +11,20 @@
   background-color: #f2f2f2;
 }
 
-.comment-day--tablet {
-  position: relative;
-  width: 565px;
-  background-color: #f2f2f2;
+@media (min-width: @tablet-width) {
+  .comment-day {
+    position: relative;
+    width: 565px;
+    background-color: #f2f2f2;
+  }
 }
 
-.comment-day--desktop {
-  position: relative;
-  width: 886px;
-  background-color: #f2f2f2;
+@media (min-width: @desktop-width) {
+  .comment-day {
+    position: relative;
+    width: 886px;
+    background-color: #f2f2f2;
+  }
 }
 
 .comment-day__crop-photo {
@@ -58,12 +62,14 @@
   margin-top: 20px;
 }
 
-.comment-day__like-day--desktop {
-  display: flex;
-  position: absolute;
-  top: 31px;
-  right: 30px;
-  align-items: center;
+@media (min-width: @desktop-width) {
+  .comment-day__like-day {
+    display: flex;
+    position: absolute;
+    top: 31px;
+    right: 30px;
+    align-items: center;
+  }
 }
 
 .comment-day__comment-text {

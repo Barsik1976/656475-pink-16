@@ -7,26 +7,32 @@
   margin-bottom: 40px;
 }
 
-.social--tablet {
-  margin: 0 auto;
-  padding-left: 20px;
-  padding-right: 20px;
-  margin-bottom: 36px;
+@media (min-width: @tablet-width) {
+  .social {
+    margin: 0 auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 36px;
+  }
 }
 
-.social--desktop {
-  margin: 0 auto;
-  padding-left: 10px;
-  padding-right: 10px;
-  margin-bottom: 70px;
+@media (min-width: @desktop-width) {
+  .social {
+    margin: 0 auto;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 70px;
+  }
 }
 
 .social__logo-link {
   margin-bottom: 40px;
 }
 
-.social__logo-link--desktop {
+@media (min-width: @desktop-width) {
+  .social__logo-link {
 
+  }
 }
 
 .social__list {
@@ -39,22 +45,26 @@
   margin-bottom: 35px;
 }
 
-.social__list--tablet {
-  width: 177px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  padding: 0;
-  margin: 0;
+@media (min-width: @tablet-width) {
+  .social__list--tablet {
+    width: 177px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
+  }
 }
 
-.social__list--desktop {
-  width: 177px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  padding: 0;
-  margin: 0;
+@media (min-width: @desktop-width) {
+  .social__list {
+    width: 177px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
+  }
 }
 
 .social__item {
@@ -101,16 +111,18 @@
   margin: 0;
 }
 
-.social__developed--desktop {
-  display: flex;
-  flex-direction: center;
-  align-items: center;
-  font-family: "Open Sans", "Arial", sans-serif;
-  font-size: 18px;
-  line-height: 18px;
-  font-weight: 400;
-  color: #283645;
-  margin: 0;
+@media (min-width: @desktop-width) {
+  .social__developed {
+    display: flex;
+    flex-direction: center;
+    align-items: center;
+    font-family: "Open Sans", "Arial", sans-serif;
+    font-size: 18px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #283645;
+    margin: 0;
+  }
 }
 
 .social__developed-link {
@@ -118,12 +130,16 @@
   margin-top: 10px;
 }
 
-.social__developed-link--tablet {
-  margin-left: 15px;
-  margin-top: 10px;
+@media (min-width: @tablet-width) {
+  .social__developed-link {
+    margin-left: 15px;
+    margin-top: 10px;
+  }
 }
 
-.social__developed-link--desktop {
-  margin-left: 28px;
-  margin-top: 10px;
+@media (min-width: @desktop-width) {
+  .social__developed-link {
+    margin-left: 28px;
+    margin-top: 10px;
+  }
 }

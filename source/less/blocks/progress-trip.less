@@ -12,8 +12,10 @@
   border: none;
 }
 
-.progress-trip--desktop {
-  padding: 0;
+@media (min-width: @desktop-width) {
+  .progress-trip {
+    padding: 0;
+  }
 }
 
 .progress-trip__list {
@@ -26,13 +28,15 @@
   transform: translateX(90px);
 }
 
-.progress-trip__list--desktop {
-  display: flex;
-  flex-wrap: wrap;
-  margin: 0;
-  padding: 0;
-  margin-top: 52px;
-  margin-left: 60px;
+@media (min-width: @desktop-width) {
+  .progress-trip__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    margin-top: 52px;
+    margin-left: 60px;
+  }
 }
 
 .progress-trip__item {
@@ -47,32 +51,36 @@
   text-align: left;
 }
 
-.progress-trip__item--tablet {
-  width: 230px;
-  align-items: center;
-  font-family: "Open Sans", "Arial", sans-serif;
-  font-size: 18px;
-  line-height: 30px;
-  font-weight: 400;
-  color: #283645;
-  list-style: none;
-  margin-bottom: 65px;
-  text-align: left;
-  margin-left: 60px;
+@media (min-width: @tablet-width) {
+  .progress-trip__item {
+    width: 230px;
+    align-items: center;
+    font-family: "Open Sans", "Arial", sans-serif;
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 400;
+    color: #283645;
+    list-style: none;
+    margin-bottom: 65px;
+    text-align: left;
+    margin-left: 60px;
+  }
 }
 
-.progress-trip__item--desktop {
-  width: 230px;
-  align-items: center;
-  font-family: "Open Sans", "Arial", sans-serif;
-  font-size: 18px;
-  line-height: 30px;
-  font-weight: 400;
-  color: #283645;
-  list-style: none;
-  margin-bottom: 65px;
-  text-align: left;
-  margin-left: 60px;
+@media (min-width: @desktop-width) {
+  .progress-trip__item {
+    width: 230px;
+    align-items: center;
+    font-family: "Open Sans", "Arial", sans-serif;
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 400;
+    color: #283645;
+    list-style: none;
+    margin-bottom: 65px;
+    text-align: left;
+    margin-left: 60px;
+  }
 }
 
 .progress-trip__list label {

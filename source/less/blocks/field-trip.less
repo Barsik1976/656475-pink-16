@@ -10,19 +10,23 @@
   border: none;
 }
 
-.field-trip--tablet {
-  margin-bottom: 52px;
+@media (min-width: @tablet-width) {
+  .field-trip--tablet {
+    margin-bottom: 52px;
+  }
 }
 
-.field-trip--desktop {
-  min-height: 305px;
-  border: 2px solid #e5e5e5;
-  border-radius: 3px;
-  margin: 0;
-  padding: 0;
-  margin-left: 70px;
-  margin-bottom: 52px;
-  box-sizing: border-box;
+@media (min-width: @desktop-width) {
+  .field-trip {
+    box-sizing: border-box;
+    min-height: 305px;
+    border: 2px solid #e5e5e5;
+    border-radius: 3px;
+    margin: 0;
+    padding: 0;
+    margin-left: 70px;
+    margin-bottom: 52px;
+  }
 }
 
 .field-trip__list {
@@ -34,16 +38,20 @@
   margin-top: 38px;
 }
 
-.field-trip__list--tablet {
-  margin-left: 121px;
+@media (min-width: @tablet-width) {
+  .field-trip__list {
+    margin-left: 121px;
+  }
 }
 
-.field-trip__list--desktop {
-  margin: 0;
-  padding: 0;
-  text-align: left;
-  margin-left: 134px;
-  margin-top: 50px;
+@media (min-width: @desktop-width) {
+  .field-trip__list {
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    margin-left: 134px;
+    margin-top: 50px;
+  }
 }
 
 .field-trip__item {
@@ -56,12 +64,16 @@
   margin-bottom: 62px;
 }
 
-.field-trip__item--tablet {
-  margin-bottom: 62px;
+@media (min-width: @tablet-width) {
+  .field-trip__item {
+    margin-bottom: 62px;
+  }
 }
 
-.field-trip__item--desktop {
-  margin-bottom: 35px;
+@media (min-width: @desktop-width) {
+  .field-trip__item {
+    margin-bottom: 35px;
+  }
 }
 
 .field-trip__item label {

@@ -2,16 +2,20 @@
 
 .range-contrast {
   position: absolute;
-  top: 14px;
-  left: 252px;
-}
-
-.range-contrast--tablet {
   top: 10px;
   left: 148px;
 }
 
-.range-contrast--mobile {
-  top: 10px;
-  left: 148px;
+@media (min-width: @tablet-width) {
+  .range-contrast {
+    top: 10px;
+    left: 148px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .range-contrast {
+    top: 14px;
+    left: 252px;
+  }
 }

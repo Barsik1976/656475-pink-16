@@ -13,19 +13,21 @@
   padding-top: 27px;
 }
 
-.download-app--desktop {
-  position: relative;
-  width: 960px;
-  min-height: 644px;
-  margin: 0 auto;
-  padding-left: 10px;
-  padding-right: 10px;
-  padding-top: 120px;
-  color: #ffffff;
-  background-image: url("../img/iphone-hand-desktop@1x.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: 0 0;
+@media (min-width: @desktop-width) {
+  .download-app {
+    position: relative;
+    width: 960px;
+    min-height: 644px;
+    margin: 0 auto;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 120px;
+    color: #ffffff;
+    background-image: url("../img/iphone-hand-desktop@1x.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0 0;
+  }
 }
 
 .download-app__title {
@@ -39,26 +41,30 @@
   width: 280px;
 }
 
-.download-app__title--tablet {
-  font-family: "Open Sans", "Arial", sans-serif;
-  font-size: 40px;
-  font-weight: 300;
-  line-height: 48px;
-  text-align: center;
-  margin: 0;
-  margin-bottom: 40px;
-  width: 300px;
+@media (min-width: @tablet-width) {
+  .download-app__title {
+    font-family: "Open Sans", "Arial", sans-serif;
+    font-size: 40px;
+    font-weight: 300;
+    line-height: 48px;
+    text-align: center;
+    margin: 0;
+    margin-bottom: 40px;
+    width: 300px;
+  }
 }
 
-.download-app__title--desktop {
-  font-family: "Open Sans", "Arial", sans-serif;
-  font-size: 50px;
-  font-weight: 300;
-  line-height: 60px;
-  text-align: center;
-  margin: 0;
-  margin-bottom: 65px;
-  width: 300px;
+@media (min-width: @desktop-width) {
+  .download-app__title {
+    font-family: "Open Sans", "Arial", sans-serif;
+    font-size: 50px;
+    font-weight: 300;
+    line-height: 60px;
+    text-align: center;
+    margin: 0;
+    margin-bottom: 65px;
+    width: 300px;
+  }
 }
 
 .download-app__button {
@@ -90,12 +96,16 @@
   margin-top: 28px;
 }
 
-.download-app__access--tablet {
-  margin-top: 39px;
+@media (min-width: @tablet-width) {
+  .download-app__access {
+    margin-top: 39px;
+  }
 }
 
-.download-app__access--desktop {
-  margin-top: 60px;
+@media (min-width: @desktop-width) {
+  .download-app__access {
+    margin-top: 60px;
+  }
 }
 
 .download-app__iphone-img {
@@ -108,17 +118,21 @@
   z-index: 4;
 }
 
-.download-app__iphone-img--tablet {
-  width: 192px;
-  height: 343px;
-  top: 54px;
-  left: 370px;
+@media (min-width: @tablet-width) {
+  .download-app__iphone-img {
+    width: 192px;
+    height: 343px;
+    top: 54px;
+    left: 370px;
+  }
 }
 
-.download-app__iphone-img--desktop {
-  width: 228px;
-  height: 405px;
-  top: 184px;
-  left: 579px;
+@media (min-width: @desktop-width) {
+  .download-app__iphone-img {
+    width: 228px;
+    height: 405px;
+    top: 184px;
+    left: 579px;
+  }
 }
 

@@ -4,23 +4,27 @@
 
 }
 
-.page-header__photo-page--tablet {
-  position: relative;
-  background-image: url("../img/bg-back-tablet@1x.jpg");
-  background-repeat: no-repeat;
-  background-position: 50% 100%;
-  background-size: 660px;
+@media (min-width: @tablet-width) {
+  .page-header__photo-page {
+    position: relative;
+    background-image: url("../img/bg-back-tablet@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: 50% 100%;
+    background-size: 660px;
+  }
 }
 
-.page-header__photo-page--desktop {
-  position: relative;
-  background-image: url("../img/bg-back-desktop@1x.jpg");
-  background-repeat: no-repeat;
-  background-position: 50% 100%;
-  background-size: 1200px;
-  margin: 0 auto;
-  background-color: #161e26;
-  text-align: center;
+@media (min-width: @desktop-width) {
+  .page-header__photo-page {
+    position: relative;
+    background-image: url("../img/bg-back-desktop@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: 50% 100%;
+    background-size: 1200px;
+    margin: 0 auto;
+    background-color: #161e26;
+    text-align: center;
+  }
 }
 
 .page-header__wrapper {
@@ -41,22 +45,26 @@
   margin-top: 110px;
 }
 
-.page-header__wrapper--tablet {
-  position: relative;
-  width: 620px;
-  min-height: 247px;
-  margin: 0 auto;
-  padding-left: 20px;
-  padding-right: 20px;
-  margin-top: 83px;
+@media (min-width: @tablet-width) {
+  .page-header__wrapper {
+    position: relative;
+    width: 620px;
+    min-height: 247px;
+    margin: 0 auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 83px;
+  }
 }
 
-.page-header__wrapper--desktop {
-  width: 940px;
-  min-height: 394px;
-  margin: 0 auto;
-  padding-left: 10px;
-  padding-right: 10px;
+@media (min-width: @desktop-width) {
+  .page-header__wrapper {
+    width: 940px;
+    min-height: 394px;
+    margin: 0 auto;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
 }
 
 .page-header__logo-link {
@@ -69,9 +77,11 @@
   margin: 0;
 }
 
-.page-header__logo-img--desktop {
-  width: 147px;
-  height: 40px;
+@media (min-width: @desktop-width) {
+  .page-header__logo-img {
+    width: 147px;
+    height: 40px;
+  }
 }
 
 .page-header__title-photo {
@@ -90,18 +100,22 @@
   margin-top: 37px;
 }
 
-.page-header__title-photo--tablet {
-  font-family: "Open Sans", "Arial", sans-serif;
-  font-size: inherit;
-  font-weight: inherit;
-  margin: 0;
+@media (min-width: @tablet-width) {
+  .page-header__title-photo {
+    font-family: "Open Sans", "Arial", sans-serif;
+    font-size: inherit;
+    font-weight: inherit;
+    margin: 0;
+  }
 }
 
-.page-header__title-photo--desktop {
-  font-family: "Open Sans", "Arial", sans-serif;
-  font-size: 50px;
-  font-weight: 300;
-  line-height: 60px;
+@media (min-width: @desktop-width) {
+  .page-header__title-photo {
+    font-family: "Open Sans", "Arial", sans-serif;
+    font-size: 50px;
+    font-weight: 300;
+    line-height: 60px;
+  }
 }
 
 .page-header__title-competition {
@@ -121,19 +135,23 @@
   margin-top: 37px;
 }
 
-.page-header__title-competition--tablet {
-  margin: 0;
+@media (min-width: @tablet-width) {
+  .page-header__title-competition {
+    margin: 0;
+  }
 }
 
-.page-header__title-competition--desktop {
-  font-family: "Open Sans", "Arial", sans-serif;
-  font-size: 50px;
-  font-weight: 300;
-  line-height: 60px;
-  color: #ffffff;
-  text-align: center;
-  margin: 0;
-  margin-top: 76px;
+@media (min-width: @desktop-width) {
+  .page-header__title-competition {
+    font-family: "Open Sans", "Arial", sans-serif;
+    font-size: 50px;
+    font-weight: 300;
+    line-height: 60px;
+    color: #ffffff;
+    text-align: center;
+    margin: 0;
+    margin-top: 76px;
+  }
 }
 
 .page-header__iphone {

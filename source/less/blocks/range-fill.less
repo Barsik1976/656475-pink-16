@@ -2,16 +2,20 @@
 
 .range-fill {
   position: absolute;
-  top: 18px;
-  left: 339px;
-}
-
-.range-fill--tablet {
   top: 10px;
   left: 77px;
 }
 
-.range-fill--mobile {
-  top: 10px;
-  left: 77px;
+@media (min-width: @tablet-width) {
+  .range-fill {
+    top: 10px;
+    left: 77px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .range-fill {
+    top: 18px;
+    left: 339px;
+  }
 }

@@ -12,13 +12,17 @@
   margin-top: 45px;
 }
 
-.notice--tablet {
-  margin-top: 27px;
+@media (min-width: @tablet-width) {
+  .notice {
+    margin-top: 27px;
+  }
 }
 
-.notice--desktop {
-  text-align: right;
-  margin-bottom: 23px;
+@media (min-width: @desktop-width) {
+  .notice {
+    text-align: right;
+    margin-bottom: 23px;
+  }
 }
 
 .notice span {
@@ -26,6 +30,8 @@
   color: #d22856;
 }
 
-.notice span--desktop {
-  color: #d22856;
+@media (min-width: @desktop-width) {
+  .notice span {
+    color: #d22856;
+  }
 }

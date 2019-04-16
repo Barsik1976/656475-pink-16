@@ -25,16 +25,20 @@
   margin: 0;
 }
 
-.contacts__phone--tablet,
-.contacts__address--tablet,
-.contacts__mail--tablet {
-  margin-top: 5px;
+@media (min-width: @tablet-width) {
+  .contacts__phone,
+  .contacts__address,
+  .contacts__mail {
+    margin-top: 5px;
+  }
 }
 
-.contacts__phone--desktop,
-.contacts__address--desktop,
-.contacts__mail--desktop {
-  margin-top: 33px;
+@media (min-width: @desktop-width) {
+  .contacts__phone,
+  .contacts__address,
+  .contacts__mail {
+    margin-top: 33px;
+  }
 }
 
 .contacts__mail a {
@@ -42,12 +46,16 @@
   color: #d22856;
 }
 
-.contacts--tablet:nth-of-type(2) {
-  order: 3;
+@media (min-width: @tablet-width) {
+  .contacts:nth-of-type(2) {
+    order: 3;
+  }
 }
 
-.contacts--tablet:nth-of-type(3) {
-  order: 2;
+@media (min-width: @tablet-width) {
+  .contacts:nth-of-type(3) {
+    order: 2;
+  }
 }
 
 .contacts:nth-of-type(2) {
