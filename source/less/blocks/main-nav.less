@@ -16,9 +16,7 @@
 }
 
 .main-nav__logo-link {
-  display: flex;
-  color: #283645;
-  text-align: center;
+background-color: transparent;
   cursor: pointer;
 }
 
@@ -55,8 +53,13 @@
   display: block;
 }
 
-.main-nav__switch--hide:active  ~ .main-nav {
-  margin-top: 255px;
+.main-nav__switch--hide:active ~ .main-nav {
+  position: absolute;
+  top: 367px;
+}
+
+.main-nav__switch--hide:active ~ .page-header__wrapper {
+
 }
 
 .main-nav__switch--close {
@@ -70,24 +73,10 @@
 }
 
 .main-nav__list {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  font-family: "Open Sans", "Arial", sans-serif;
-  line-height: 18px;
-  text-align: left;
-  list-style: none;
-  padding: 0;
-  margin: 0;
+
 }
 
-.main-nav__list a {
-  display: block;
-  color: #ffffff;
-  text-decoration: none;
-  padding-top: 20px;
-  padding-bottom: 20px;
-}
+
 
 .main-nav__switch--hide:active {
   display: block;
