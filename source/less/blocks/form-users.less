@@ -1,9 +1,5 @@
 
 
-.form-users {
-
-}
-
 .form-users__title {
   width: 280px;
   font-family: "Open Sans", "Arial", sans-serif;
@@ -99,7 +95,6 @@
 }
 
 .form-users__emotions textarea {
-  box-sizing: border-box;
   width: 280px;
   min-height: 200px;
   margin-top: 20px;
@@ -126,7 +121,6 @@
 
 @media (min-width: @desktop-width) {
   .form-users__emotions textarea {
-    box-sizing: border-box;
     width: 819px;
     min-height: 124px;
     margin-top: 45px;
@@ -139,6 +133,7 @@
     padding-right: 20px;
     padding-top: 14px;
     padding-bottom: 14px;
+  }
 }
 
 .form-users__form-send {
@@ -215,5 +210,6 @@
 }
 
 .form-users__wrapper input[type="radio"]:checked + label::after {
+  display: inline-block;
   opacity: 1;
 }
