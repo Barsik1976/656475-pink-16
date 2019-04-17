@@ -31,13 +31,7 @@
 }
 
 .download-app__title {
-  font-family: "Open Sans", "Arial", sans-serif;
   font-size: 0;
-  font-weight: 300;
-  line-height: 48px;
-  text-align: center;
-  margin: 0;
-  margin-bottom: 40px;
   width: 280px;
 }
 
@@ -81,8 +75,31 @@
   margin-bottom: 31px;
 }
 
+@media (min-width: @desktop-width) {
+  .download-app__button {
+    display: block;
+    width: 292px;
+    margin: 0;
+    margin-bottom: 65px;
+  }
+}
+
 .download-app__list {
 
+}
+
+@media (min-width: @desktop-width) {
+  .download-app__list {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    width: 300px;
+    margin-left: 8px;
+  }
 }
 
 .download-app__access {
@@ -133,6 +150,6 @@
     height: 405px;
     top: 184px;
     left: 579px;
+    border: 2px solid #000000;
   }
 }
-

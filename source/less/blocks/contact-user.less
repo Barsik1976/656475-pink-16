@@ -13,8 +13,14 @@
 
 @media (min-width: @desktop-width) {
   .contact-user {
+    box-sizing: border-box;
+    width: 100%;
+    min-height: 162px;
     border: 2px solid #e5e5e5;
     border-radius: 3px;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 61px;
   }
 }
 
@@ -24,6 +30,27 @@
   flex-wrap: wrap;
   padding-top: 45px;
   padding-bottom: 26px;
+}
+
+@media (min-width: @tablet-width) {
+  .contact-user__wrapper {
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-top: 45px;
+    padding-bottom: 33px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .contact-user__wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-left: 58px;
+    padding-right: 58px;
+    padding-top: 38px;
+    padding-bottom: 23px;
+  }
 }
 
 .contact-user__wrapper label {
@@ -38,6 +65,15 @@
   margin-left: 20px;
   margin-bottom: 15px;
   text-align: left;
+}
+
+@media (min-width: @desktop-width) {
+  .contact-user__wrapper label {
+    display: block;
+    margin-top: 19px;
+    margin-left: 20px;
+    text-align: left;
+  }
 }
 
 .contact-user__tel-form {
@@ -71,38 +107,6 @@
   background-color: transparent;
 }
 
-@media (min-width: @tablet-width) {
-  .contact-user__wrapper {
-    padding-left: 60px;
-    padding-right: 60px;
-    padding-top: 45px;
-    padding-bottom: 33px;
-  }
-}
-
-@media (min-width: @desktop-width) {
-  .contact-user__wrapper {
-    padding-top: 38px;
-    padding-bottom: 23px;
-  }
-}
-
-.contact-user__wrapper label {
-  display: block;
-  margin-left: 20px;
-  margin-bottom: 15px;
-  text-align: left;
-}
-
-@media (min-width: @desktop-width) {
-  .contact-user__wrapper label {
-    display: block;
-    margin-top: 19px;
-    margin-left: 20px;
-    text-align: left;
-  }
-}
-
 .contact-user__wrapper span {
   position: absolute;
   display: flex;
@@ -119,8 +123,10 @@
   z-index: -1;
 }
 
-.contact-user__wrapper span--tablet {
-  left: 436px;
+@media (min-width: @tablet-width) {
+  .contact-user__wrapper span {
+    left: 436px;
+  }
 }
 
 .contact-user__tel {

@@ -6,11 +6,27 @@
   line-height: 24px;
   color: #283645;
   text-align: left;
+  background-color: #f2f2f2;}
+
+@media (min-width: @tablet-width) {
+  .comment {
+    font-family: "Open Sans", "Arial", sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    color: #283645;
+    text-align: left;
+    background-color: #f2f2f2;  }
 }
 
-.comment__crop-photo {
-  width: 280px;
-  height: 180px;
+@media (min-width: @desktop-width) {
+  .comment {
+    font-family: "Open Sans", "Arial", sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    color: #283645;
+    text-align: left;
+    background-color: #f2f2f2;
+  }
 }
 
 .comment__name {
@@ -22,14 +38,29 @@
   margin-bottom: 10px;
 }
 
-.comment__name span {
-  font-size: 12px;
-  line-height: 24px;
-  font-weight: 300;
-  text-transform: uppercase;
+@media (min-width: @tablet-width) {
+  .comment__name {
+    font-family: "Open Sans", "Arial", sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 700;
+    margin: 0;
+    margin-bottom: 10px;
+  }
 }
 
-.comment__time {
+@media (min-width: @desktop-width) {
+  .comment__name {
+    font-family: "Open Sans", "Arial", sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 700;
+    margin: 0;
+    margin-bottom: 10px;
+  }
+}
+
+.comment__data {
   display: inline-block;
   font-family: "Open Sans", "Arial", sans-serif;
   font-size: 12px;
@@ -38,18 +69,87 @@
   text-transform: uppercase;
 }
 
+@media (min-width: @tablet-width) {
+  .comment__data {
+    display: inline-block;
+    font-family: "Open Sans", "Arial", sans-serif;
+    font-size: 12px;
+    line-height: 24px;
+    font-weight: 300;
+    text-transform: uppercase;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .comment__data {
+    display: inline-block;
+    font-family: "Open Sans", "Arial", sans-serif;
+    font-size: 12px;
+    line-height: 24px;
+    font-weight: 300;
+    text-transform: uppercase;
+  }
+}
+
 .comment__text {
   font-family: "Open Sans", "Arial", sans-serif;
   font-size: 14px;
   line-height: 24px;
   color: #283645;
   text-align: left;
+  padding-left: 17px;
+  padding-right: 17px;
+  padding-top: 25px;
   margin: 0;
+}
+
+@media (min-width: @tablet-width) {
+  .comment__text {
+    font-family: "Open Sans", "Arial", sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    color: #283645;
+    text-align: left;
+    padding-left: 27px;
+    padding-right: 28px;
+    padding-top: 31px;
+    margin: 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .comment__text {
+    font-family: "Open Sans", "Arial", sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    color: #283645;
+    text-align: left;
+    padding-left: 27px;
+    padding-right: 30px;
+    padding-top: 31px;
+    margin: 0;
+  }
 }
 
 .comment__like {
   display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
   align-items: center;
+}
+
+@media (min-width: @tablet-width) {
+  .comment__like {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .comment__like {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
 }

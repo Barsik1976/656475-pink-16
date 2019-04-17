@@ -63,8 +63,23 @@
   align-items: flex-end;
 }
 
+@media (min-width: @tablet-width) {
+  .form-users__profiles {
+    display: flex;
+    align-items: flex-end;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .form-users__profiles {
+    display: flex;
+    align-items: flex-end;
+  }
+}
+
 .form-users__field {
   position: relative;
+  width: 280px;
   margin: 0 auto;
   padding: 0;
 }
@@ -81,12 +96,6 @@
     position: relative;
     width: 435px;
   }
-}
-
-.form-users__emotions {
-  width: 280px;
-  min-height: 162px;
-  transform: translateX(20px);
 }
 
 .form-users__emotions textarea {
@@ -130,13 +139,6 @@
     padding-right: 20px;
     padding-top: 14px;
     padding-bottom: 14px;
-    font-family: "Open Sans", "Arial", sans-serif;
-    font-size: 18px;
-    line-height: 30px;
-    font-weight: 400;
-    color: #283645;
-    white-space: normal;
-  }
 }
 
 .form-users__form-send {
@@ -173,11 +175,7 @@
 .form-users__emotions {
   width: 280px;
   min-height: 162px;
-  border: none;
-  margin: 0;
   transform: translateX(20px);
-  padding: 0;
-  margin-bottom: 61px;
 }
 
 .form-users__wrapper input + label {

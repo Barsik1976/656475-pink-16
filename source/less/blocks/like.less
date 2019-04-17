@@ -1,8 +1,22 @@
 
 
 .like {
-  margin-top: 20px;
   text-align: left;
+  margin-top: 20px;
+}
+
+@media (min-width: @tablet-width) {
+  .like {
+    text-align: left;
+    margin-top: 20px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .like {
+    text-align: left;
+    margin-top: 20px;
+  }
 }
 
 .like__number-likes {
@@ -14,6 +28,19 @@
   text-transform: uppercase;
   margin: 0;
   margin-left: 19px;
+}
+
+@media (min-width: @tablet-width) {
+  .like__number-likes {
+    font-family: "Open Sans", "Arial", sans-serif;
+    font-size: 12px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #d22856;
+    text-transform: uppercase;
+    margin: 0;
+    margin-left: 19px;
+  }
 }
 
 @media (min-width: @desktop-width) {
@@ -28,4 +55,24 @@
   height: 12px;
   background-image: url(../img/icon-heart.svg);
   background-repeat: no-repeat;
+}
+
+@media (min-width: @tablet-width) {
+  .like__heart-img {
+    display: inline-block;
+    width: 14px;
+    height: 12px;
+    background-image: url(../img/icon-heart.svg);
+    background-repeat: no-repeat;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .like__heart-img {
+    display: inline-block;
+    width: 14px;
+    height: 12px;
+    background-image: url(../img/icon-heart.svg);
+    background-repeat: no-repeat;
+  }
 }
