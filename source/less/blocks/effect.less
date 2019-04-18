@@ -1,13 +1,13 @@
 
 
 .effect {
-  display: block;
+  display: none;
 }
 
 @media (min-width: @tablet-width) {
-  .effect{
-    position: relative;
+  .effect {
     width: 660px;
+    position: relative;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -15,15 +15,16 @@
     background-repeat: no-repeat;
     background-position: 0 60px;
     background-size: 240px 276px;
-    left: calc(50% - 310px);
     background-color: #ffffff;
+    left: calc(50% - 310px);
+    padding-bottom: 106px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .effect {
-    position: absolute;
     width: 960px;
+    position: absolute;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -38,12 +39,11 @@
   }
 }
 
-.effect__wrapper {
-  display: block;
-}
-
 @media (min-width: @tablet-width) {
   .effect__wrapper {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
     width: 310px;
     padding-left: 310px;
     padding-top: 95px;
@@ -60,12 +60,14 @@
   }
 }
 
-.effect__title {
-  font-size: 0;
-}
-
 @media (min-width: @tablet-width) {
   .effect__title {
+    font-family: "Open Sans", "Arial", sans-serif;
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: 700;
+    color: #000000;
+    margin: 0;
     margin-bottom: 23px;
   }
 }
@@ -80,10 +82,6 @@
     margin: 0;
     margin-bottom: 31px;
   }
-}
-
-.effect__text {
-  font-size: 0;
 }
 
 @media (min-width: @tablet-width) {
@@ -107,16 +105,14 @@
   }
 }
 
-.effect__link {
-  display: block;
-}
-
 @media (min-width: @tablet-width) {
   .effect__link {
     font-family: "Open Sans", "Arial", sans-serif;
     font-size: 14px;
     line-height: 24px;
     color: #d22856;
+    background-color: transparent;
+    cursor: pointer;
   }
 }
 

@@ -1,9 +1,5 @@
 
 
-.form-users {
-
-}
-
 .form-users__title {
   width: 280px;
   font-family: "Open Sans", "Arial", sans-serif;
@@ -82,10 +78,21 @@
   width: 280px;
   margin: 0 auto;
   padding: 0;
+
+
 }
 
 @media (min-width: @tablet-width) {
   .form-users__field {
+    width: 620px;
+    min-height: 305px;
+    border: 2px solid #e5e5e5;
+    border-radius: 3px;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 52px;
+    box-sizing: border-box;
+
     position: relative;
     width: 620px;
   }
@@ -99,7 +106,6 @@
 }
 
 .form-users__emotions textarea {
-  box-sizing: border-box;
   width: 280px;
   min-height: 200px;
   margin-top: 20px;
@@ -126,7 +132,6 @@
 
 @media (min-width: @desktop-width) {
   .form-users__emotions textarea {
-    box-sizing: border-box;
     width: 819px;
     min-height: 124px;
     margin-top: 45px;
@@ -139,6 +144,7 @@
     padding-right: 20px;
     padding-top: 14px;
     padding-bottom: 14px;
+  }
 }
 
 .form-users__form-send {
@@ -161,15 +167,51 @@
 }
 
 .form-users__trip {
-  width: 100%;
-  background-color: #f2f2f2;
-  margin-top: 15px;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 41px;
+  border: none;
+}
+
+@media (min-width: @tablet-width) {
+  .form-users__trip {
+    width: 100%;
+    min-height: 162px;
+    border: 2px solid #e5e5e5;
+    border-radius: 3px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .form-users__trip {
+    width: 100%;
+    min-height: 162px;
+    border: 2px solid #e5e5e5;
+    border-radius: 3px;
+  }
 }
 
 .form-users__progress {
   width: 100%;
   background-color: #f2f2f2;
-  margin-top: 15px;
+}
+
+@media (min-width: @tablet-width) {
+  .form-users__progress {
+    width: 100%;
+    min-height: 162px;
+    border: 2px solid #e5e5e5;
+    border-radius: 3px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .form-users__progress {
+    width: 100%;
+    min-height: 162px;
+    border: 2px solid #e5e5e5;
+    border-radius: 3px;
+  }
 }
 
 .form-users__emotions {
@@ -215,5 +257,6 @@
 }
 
 .form-users__wrapper input[type="radio"]:checked + label::after {
+  display: inline-block;
   opacity: 1;
 }
