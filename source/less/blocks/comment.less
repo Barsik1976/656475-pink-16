@@ -6,7 +6,8 @@
   line-height: 24px;
   color: #283645;
   text-align: left;
-  background-color: #f2f2f2;}
+  background-color: #f2f2f2;
+}
 
 @media (min-width: @tablet-width) {
   .comment {
@@ -97,22 +98,17 @@
   line-height: 24px;
   color: #283645;
   text-align: left;
-  padding-left: 17px;
-  padding-right: 17px;
-  padding-top: 25px;
   margin: 0;
 }
 
 @media (min-width: @tablet-width) {
   .comment__text {
+    min-height: 50px;
     font-family: "Open Sans", "Arial", sans-serif;
     font-size: 14px;
     line-height: 24px;
     color: #283645;
     text-align: left;
-    padding-left: 27px;
-    padding-right: 28px;
-    padding-top: 31px;
     margin: 0;
   }
 }
@@ -120,13 +116,12 @@
 @media (min-width: @desktop-width) {
   .comment__text {
     font-family: "Open Sans", "Arial", sans-serif;
+    min-height: 50px;
+    font-family: inherit;
     font-size: 14px;
     line-height: 24px;
     color: #283645;
     text-align: left;
-    padding-left: 27px;
-    padding-right: 30px;
-    padding-top: 31px;
     margin: 0;
   }
 }
@@ -134,6 +129,8 @@
 .comment__like {
   display: flex;
   align-items: center;
+  text-align: left;
+  margin-top: 20px;
 }
 
 @media (min-width: @tablet-width) {
@@ -142,6 +139,8 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    text-align: left;
+    margin-top: 20px;
   }
 }
 
@@ -151,5 +150,7 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    text-align: left;
+    margin-top: 20px;
   }
 }
