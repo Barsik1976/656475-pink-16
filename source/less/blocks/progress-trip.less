@@ -1,16 +1,13 @@
 
 
 .progress-trip {
-  margin-top: 15px;
   border: none;
 }
 
 @media (min-width: @tablet-width) {
   .progress-trip {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    margin-bottom: 61px;
+    border: 2px solid #e5e5e5;
+    border-radius: 3px;
   }
 }
 
@@ -31,6 +28,18 @@
   padding: 0;
   margin-top: 41px;
   transform: translateX(90px);
+}
+
+@media (min-width: @tablet-width) {
+  .progress-trip__list {
+    display: flex;
+    flex-wrap: wrap;
+    width: 280px;
+    margin: 0;
+    padding: 0;
+    margin-top: 52px;
+    transform: translateX(60px);
+  }
 }
 
 @media (min-width: @desktop-width) {
