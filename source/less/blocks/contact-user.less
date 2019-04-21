@@ -33,7 +33,6 @@
 }
 
 .contact-user legend {
-  font-size: 0;
   margin: 0;
 }
 
@@ -129,6 +128,30 @@
   .contact-user__mail-form {
     width: 375px;
     margin: 0;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .contact-user__tel-form label {
+    order: 2;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .contact-user__mail-form label {
+    order: 4;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .contact-user__tel {
+    order: 1;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .contact-user__mail {
+    order: 3;
   }
 }
 

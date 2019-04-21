@@ -154,8 +154,22 @@
   margin-bottom: 61px;
 }
 
+@media (min-width: @tablet-width) {
+  .form-users__emotions {
+    padding: 0;
+    margin: 0 auto;
+    margin-bottom: 61px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .form-users__emotions {
+
+  }
+}
+
 .form-users__emotions textarea {
-box-sizing: border-box;
+  box-sizing: border-box;
   width: 280px;
   min-height: 200px;
   margin-top: 20px;
@@ -175,13 +189,31 @@ box-sizing: border-box;
 
 @media (min-width: @tablet-width) {
   .form-users__emotions textarea {
+    box-sizing: border-box;
     width: 496px;
     min-height: 189px;
+    margin-top: 45px;
+    margin-bottom: 45px;
+    margin-left: 60px;
+    margin-right: 60px;
+    border: 2px #e5e5e5 solid;
+    border-radius: 3px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    font-family: "Open Sans", "Arial", sans-serif;
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 400;
+    color: #283645;
+    white-space: normal;
   }
 }
 
 @media (min-width: @desktop-width) {
   .form-users__emotions textarea {
+    box-sizing: border-box;
     width: 819px;
     min-height: 124px;
     margin-top: 45px;
@@ -204,6 +236,7 @@ box-sizing: border-box;
 
 @media (min-width: @tablet-width) {
   .form-users__form-send {
+    width: 100%;
     display: flex;
     justify-content: space-between;
   }
