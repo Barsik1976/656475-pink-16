@@ -20,9 +20,9 @@
         </a>
         <button class="main-nav__switch main-nav__switch--hide" type="button" aria-label="Открыть меню"></button>
         <ul class="main-nav__list site-list site-list--open">
-          <li class="site-list__item site-list__item--active"><a>Главная</a></li>
+          <li class="site-list__item site-list__item--active"><a href="index.html">Главная</a></li>
           <li class="site-list__item"><a href="photo.html">Фотографии</a></li>
-          <li class="site-list__item"><a href="form.html">Конкурс</a></li>
+          <li class="site-list__item  site-list__item--active"><a>Конкурс</a></li>
           <li class="site-list__item"><a href="htmlacademy.ru">HTML Academy</a></li>
         </ul>
       </div>
@@ -33,6 +33,7 @@
     <section class="form-users">
       <h3 class="form-users__title subtitle">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! Пожалуйста, заполните форму ниже:</h3>
         <form class="form-users__wrapper" action="https://echo.htmlacademy.ru" method="post">
+        <div>
         <fieldset class="form-users__field field-profiles">
           <legend class="visually-hidden">Фамилия имя отчество</legend>
         <p class="field-profiles__item">
@@ -48,6 +49,7 @@
           <input class="field-profiles__field-name" id="middle-name" name="middle-name" type="text" placeholder="Ну и отчество тоже">
         </p>
       </fieldset>
+    </div>
       <div class="form-users__progress">
        <fieldset class="form-users__progress progress-trip">
         <legend class="form-users__legend-title progress-title">Ваши безбашенные достижения в путешествии</legend>

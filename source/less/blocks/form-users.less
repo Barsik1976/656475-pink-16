@@ -1,8 +1,20 @@
 
 
+@media (min-width: @desktop-width) {
+  .form-users {
+    width: 940px;
+    margin: 0 auto;
+  }
+}
+
+.form-users legend {
+  padding-left: 0;
+  padding-right: 0;
+}
+
 .form-users__title {
   width: 280px;
-  font-family: inherit;
+  font-family: "Open Sans", "Arial", sans-serif;
   font-size: 14px;
   line-height: 30px;
   font-weight: 400;
@@ -30,12 +42,21 @@
 
 @media (min-width: @desktop-width) {
   .form-users__title {
-
+    width: 820px;
+    font-family: inherit;
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 400;
+    margin: 0 auto;
+    margin-top: 100px;
+    margin-bottom: 80px;
+    text-align: center;
+    color: #283645;
   }
 }
 
 .form-users__legend-title {
-  width: 280px;
+  width: 260px;
   font-family: "Open Sans", "Arial", sans-serif;
   font-size: 14px;
   line-height: 18px;
@@ -141,10 +162,17 @@
   }
 }
 
+
+@media (min-width: @desktop-width) {
+  div.form-users__field {
+    display: flex;
+  }
+}
+
 @media (min-width: @desktop-width) {
   .form-users__field {
-    position: relative;
-    width: 435px;
+    margin: 0;
+    padding: 0;
   }
 }
 
@@ -164,7 +192,14 @@
 
 @media (min-width: @desktop-width) {
   .form-users__emotions {
-
+    width: 100%;
+    min-height: 162px;
+    border: 2px solid #e5e5e5;
+    border-radius: 3px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    margin-bottom: 61px;
   }
 }
 
@@ -261,16 +296,18 @@
   .form-users__trip {
     min-height: 162px;
     background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 52px;
+    box-sizing: border-box;
     border: none;
   }
 }
 
 @media (min-width: @desktop-width) {
   .form-users__trip {
-    width: 100%;
-    min-height: 162px;
-    border: 2px solid #e5e5e5;
-    border-radius: 3px;
+    width: 435px;
+    margin-bottom: 52px;
   }
 }
 
@@ -303,8 +340,7 @@
   .form-users__progress {
     width: 100%;
     min-height: 162px;
-    border: 2px solid #e5e5e5;
-    border-radius: 3px;
+    border: none;
   }
 }
 

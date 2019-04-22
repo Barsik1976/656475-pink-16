@@ -1,6 +1,8 @@
 
 
 .progress-trip {
+  width: 100%;
+  background-color: #f2f2f2;
   border: none;
 }
 
@@ -8,8 +10,10 @@
   .progress-trip {
     border: 2px solid #e5e5e5;
     border-radius: 3px;
+    background-color: #ffffff;
   }
 }
+
 
 @media (min-width: @desktop-width) {
   .progress-trip {
@@ -21,9 +25,9 @@
 }
 
 .progress-trip__list {
+  width: 280px;
   display: flex;
   flex-wrap: wrap;
-  width: 280px;
   margin: 0;
   padding: 0;
   margin-top: 41px;
@@ -34,22 +38,22 @@
   .progress-trip__list {
     display: flex;
     flex-wrap: wrap;
-    width: 280px;
     margin: 0;
     padding: 0;
     margin-top: 52px;
-    transform: translateX(60px);
   }
 }
 
 @media (min-width: @desktop-width) {
   .progress-trip__list {
+    width: 900px;
     display: flex;
     flex-wrap: wrap;
     margin: 0;
     padding: 0;
     margin-top: 52px;
     margin-left: 60px;
+  transform: translateX(0px);
   }
 }
 
@@ -85,7 +89,6 @@
   .progress-trip__item {
     width: 230px;
     align-items: center;
-    font-family: "Open Sans", "Arial", sans-serif;
     font-size: 18px;
     line-height: 30px;
     font-weight: 400;
@@ -93,7 +96,6 @@
     list-style: none;
     margin-bottom: 65px;
     text-align: left;
-    margin-left: 60px;
   }
 }
 

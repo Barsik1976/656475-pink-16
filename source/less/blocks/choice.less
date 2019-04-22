@@ -17,6 +17,10 @@
 
 @media (min-width: @tablet-width) {
   .choice__add-img {
+    width: 300px;
+    height: 400px;
+    background-image: url("../img/photo-road-tablet@1x.jpg");
+    margin-top: 57px;
     margin-left: 20px;
   }
 }
@@ -51,8 +55,17 @@
 
 @media (min-width: @tablet-width) {
   .choice__list {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    top: 55px;
     left: 365px;
     width: 274px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    border: none;
   }
 }
 
@@ -72,14 +85,17 @@
 }
 
 .choice__item {
-
+  text-align: left;
 }
 
 @media (min-width: @tablet-width) {
   .choice__item {
+    position: relative;
     width: 274px;
+    border-bottom: 1px solid #dddfe0;
     padding-bottom: 23px;
     margin-bottom: 26px;
+    text-align: left;
   }
 }
 
@@ -98,15 +114,22 @@
   display: block;
   border: none;
   background-color: transparent;
-  cursor: pointer;
   padding: 0;
   margin-left: 16px;
   margin-right: 16px;
+  cursor: pointer;
 }
 
 @media (min-width: @tablet-width) {
   .choice__button {
+    display: inline-block;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    margin-left: 0;
     margin-right: 28px;
+    padding: 0;
+    vertical-align: middle;
   }
 }
 
@@ -201,7 +224,7 @@
   }
 }
 
-div.choice__option {
+.choice__option {
   width: 274px;
   margin: 0 auto;
   margin-top: 38px;
@@ -210,9 +233,14 @@ div.choice__option {
 
 @media (min-width: @tablet-width) {
   .choice__option {
-    width: 260px;
+    position: absolute;
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
     bottom: 53px;
     left: 358px;
+    margin-top: 0;
+    padding: 0;
   }
 }
 

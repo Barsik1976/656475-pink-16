@@ -17,10 +17,9 @@
 }
 
 .page-header__wrapper {
-  position: relative;
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
-  background-position: 50% 100%;
+  background-position: 50% 0;
   background-size: 320px;
   background-color: #161e26;
   margin: 0 auto;
@@ -29,11 +28,10 @@
 
 @media (min-width: @tablet-width) {
   .page-header__wrapper {
-    position: relative;
     background-image: url("../img/bg-back-tablet@1x.jpg");
     background-repeat: no-repeat;
     background-position: 50% 100%;
-    background-size: 660px;
+    background-size: cover;
     margin: 0 auto;
     background-color: #161e26;
     text-align: center;
@@ -46,7 +44,7 @@
     background-image: url("../img/bg-back-desktop@1x.jpg");
     background-repeat: no-repeat;
     background-position: 50% 100%;
-    background-size: 1200px;
+    background-size: cover;
     margin: 0 auto;
     background-color: #161e26;
     text-align: center;
@@ -62,65 +60,26 @@
 
 .page-header__wrapper {
   position: relative;
-  min-height: 135px;
-  margin: 0 auto;
-  padding-left: 20px;
-  padding-right: 20px;
-  margin-top: 37px;
-  color: #ffffff;
 }
-
 
 @media (min-width: @tablet-width) {
   .page-header__wrapper {
-    position: relative;
-    min-height: 247px;
-    margin: 0 auto;
-    padding-left: 20px;
-    padding-right: 20px;
-    margin-top: 83px;
+
   }
 }
 
 @media (min-width: @desktop-width) {
   .page-header__wrapper {
-    min-height: 394px;
+    width: 100%;
     margin: 0 auto;
     padding-left: 10px;
     padding-right: 10px;
   }
 }
 
-.page-header__logo-img {
-  max-width: 100%;
-  height: auto;
-  margin: 0;
-}
-
-.page-header__logo-img {
-  width: 75px;
-  height: 23px;
-  margin: 0;
-}
-
-@media (min-width: @tablet-width) {
-  .page-header__logo-img {
-    width: 147px;
-    height: 40px;
-  }
-}
-
-@media (min-width: @desktop-width) {
-  .page-header__logo-img {
-    width: 147px;
-    height: 40px;
-  }
-}
-
 .page-header__title-photo {
   position: relative;
   width: 280px;
-  min-height: 135px;
   font-family: "Open Sans", "Arial", sans-serif;
   font-size: 24px;
   font-weight: 300;
@@ -128,17 +87,22 @@
   color: #ffffff;
   text-align: center;
   margin: 0 auto;
+  padding-top: 57px;
   padding-left: 20px;
   padding-right: 20px;
-  margin-top: 37px;
+  padding-bottom: 87px;
 }
 
 @media (min-width: @tablet-width) {
   .page-header__title-photo {
+    width: 620px;
     font-family: "Open Sans", "Arial", sans-serif;
-    font-size: inherit;
-    font-weight: inherit;
-    margin: 0;
+    font-size: 50px;
+    font-weight: 300;
+    line-height: 60px;
+    text-align: center;
+    padding-top: 125px;
+    padding-bottom: 150px;
   }
 }
 
@@ -148,13 +112,14 @@
     font-size: 50px;
     font-weight: 300;
     line-height: 60px;
+    padding-top: 117px;
+    padding-bottom: 112px;
   }
 }
 
 .page-header__title-competition {
   position: relative;
   width: 280px;
-  min-height: 135px;
   font-family: "Open Sans", "Arial", sans-serif;
   font-size: 24px;
   font-weight: 300;
@@ -165,12 +130,12 @@
   margin: 0 auto;
   padding-left: 20px;
   padding-right: 20px;
-  margin-top: 37px;
+  padding-top: 37px;
+  padding-bottom: 53px;
 }
 
 @media (min-width: @tablet-width) {
   .page-header__title-competition {
-    position: relative;
     width: 620px;
     font-family: "Open Sans", "Arial", sans-serif;
     font-size: 50px;
@@ -179,22 +144,27 @@
     color: #ffffff;
     text-align: center;
     margin: 0 auto;
+    padding-top: 125px;
     padding-left: 20px;
     padding-right: 20px;
-    margin-top: 83px;
+    padding-bottom: 78px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .page-header__title-competition {
+    width: 940px;
     font-family: "Open Sans", "Arial", sans-serif;
     font-size: 50px;
     font-weight: 300;
     line-height: 60px;
     color: #ffffff;
     text-align: center;
-    margin: 0;
-    margin-top: 76px;
+    padding-top: 117px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 100px;
+    margin: 0 auto;
   }
 }
 
