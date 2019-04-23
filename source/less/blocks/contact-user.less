@@ -79,6 +79,42 @@
   }
 }
 
+@media (min-width: @tablet-width) {
+  .contact-user__wrapper span {
+    position: absolute;
+    display: flex;
+    width: 60px;
+    height: 58px;
+    top: 0;
+    left: 436px;
+    background-color: #e5e5e5;
+    border-top: 2px solid #e5e5e5;
+    border-right: 2px solid #e5e5e5;
+    border-bottom: 2px solid #e5e5e5;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    z-index: -1;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .contact-user__wrapper span {
+   position: absolute;
+    display: flex;
+    width: 60px;
+    height: 58px;
+    top: 0;
+    left: 312px;
+    background-color: #e5e5e5;
+    border-top: 2px solid #e5e5e5;
+    border-right: 2px solid #e5e5e5;
+    border-bottom: 2px solid #e5e5e5;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    z-index: -1;
+  }
+}
+
 .contact-user__wrapper label {
   display: block;
   font-family: "Open Sans", "Arial", sans-serif;
@@ -132,26 +168,50 @@
 }
 
 @media (min-width: @tablet-width) {
-  .contact-user__tel-form label {
+  .contact-user__tel-form label:nth-of-type(1) {
     order: 2;
   }
 }
 
 @media (min-width: @tablet-width) {
-  .contact-user__mail-form label {
-    order: 4;
+  .contact-user__mail-form label:nth-of-type(1) {
+    order: 2;
   }
 }
 
 @media (min-width: @tablet-width) {
-  .contact-user__tel {
+  .contact-user__tel:nth-of-type(2) {
     order: 1;
   }
 }
 
 @media (min-width: @tablet-width) {
-  .contact-user__mail {
-    order: 3;
+  .contact-user__mail:nth-of-type(2) {
+    order: 1;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .contact-user__tel-form > label:nth-of-type(1) {
+    order: 2;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .contact-user__mail-form > label:nth-of-type(1) {
+    order: 2;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .contact-user__tel:nth-of-type(2) {
+    order: 1;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .contact-user__mail:nth-of-type(2) {
+    order: 1;
   }
 }
 
@@ -177,43 +237,11 @@
     font-weight: 400;
     color: #283645;
     white-space: normal;
-    background-color: transparent;
   }
 }
 
-@media (min-width: @desktop-width) {
-  .contact-user__tel,
-  .contact-user__mail {
-    background-color: transparent;
-  }
-}
-
-.contact-user__wrapper span {
-  position: absolute;
-  display: flex;
-  width: 60px;
-  height: 58px;
-  top: 0;
-  left: 312px;
-  background-color: #e5e5e5;
-  border-top: 2px solid #e5e5e5;
-  border-right: 2px solid #e5e5e5;
-  border-bottom: 2px solid #e5e5e5;
-  border-top-right-radius: 3px;
-  border-bottom-right-radius: 3px;
-  z-index: -1;
-}
-
-
-
-
-@media (min-width: @tablet-width) {
-  .contact-user__wrapper span {
-    left: 436px;
-  }
-}
-
-.contact-user__tel {
+.contact-user__tel,
+.contact-user__mail {
   width: 236px;
   border: 2px #e5e5e5 solid;
   border-radius: 3px;
@@ -233,10 +261,10 @@
 
 @media (min-width: @tablet-width) {
   .contact-user__tel {
-    background-image: url(../img/telephone.svg);
+    width: 497px;
+    background-image: url("../img/icon-phone.svg");
     background-repeat: no-repeat;
     background-position: 456px 50%;
-    width: 497px;
   }
 }
 
@@ -249,26 +277,12 @@
   }
 }
 
-.contact-user__mail {
-  width: 236px;
-  border: 2px #e5e5e5 solid;
-  border-radius: 3px;
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-top: 14px;
-  padding-bottom: 14px;
-  font-family: "Open Sans", "Arial", sans-serif;
-  font-size: 18px;
-  line-height: 30px;
-  font-weight: 400;
-  color: #283645;
-  white-space: normal;
-}
-
 @media (min-width: @tablet-width) {
   .contact-user__mail {
     width: 497px;
-    background-position: 456px 50%;
+    background-image: url("../img/icon-mail.svg");
+    background-repeat: no-repeat;
+    background-position: 332px 50%;
   }
 }
 
@@ -276,34 +290,6 @@
   .contact-user__mail {
     width: 375px;
     background-image: url("../img/icon-mail.svg");
-    background-repeat: no-repeat;
-    background-position: 332px 50%;
-  }
-}
-
-@media (min-width: @tablet-width) {
-  .contact-user__wrapper span {
-    position: absolute;
-    display: flex;
-    width: 60px;
-    height: 58px;
-    top: 0;
-    left: 436px;
-    background-color: #e5e5e5;
-    border-top: 2px solid #e5e5e5;
-    border-right: 2px solid #e5e5e5;
-    border-bottom: 2px solid #e5e5e5;
-    border-top-right-radius: 3px;
-    border-bottom-right-radius: 3px;
-    z-index: -1;
-  }
-}
-
-@media (min-width: @desktop-width) {
-  .contact-user__tel span {
-    display: block;
-    width: 375px;
-    background-image: url("../img/icon-phone.svg");
     background-repeat: no-repeat;
     background-position: 332px 50%;
   }
