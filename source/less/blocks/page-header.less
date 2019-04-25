@@ -1,25 +1,26 @@
 
 
 .page-header {
-
+  width: 100%;
+  background-color: #161e26;
 }
 
 @media (min-width: @tablet-width) {
   .page-header {
-
+    background-color: #161e26;
   }
 }
 
 @media (min-width: @desktop-width) {
   .page-header {
-
+    background-color: #161e26;
   }
 }
 
 .page-header__wrapper {
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
-  background-position: 50% 0;
+  background-position: center center;
   background-size: 320px;
   background-color: #161e26;
   margin: 0 auto;
@@ -30,7 +31,7 @@
   .page-header__wrapper {
     background-image: url("../img/bg-back-tablet@1x.jpg");
     background-repeat: no-repeat;
-    background-position: 50% 100%;
+    background-position: center center;
     background-size: cover;
     margin: 0 auto;
     background-color: #161e26;
@@ -43,37 +44,30 @@
     position: relative;
     background-image: url("../img/bg-back-desktop@1x.jpg");
     background-repeat: no-repeat;
-    background-position: 50% 100%;
+    background-position: center center;
     background-size: cover;
     margin: 0 auto;
-    background-color: #161e26;
     text-align: center;
   }
 }
 
-.page-header__wrapp-iphone {
-  position: relative;
-  width: 320px;
-  margin: 0 auto;
-  margin-top: 110px;
-}
-
 .page-header__wrapper {
   position: relative;
+  width: 100%;
+  margin: 0 auto;
 }
 
 @media (min-width: @tablet-width) {
   .page-header__wrapper {
-
+    width: 660px;
+    margin: 0 auto;
   }
 }
 
 @media (min-width: @desktop-width) {
   .page-header__wrapper {
-    width: 100%;
+    width: 1200px;
     margin: 0 auto;
-    padding-left: 10px;
-    padding-right: 10px;
   }
 }
 
@@ -189,11 +183,6 @@
 
 @media (min-width: @desktop-width) {
   .page-header__iphone {
-    min-height: 644px;
-    color: #ffffff;
-    background-image: url("../img/iphone-hand-desktop@1x.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 0 0;
+
   }
 }

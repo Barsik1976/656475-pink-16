@@ -16,7 +16,11 @@
       <nav class="main-nav">
         <div class="main-nav__wrapper">
         <a class="main-nav__logo-link" title="логотип пинк">
-          <img class="main-nav__logo-img" src="img/logo-pink-white-mobile.svg" alt="логотип пинк">
+          <picture>
+            <source srcset="img/logo-pink-white-desktop.svg" media="(min-width: 1200px)">
+            <source srcset="img/logo-pink-white-tablet.svg" media="(min-width: 660px)">
+            <img class="main-nav__logo-img" src="img/logo-pink-white-mobile.svg" width="75" height="23" alt="логотип пинк">
+          </picture>
         </a>
         <button class="main-nav__switch main-nav__switch--hide" type="button" aria-label="Открыть меню"></button>
         <ul class="main-nav__list site-list site-list--open">
@@ -127,7 +131,12 @@
   <footer class="page-footer-form">
         <div class="page-footer-form__information social">
       <a class="social__logo-link" href="#" title="логотип пинк">
-        <img src="img/logo-pink-blue-mobile.svg" alt="логотип пинк" width="147" height="40"></a>
+        <picture>
+          <source srcset="img/logo-pink-blue-desktop.svg" media="(min-width: 1200px)">
+          <source srcset="img/logo-pink-blue-mobile.svg" media="(min-width: 660px)">
+          <img src="img/logo-pink-blue-mobile.svg" width="147" height="40" alt="логотип пинк">
+        </picture>
+      </a>
       <ul class="social__list">
         <li class="social__item"><a class="social__link social__link--twitter" href="#twitter" title="twitter"><span class="visually-hidden">Твиттер</span>
           <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="17.5px" height="14.663px" viewBox="0 0 17.5 14.663" enable-background="new 0 0 17.5 14.663" xml:space="preserve">
