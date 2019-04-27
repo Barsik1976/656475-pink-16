@@ -1,14 +1,19 @@
 
 
 .map {
+  position: relative;
   width: 320px;
   height: 200px;
+  background-color: #eceae4;
+  background-image: url("../img/pink-index-mobile-map.jpg");
+  background-repeat: no-repeat;
 }
 
 @media (min-width: @tablet-width) {
   .map {
     width: 660px;
     height: 373px;
+    background-image: url("../img/pink-index-tablet-map.jpg");
   }
 }
 
@@ -16,13 +21,15 @@
   .map {
     width: 960px;
     height: 500px;
+    background-image: url("../img/pink-index-desktop-map.jpg");
   }
 }
 
 .map__map-img {
-  position: absolute;
-  top: 40px;
-  left: calc(50% - 160px);
+  display: block;
+  width: 320px;
+  height: auto;
+  position: relative;
   background-color: transparent;
   border: none;
   outline: none;
@@ -30,22 +37,15 @@
 
 @media (min-width: @tablet-width) {
   .map__map-img {
-    position: absolute;
-    top: 30px;
-    left: calc(50% - 330px);
-    background-color: transparent;
-    border: none;
-    outline: none;
+    width: 660px;
+    margin: 0 auto;
+
   }
 }
 
 @media (min-width: @desktop-width) {
   .map__map-img {
-    position: absolute;
-    top: 23px;
-    left: calc(50% - 480px);
-    background-color: transparent;
-    border: none;
-    outline: none;
+    margin-top: 26px;
+
   }
 }
