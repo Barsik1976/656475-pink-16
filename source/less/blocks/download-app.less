@@ -23,6 +23,8 @@
     background-image: url("../img/iphone-hand-tablet@1x.png");
     background-repeat: no-repeat;
     background-position: 50% 0;
+    margin-left: calc(50% - 330px);
+
   }
 }
 
@@ -54,11 +56,6 @@
   padding-left: 0;
 }
 
-.download-app__wrapper > div {
-  width: 280px;
-  margin: 0 auto;
-}
-
 @media (min-width: @tablet-width) {
   .download-app__wrapper {
     position: static;
@@ -73,7 +70,7 @@
     position: static;
     width: 300px;
     padding-top: 22px;
-    margin-left: 10px;
+    transform: translateX(10px);
     background-color: transparent;
   }
 }
@@ -119,7 +116,7 @@
   border: 3px solid #ffffff;
   padding-top: 16px;
   padding-bottom: 18px;
-  margin: 0;
+  margin: 0 auto;
   margin-bottom: 31px;
 }
 

@@ -13,7 +13,6 @@
   margin: 0;
   margin-bottom: 18px;
 }
-
 @media (min-width: @tablet-width) {
   .page-footer__title {
     font-family: "Open Sans", "Arial", sans-serif;
@@ -181,3 +180,34 @@
     border: 0;
   }
 }
+
+.page-footer__information {
+  display: none;
+}
+
+@media (min-width: @tablet-width) {
+  .page-footer__information {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    margin-bottom: 36px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-footer__information {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    margin-bottom: 70px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
