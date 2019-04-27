@@ -47,7 +47,6 @@
 
 @media (min-width: @tablet-width) {
   .like__number-likes:nth-of-type(2) {
-    order: 1;
   }
 }
 
@@ -59,10 +58,11 @@
 
 .like__heart-img {
   display: inline-block;
+  position: absolute;
+  top: 95px;
   width: 14px;
   height: 12px;
-  background-image: url(../img/icon-heart.svg);
-  background-repeat: no-repeat;
+  cursor: pointer;
 }
 
 @media (min-width: @tablet-width) {
