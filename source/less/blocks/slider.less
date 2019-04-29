@@ -22,7 +22,7 @@
 
 }
 
-.slider label {
+.slider__toggles label {
   position: relative;
   display: inline-block;
   width: 6px;
@@ -36,7 +36,7 @@
   font-size: 0;
 }
 
-.slider label::after {
+.slider__toggles label::after {
   position: absolute;
   display: inline-block;
   content: "";
@@ -51,7 +51,7 @@
 }
 
 @media (min-width: @tablet-width) {
-.slider label {
+.slider__toggles label {
   position: relative;
   display: inline-block;
   width: 6px;
@@ -66,7 +66,7 @@
 }
 
 @media (min-width: @tablet-width) {
-.slider label::after {
+.slider__toggles label::after {
   position: absolute;
   display: inline-block;
   content: "";
@@ -87,9 +87,9 @@
   display: block;
 }
 
-#review-item-1:checked ~ .slider .slider__item--1::after,
-#review-item-2:checked ~ .slider .slider__item--2::after,
-#review-item-3:checked ~ .slider .slider__item--3::after {
+#review-item-1:checked ~ .slider__toggles .slider__item--1::after,
+#review-item-2:checked ~ .slider__toggles .slider__item--2::after,
+#review-item-3:checked ~ .slider__toggles .slider__item--3::after {
   position: absolute;
   content: "";
   bottom: -2px;
@@ -112,9 +112,9 @@
 }
 
 @media (min-width: @tablet-width) {
-  #review-item-1:checked ~ .slider .slider__item--1::after,
-  #review-item-2:checked ~ .slider .slider__item--2::after,
-  #review-item-3:checked ~ .slider .slider__item--3::after {
+  #review-item-1:checked ~ .slider__toggles .slider__item--1::after,
+  #review-item-2:checked ~ .slider__toggles .slider__item--2::after,
+  #review-item-3:checked ~ .slider__toggles .slider__item--3::after {
     position: absolute;
     content: "";
     bottom: -2px;
@@ -139,9 +139,9 @@
 }
 
 @media (min-width: @desktop-width) {
-  #eview-item-1:checked ~ .slider label:nth-child(2),
-  #eview-item-2:checked ~ .slider label:nth-child(3),
-  #eview-item-3:checked ~ .slider label:nth-child(1) {
+  #eview-item-1:checked ~ .slider__toggles label:nth-child(2),
+  #eview-item-2:checked ~ .slider__toggles label:nth-child(3),
+  #eview-item-3:checked ~ .slider__toggles label:nth-child(1) {
     background-image: url(../img/icon-review-arrow-right.svg);
     background-repeat: no-repeat;
     background-color: transparent;
@@ -150,20 +150,12 @@
 }
 
 @media (min-width: @desktop-width) {
-  #eview-item-1:checked ~ .slider label:nth-child(3),
-  #eview-item-2:checked ~ .slider label:nth-child(1),
-  #eview-item-3:checked ~ .slider label:nth-child(2) {
+  #eview-item-1:checked ~ .slider__toggles label:nth-child(3),
+  #eview-item-2:checked ~ .slider__toggles label:nth-child(1),
+  #eview-item-3:checked ~ .slider__toggles label:nth-child(2) {
     background-image: url(../img/icon-review-arrow-left.svg);
     background-repeat: no-repeat;
     background-color: transparent;
     float: left;
   }
-}
-
-.slider__toggles {
-
-}
-
-.slider__toggle {
-
 }

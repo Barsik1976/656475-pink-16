@@ -93,7 +93,9 @@
 }
 
 .page-footer__map {
-  margin: 0 auto;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 39px;
 }
 
 @media (min-width: @tablet-width) {
@@ -107,13 +109,12 @@
 @media (min-width: @desktop-width) {
   .page-footer__map {
     position: relative;
-    width: 960px;
+    width: 100%;
     height: 500px;
     margin-top: 43px;
     margin-bottom: 75px;
   }
 }
-
 
 .page-footer__map::before {
     position: absolute;
@@ -127,8 +128,6 @@
     background-repeat: no-repeat;
     background-size: 100% 32px;
 }
-
-
 
 @media (min-width: @tablet-width) {
   .page-footer__map::before {
@@ -164,7 +163,7 @@
   position: absolute;
   width: 100%;
   height: 200px;
-  top: 30px;
+  top: 0;
   left: 0;
   border: 0;
 }
@@ -174,9 +173,6 @@
     position: absolute;
     width: 100%;
     height: 373px;
-    top: 30px;
-    left: 0;
-    border: 0;
   }
 }
 
@@ -185,9 +181,6 @@
     position: absolute;
     width: 100%;
     height: 500px;
-    top: 23px;
-    left: 0;
-    border: 0;
   }
 }
 

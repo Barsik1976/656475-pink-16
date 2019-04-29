@@ -2,7 +2,7 @@
 
 .map {
   position: relative;
-  width: 320px;
+  width: 100%;
   height: 200px;
   background-color: #eceae4;
   background-image: url("../img/pink-index-mobile-map.jpg");
@@ -11,7 +11,6 @@
 
 @media (min-width: @tablet-width) {
   .map {
-    width: 660px;
     height: 373px;
     background-image: url("../img/pink-index-tablet-map.jpg");
   }
@@ -19,7 +18,6 @@
 
 @media (min-width: @desktop-width) {
   .map {
-    width: 960px;
     height: 500px;
     background-image: url("../img/pink-index-desktop-map.jpg");
   }
@@ -28,6 +26,7 @@
 .map__map-img {
   display: block;
   width: 320px;
+  height: 200px;
   height: auto;
   position: relative;
   background-color: transparent;
@@ -38,6 +37,7 @@
 @media (min-width: @tablet-width) {
   .map__map-img {
     width: 660px;
+    height: 373px;
     margin: 0 auto;
 
   }
@@ -45,7 +45,7 @@
 
 @media (min-width: @desktop-width) {
   .map__map-img {
+    height: 500px;
     margin-top: 26px;
-
   }
 }
