@@ -1,0 +1,48 @@
+
+
+.like-day {
+  text-align: left;
+}
+
+@media (min-width: @tablet-width) {
+  .like-day {
+    text-align: left;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .like-day {
+    text-align: left;
+  }
+}
+
+.like-day__number-likes {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 12px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #d22856;
+  text-transform: uppercase;
+  margin: 0;
+  margin-left: 19px;
+}
+
+.like-day__heart-img {
+  display: inline-block;
+  position: relative;
+  margin-top: -10px;
+  height: 12px;
+  cursor: pointer;
+}
+
+@media (min-width: @tablet-width) {
+  .like-day__number-likes {
+    margin-right: 19px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .like-day__heart-img:nth-of-type(1) {
+    order: 2;
+  }
+}

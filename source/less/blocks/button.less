@@ -1,0 +1,75 @@
+
+
+.button {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-weight: 700;
+  border-radius: 50px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.button__choice {
+  display: block;
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: 700;
+  text-align: center;
+  width: 274px;
+  height: 54px;
+  border-radius: 50px;
+  background-color: transparent;
+  cursor: pointer;
+  margin: 0 auto;
+}
+
+@media (min-width: @tablet-width) {
+  .button__choice {
+    width: 254px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .button__choice {
+    width: 178px;
+    margin: 0;
+  }
+}
+
+.button__choice--post {
+  color: #d22856;
+  border: 3px solid #d22856;
+}
+
+.button__choice--cancel {
+  color: #dddfe0;
+  border: 3px solid #dddfe0;
+  margin-top: 12px;
+}
+
+
+
+@media (min-width: @tablet-width) {
+  .button__choice--post {
+
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .button__choice--post {
+  padding: 0;
+
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .button__choice--cancel {
+
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .button__choice--cancel {
+    margin-top: 0;
+  }
+}
