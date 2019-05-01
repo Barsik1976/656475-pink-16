@@ -1,0 +1,62 @@
+
+
+.tables-controls {
+  position: absolute;
+  top: 425px;
+  left: calc(50% - 50px);
+}
+
+.tables-controls label {
+  position: relative;
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  cursor: pointer;
+  vertical-align: middle;
+  background-color: #bec2c7;
+  margin-left: 18px;
+  text-align: center;
+}
+
+.tables-controls label::after {
+  position: absolute;
+  display: inline-block;
+  content: "";
+  bottom: 0;
+  left: 0;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  cursor: pointer;
+  vertical-align: middle;
+  background-color: #bec2c7;
+}
+
+#table-item-1:checked ~ .tariffs-table .tariffs-table__item-1 {
+  display: block;
+}
+
+#table-item-2:checked ~ .tariffs-table .tariffs-table__item-2 {
+  display: block;
+}
+
+#table-item-3:checked ~ .tariffs-table .tariffs-table__item-3 {
+  display: block;
+}
+
+#table-item-1:checked ~ .slider .slider__item--1::after,
+#table-item-2:checked ~ .slider .slider__item--2::after,
+#table-item-3:checked ~ .slider .slider__item--3::after {
+  position: absolute;
+  content: "";
+  bottom: -2px;
+  left: -2px;
+  width: 6px;
+  height: 6px;
+  background-color: inherit;
+  border: 2px solid #283645;
+  background-color: #ffffff;
+  border-radius: 50%;
+  cursor: pointer;
+}
