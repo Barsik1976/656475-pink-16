@@ -52,35 +52,37 @@
               <input class="field-profiles__field-name" id="middle-name" name="middle-name" type="text" placeholder="Ну и отчество тоже">
             </p>
           </fieldset>
-          <fieldset class="form-users__progress progress-trip">
-            <legend class="form-users__legend-title progress-title">Ваши безбашенные достижения в путешествии</legend>
-            <ul class="progress-trip__list">
-              <li class="progress-trip__item">
-                <input class="visually-hidden" type="checkbox" name="shark" value="shark" id="progress-1" checked>
-                <label for="progress-1">Сделал селфи с акулой</label>
-              </li>
-              <li class="progress-trip__item">
-                <input class="visually-hidden" type="checkbox" name="chuck-norris" value="chuck-norris" id="progress-2">
-                <label for="progress-2">Обгорел на пляже</label>
-              </li>
-              <li class="progress-trip__item">
-                <input class="visually-hidden" type="checkbox" name="tower" value="tower" id="progress-3">
-                <label for="progress-3">Видел Чака Норриса</label>
-              </li>
-              <li class="progress-trip__item">
-                <input class="visually-hidden" type="checkbox" name="beach" value="beach" id="progress-4">
-                <label for="progress-4">Накупил сувениров</label>
-              </li>
-              <li class="progress-trip__item">
-                <input class="visually-hidden" type="checkbox" name="souvenirs" value="souvenirs" id="progress-5">
-                <label for="progress-5">Удержал башню</label>
-              </li>
-              <li class="progress-trip__item">
-                <input class="visually-hidden" type="checkbox" name="hotel" value="hotel" id="progress-6">
-                <label for="progress-6">Разгромил отель</label>
-              </li>
-            </ul>
-          </fieldset>
+          <div class="form-users__progress">
+            <fieldset class="form-users__field progress-trip">
+              <legend class="form-users__legend-title progress-title">Ваши безбашенные достижения в путешествии</legend>
+              <ul class="progress-trip__list">
+                <li class="progress-trip__item">
+                  <input class="visually-hidden" type="checkbox" name="shark" value="shark" id="progress-1" checked>
+                  <label for="progress-1">Сделал селфи с акулой</label>
+                </li>
+                <li class="progress-trip__item">
+                  <input class="visually-hidden" type="checkbox" name="chuck-norris" value="chuck-norris" id="progress-2">
+                  <label for="progress-2">Обгорел на пляже</label>
+                </li>
+                <li class="progress-trip__item">
+                  <input class="visually-hidden" type="checkbox" name="tower" value="tower" id="progress-3">
+                  <label for="progress-3">Видел Чака Норриса</label>
+                </li>
+                <li class="progress-trip__item">
+                  <input class="visually-hidden" type="checkbox" name="beach" value="beach" id="progress-4">
+                  <label for="progress-4">Накупил сувениров</label>
+                </li>
+                <li class="progress-trip__item">
+                  <input class="visually-hidden" type="checkbox" name="souvenirs" value="souvenirs" id="progress-5">
+                  <label for="progress-5">Удержал башню</label>
+                </li>
+                <li class="progress-trip__item">
+                  <input class="visually-hidden" type="checkbox" name="hotel" value="hotel" id="progress-6">
+                  <label for="progress-6">Разгромил отель</label>
+                </li>
+              </ul>
+            </fieldset>
+          </div>
           <fieldset class="form-users__field form-users__field--contact contact-user">
             <legend class="form-users__legend-title contact-title">Контактная информация</legend>
             <div class="contact-user__wrapper">
@@ -96,23 +98,25 @@
               </p>
             </div>
           </fieldset>
-          <fieldset class="form-users__field form-users__field--trip field-trip">
-            <legend class="form-users__legend-title trip-title">С каким приложением путешествовали?</legend>
-            <ul class="field-trip__list">
-              <li class="field-trip__item">
-                <input class="visually-hidden" type="radio" name="application" value="ios" id="filter-ios" checked>
-                <label for="filter-ios">Pink для iOS</label>
-              </li>
-              <li class="field-trip__item">
-                <input class="visually-hidden" type="radio" name="application" value="android" id="filter-android">
-                <label for="filter-android">Pink на Android</label>
-              </li>
-              <li class="field-trip__item">
-                <input class="visually-hidden" type="radio" name="application" value="windows" id="filter-windows">
-                <label for="filter-windows">Windows Phone</label>
-              </li>
-            </ul>
-          </fieldset>
+          <div class="form-users__trip">
+            <fieldset class="form-users__field field-trip">
+              <legend class="form-users__legend-title trip-title">С каким приложением путешествовали?</legend>
+              <ul class="field-trip__list">
+                <li class="field-trip__item">
+                  <input class="visually-hidden" type="radio" name="application" value="ios" id="filter-ios" checked>
+                  <label for="filter-ios">Pink для iOS</label>
+                </li>
+                <li class="field-trip__item">
+                  <input class="visually-hidden" type="radio" name="application" value="android" id="filter-android">
+                  <label for="filter-android">Pink на Android</label>
+                </li>
+                <li class="field-trip__item">
+                  <input class="visually-hidden" type="radio" name="application" value="windows" id="filter-windows">
+                  <label for="filter-windows">Windows Phone</label>
+                </li>
+              </ul>
+            </fieldset>
+          </div>
           <fieldset class="form-users__emotions emotions">
             <legend class="form-users__legend-title emotion-title">Опишите свои эмоции</legend>
             <textarea name="text" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
