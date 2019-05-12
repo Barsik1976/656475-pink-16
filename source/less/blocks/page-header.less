@@ -17,6 +17,8 @@
 }
 
 .page-header__wrapper {
+  position: relative;
+  width: 100%;
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: center center;
@@ -47,26 +49,6 @@
     background-size: cover;
     margin: 0 auto;
     text-align: center;
-  }
-}
-
-.page-header__wrapper {
-  position: relative;
-  width: 100%;
-  margin: 0 auto;
-}
-
-@media (min-width: @tablet-width) {
-  .page-header__wrapper {
-    width: 100%;
-    margin: 0 auto;
-  }
-}
-
-@media (min-width: @desktop-width) {
-  .page-header__wrapper {
-    width: 100%;
-    margin: 0 auto;
   }
 }
 
@@ -119,7 +101,6 @@
   line-height: 30px;
   text-align: center;
   color: #ffffff;
-  text-align: center;
   margin: 0 auto;
   padding-left: 20px;
   padding-right: 20px;
@@ -177,11 +158,5 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 50% 0;
-  }
-}
-
-@media (min-width: @desktop-width) {
-  .page-header__iphone {
-
   }
 }
