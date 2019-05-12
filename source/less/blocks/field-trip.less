@@ -17,9 +17,6 @@
   .field-trip {
     box-sizing: border-box;
     width: 435px;
-    min-height: 305px;
-    border: 2px solid #e5e5e5;
-    border-radius: 3px;
   }
 }
 
@@ -34,34 +31,23 @@
 
 @media (min-width: @tablet-width) {
   .field-trip__list {
-    width: 280px;
     transform: translateX(120px);
   }
 }
 
 @media (min-width: @desktop-width) {
   .field-trip__list {
-    margin: 0;
-    padding: 0;
-    text-align: left;
     margin-top: 50px;
   }
 }
 
 .field-trip__item {
-  font-family: "Open Sans", "Arial", sans-serif;
   font-size: 18px;
   line-height: 30px;
   font-weight: 400;
   color: #283645;
   list-style: none;
   margin-bottom: 62px;
-}
-
-@media (min-width: @tablet-width) {
-  .field-trip__item {
-    margin-bottom: 62px;
-  }
 }
 
 @media (min-width: @desktop-width) {
@@ -72,16 +58,4 @@
 
 .field-trip__item label {
   position: relative;
-}
-
-@media (min-width: @tablet-width) {
-  .field-trip__item label {
-    position: relative;
-  }
-}
-
-@media (min-width: @desktop-width) {
-  .field-trip__item label {
-    position: relative;
-  }
 }
