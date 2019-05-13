@@ -10,8 +10,6 @@
 
 @media (min-width: @tablet-width) {
   .tariffs {
-    position: relative;
-    background-color: #f2f2f2;
     min-height: 375px;
     margin-top: 30px;
   }
@@ -19,8 +17,6 @@
 
 @media (min-width: @desktop-width) {
   .tariffs {
-    position: relative;
-    background-color: #f2f2f2;
     min-height: 524px;
   }
 }
@@ -35,20 +31,7 @@
 
 @media (min-width: @tablet-width) {
   .tariffs::before {
-    content: "";
-    display: block;
-    height: 100px;
-    background-image: linear-gradient(to right bottom, #ffffff 50%, #f2f2f2 50%);
     margin-top: 30px;
-  }
-}
-
-@media (min-width: @desktop-width) {
-  .tariffs::before {
-    content: "";
-    display: block;
-    height: 100px;
-    background-image: linear-gradient(to right bottom, #ffffff 50%, #f2f2f2 50%);
   }
 }
 
@@ -57,22 +40,17 @@
   position: relative;
   width: 828px;
   margin-top: 65px;
-  font-family: "Open Sans", "Arial", sans-serif;
   background-color: #ffffff;
-  border-top: none;
+  border: none;
   padding: 0;
-  border-left: 2px solid #e5e5e5;
-  border-right: 2px solid #e5e5e5;
+  border-collapse: collapse;
+  overflow: hidden;
 }
 
 @media (min-width: @tablet-width) {
   .tariffs__table {
     position: static;
     width: 656px;
-    font-family: inherit;
-    background-color: #ffffff;
-    border-collapse: collapse;
-    padding: 0;
     margin-top: 35px;
     margin-left: calc(50% - 310px);
     border: none;
@@ -83,14 +61,8 @@
   .tariffs__table {
     position: static;
     width: 936px;
-    font-family: inherit;
-    background-color: #ffffff;
-    border-top: none;
-    border-collapse: collapse;
-    padding: 0;
     margin-top: 72px;
     margin-left: calc(50% - 470px);
-    overflow: hidden;
   }
 }
 
@@ -106,7 +78,6 @@
 
 .tariffs__header-title {
   width: 276px;
-  font-family: "Open Sans", "Arial", sans-serif;
   font-size: 16px;
   line-height: 24px;
   font-weight: 700;
@@ -123,13 +94,6 @@
 @media (min-width: @tablet-width) {
   .tariffs__header-title {
     width: 153px;
-    font-size: 16px;
-    line-height: 24px;
-    font-weight: 700;
-    text-transform: uppercase;
-    color: #ffffff;
-    background-color: #283645;
-    text-align: center;
     border: 2px solid #e5e5e5;
     border-bottom: 2px solid #283645;
     border-left: 2px solid #283645;
@@ -143,21 +107,13 @@
     width: 232px;
     font-size: 18px;
     line-height: 30px;
-    font-weight: 700;
-    text-transform: uppercase;
-    color: #ffffff;
-    background-color: #283645;
-    text-align: center;
-    border: 2px solid #e5e5e5;
-    border-bottom: 2px solid #283645;
-    border-left: 2px solid #283645;
-    border-top: none;
+    border: none;
     padding-top: 23px;
   }
 }
 
 @media (min-width: @tablet-width) {
-  .tariffs__header-title--1 {
+  .tariffs__header-title--title1 {
     background-color: #f2f2f2;
     border-top: none;
     border-left: none;
@@ -167,7 +123,7 @@
 }
 
 @media (min-width: @desktop-width) {
-  .tariffs__header-title--1 {
+  .tariffs__header-title--title1 {
     background-color: #f2f2f2;
     border-top: none;
     border-left: none;
@@ -185,7 +141,6 @@
   display: inline-block;
   position: absolute;
   content: "Хит";
-  font-family: "Open Sans", "Arial", sans-serif;
   font-size: 14px;
   line-height: 30px;
   font-weight: 400;
@@ -200,59 +155,10 @@
   vertical-align: middle;
 }
 
-@media (min-width: @tablet-width) {
-  .tariffs__header-title--hit {
-    position: relative;
-    overflow: hidden;
-  }
-}
-
-@media (min-width: @tablet-width) {
-  .tariffs__header-title--hit::before {
-    display: inline-block;
-    position: absolute;
-    content: "Хит";
-    font-family: "Open Sans", "Arial", sans-serif;
-    font-size: 14px;
-    line-height: 30px;
-    font-weight: 400;
-    text-transform: uppercase;
-    color: #ffffff;
-    background-color: #d22856;
-    height: 30px;
-    width: 120px;
-    transform: rotate(-45deg);
-    top: 5px;
-    left: -35px;
-    vertical-align: middle;
-  }
-}
-
-@media (min-width: @desktop-width) {
-  .tariffs__header-title--hit {
-    position: relative;
-    overflow: hidden;
-  }
-}
-
 @media (min-width: @desktop-width) {
   .tariffs__header-title--hit::before {
-    display: inline-block;
-    position: absolute;
-    content: "Хит";
-    font-family: inherit;
-    font-size: 14px;
-    line-height: 30px;
-    font-weight: 400;
-    text-transform: uppercase;
-    color: #ffffff;
-    background-color: #d22856;
-    height: 30px;
-    width: 120px;
-    transform: rotate(-45deg);
     top: 10px;
     left: -30px;
-    vertical-align: middle;
   }
 }
 
@@ -281,18 +187,9 @@
 @media (min-width: @tablet-width) {
   .tariffs__header td {
     width: 153px;
-    font-size: 14px;
-    line-height: 30px;
-    font-weight: 400;
     text-transform: none;
-    color: #283645;
-    text-align: center;
-    padding: 0;
-    padding-left: 15px;
-    padding-right: 15px;
     padding-top: 15px;
     padding-bottom: 13px;
-    border: 2px solid #e5e5e5;
   }
 }
 
@@ -300,23 +197,16 @@
   .tariffs__header td {
     width: 232px;
     font-size: 18px;
-    line-height: 30px;
-    font-weight: 400;
-    color: #283645;
-    text-align: center;
-    padding: 0;
     padding-left: 24px;
     padding-right: 24px;
     padding-top: 22px;
     padding-bottom: 18px;
     vertical-align: middle;
-    border: 2px solid #e5e5e5;
   }
 }
 
 .tariffs__header span {
   display: block;
-  font-family: "Open Sans", "Arial", sans-serif;
   font-size: 18px;
   line-height: 26px;
   font-weight: 300;
@@ -372,7 +262,7 @@
 .tariffs__header-title:nth-child(2) {
   border-right: 2px solid #e5e5e5;
   border-bottom: 2px solid #283645;
-  border-left: 2px solid #283645;
+  border-left: 2px solid #e5e5e5;
   border-top-left-radius: 3px;
   border-bottom-left-radius: 3px;
 }
@@ -384,5 +274,10 @@
 
 .tariffs__header-title:last-child {
   border-top-right-radius: 3px;
-  border-bottom-right-radius: 3px;
+}
+
+@media (min-width: @tablet-width) {
+  .tariffs__header-title:nth-child(2) {
+    border-left: 2px solid #283645;
+  }
 }
