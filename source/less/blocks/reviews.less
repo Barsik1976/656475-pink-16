@@ -8,21 +8,15 @@
 
 @media (min-width: @tablet-width) {
   .reviews {
-    position: relative;
-    display: flex;
-    flex-direction: column;
     width: 620px;
     padding-bottom: 20px;
-    margin: 0 auto;
   }
 }
 
 @media (min-width: @desktop-width) {
   .reviews {
-    position: relative;
     width: 940px;
     padding-bottom: 45px;
-    margin: 0 auto;
     overflow: hidden;
   }
 }
@@ -34,18 +28,6 @@
 .reviews__list {
   margin-top: 50px;
   text-align: center;
-}
-
-@media (min-width: @tablet-width) {
-  .reviews__list {
-    display: block;
-  }
-}
-
-@media (min-width: @desktop-width) {
-  .reviews__list {
-    display: block;
-  }
 }
 
 @media (min-width: @desktop-width) {
@@ -63,7 +45,6 @@
 
 .reviews__text {
   display: block;
-  font-family: "Open Sans", "Arial", sans-serif;
   font-size: 14px;
   line-height: 30px;
   font-weight: 400;
@@ -73,32 +54,24 @@
 
 @media (min-width: @tablet-width) {
   .reviews__text {
-    display: block;
-    font-family: inherit;
     font-size: 18px;
-    line-height: 30px;
-    font-weight: 400;
     margin: 0;
     margin-bottom: 45px;
+    order: -1;
   }
 }
 
 @media (min-width: @desktop-width) {
   .reviews__text {
-    display: block;
-    font-family: inherit;
-    font-size: 18px;
-    line-height: 30px;
-    font-weight: 400;
     margin: 0;
     margin-bottom: 46px;
     padding-left: 140px;
     padding-right: 140px;
+    order: -1;
   }
 }
 
 .reviews__author-name {
-  font-family: "Open Sans", "Arial", sans-serif;
   font-size: 18px;
   line-height: 30px;
   font-weight: 700;
@@ -109,29 +82,12 @@
 @media (min-width: @tablet-width) {
   .reviews__author-name {
     font-size: 20px;
-    line-height: 30px;
-    margin: 0;
   }
 }
 
 @media (min-width: @desktop-width) {
   .reviews__author-name {
     font-size: 24px;
-    line-height: 30px;
-    font-weight: 700;
-    margin: 0;
-  }
-}
-
-@media (min-width: @tablet-width) {
-  .reviews__text {
-    order: -1;
-  }
-}
-
-@media (min-width: @desktop-width) {
-  .reviews__text {
-    order: -1;
   }
 }
 
@@ -154,9 +110,6 @@
 @media (min-width: @desktop-width) {
   .reviews__age-status {
     font-size: 18px;
-    line-height: 30px;
-    font-weight: 400;
-    margin-top: 16px;
   }
 }
 
@@ -169,10 +122,4 @@
 
 .slider__no-js {
   display: none;
-}
-
-@media (min-width: @tablet-width) {
-  .slider__no-js {
-    display: none;
-  }
 }
