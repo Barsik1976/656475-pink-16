@@ -165,9 +165,9 @@
 }
 
 @media (min-width: @desktop-width) {
-  #review-item-1:checked ~ .slider__toggles label:nth-child(2),
-  #review-item-2:checked ~ .slider__toggles label:nth-child(3),
-  #review-item-3:checked ~ .slider__toggles label:nth-child(1) {
+  #review-item-1:checked ~ .slider__toggles label:nth-of-type(2),
+  #review-item-2:checked ~ .slider__toggles label:nth-of-type(3),
+  #review-item-3:checked ~ .slider__toggles label:nth-of-type(1) {
     display: block;
     background-image: url("../img/icon-review-arrow-right.svg");
     background-repeat: no-repeat;
@@ -177,9 +177,9 @@
 }
 
 @media (min-width: @desktop-width) {
-  #review-item-1:checked ~ .slider__toggles label:nth-child(3),
-  #review-item-2:checked ~ .slider__toggles label:nth-child(1),
-  #review-item-3:checked ~ .slider__toggles label:nth-child(2) {
+  #review-item-1:checked ~ .slider__toggles label:nth-of-type(3),
+  #review-item-2:checked ~ .slider__toggles label:nth-of-type(1),
+  #review-item-3:checked ~ .slider__toggles label:nth-of-type(2) {
     display: block;
     background-image: url("../img/icon-review-arrow-left.svg");
     background-repeat: no-repeat;
