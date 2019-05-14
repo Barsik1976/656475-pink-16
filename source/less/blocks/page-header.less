@@ -1,5 +1,5 @@
 .page-header {
-  background-color: #161e26;
+  background-color: #283645;
 }
 
 .page-header__wrapper {
@@ -9,9 +9,7 @@
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
-  background-color: #161e26;
   margin: 0 auto;
-  text-align: center;
 }
 
 @media (min-width: @tablet-width) {
@@ -91,5 +89,40 @@
     padding-left: 10px;
     padding-right: 10px;
     padding-bottom: 100px;
+  }
+}
+
+.page-header__logo-link {
+  display: inline-block;
+  margin-top: 23px;
+  margin-left: calc(50% - 140px);
+  background-color: transparent;
+  cursor: pointer;
+}
+
+@media (min-width: @tablet-width) {
+  .page-header__logo-link {
+    margin-top: 27px;
+    margin-left: calc(50% - 310px);
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-header__logo-link {
+    margin-top: 0;
+    margin-right: 173px;
+  }
+}
+
+.page-header__logo-img {
+  display: block;
+  width: 75px;
+  height: 23px;
+}
+
+@media (min-width: @tablet-width) {
+  .page-header__logo-img {
+    width: 147px;
+    height: 40px;
   }
 }
