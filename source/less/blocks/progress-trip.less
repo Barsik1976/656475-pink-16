@@ -9,17 +9,19 @@
 
 @media (min-width: @tablet-width) {
   .progress-trip {
-    background-color: #ffffff;
     border: 2px solid #e5e5e5;
     border-radius: 3px;
     background-color: #ffffff;
+<<<<<<< HEAD
     margin-bottom: 0;
+=======
+>>>>>>> cf84181eb617c38c790b6e84adf024d863add7b1
   }
 }
 
 .progress-trip__list {
-  width: 280px;
   display: flex;
+  width: 280px;
   flex-wrap: wrap;
   margin: 0;
   padding: 0;
@@ -29,10 +31,6 @@
 
 @media (min-width: @tablet-width) {
   .progress-trip__list {
-    display: flex;
-    flex-wrap: wrap;
-    margin: 0;
-    padding: 0;
     margin-top: 52px;
   }
 }
@@ -40,19 +38,13 @@
 @media (min-width: @desktop-width) {
   .progress-trip__list {
     width: 870px;
-    display: flex;
-    flex-wrap: wrap;
-    margin: 0;
-    padding: 0;
-    margin-top: 52px;
     margin-left: 60px;
-    transform: translateX(0px);
+    transform: translateX(0);
   }
 }
 
 .progress-trip__item {
   width: 280px;
-  font-family: "Open Sans", "Arial", sans-serif;
   font-size: 18px;
   line-height: 30px;
   font-weight: 400;
@@ -65,30 +57,8 @@
 @media (min-width: @tablet-width) {
   .progress-trip__item {
     width: 230px;
-    align-items: center;
-    font-family: "Open Sans", "Arial", sans-serif;
-    font-size: 18px;
-    line-height: 30px;
-    font-weight: 400;
-    color: #283645;
-    list-style: none;
     margin-bottom: 65px;
-    text-align: left;
     margin-left: 60px;
-  }
-}
-
-@media (min-width: @desktop-width) {
-  .progress-trip__item {
-    width: 230px;
-    align-items: center;
-    font-size: 18px;
-    line-height: 30px;
-    font-weight: 400;
-    color: #283645;
-    list-style: none;
-    margin-bottom: 65px;
-    text-align: left;
   }
 }
 

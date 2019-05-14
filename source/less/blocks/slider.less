@@ -1,4 +1,11 @@
+@media (min-width: @desktop-width) {
+  .slider {
+    position: relative;
+    width: 940px;
+  }
+}
 
+<<<<<<< HEAD
 
 .slider {
 
@@ -24,6 +31,21 @@
 }
 
 @media (min-width: @desktop-width) {
+=======
+.slider__toggles {
+  position: absolute;
+  left: calc(50% - 50px);
+  bottom: -39px;
+}
+
+@media (min-width: @tablet-width) {
+  .slider__toggles {
+    bottom: 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+>>>>>>> cf84181eb617c38c790b6e84adf024d863add7b1
   .slider__toggles {
     position: absolute;
     top: 212px;
@@ -31,6 +53,7 @@
   }
 }
 
+<<<<<<< HEAD
 .slider__list {
 
 }
@@ -38,6 +61,11 @@
 @media (min-width: @tablet-width) {
 .slider__item {
   display: none;
+=======
+@media (min-width: @tablet-width) {
+  .slider__item {
+    display: none;
+>>>>>>> cf84181eb617c38c790b6e84adf024d863add7b1
   }
 }
 
@@ -70,36 +98,50 @@
 }
 
 @media (min-width: @tablet-width) {
-.slider__toggles label {
-  position: relative;
-  display: inline-block;
-  width: 6px;
-  height: 6px;
-  border-radius: 50%;
-  cursor: pointer;
-  vertical-align: middle;
-  background-color: #bec2c7;
-  margin-left: 18px;
-  text-align: center;
+  .slider__toggles label {
+    position: relative;
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    cursor: pointer;
+    vertical-align: middle;
+    background-color: #bec2c7;
+    margin-left: 18px;
+    text-align: center;
   }
 }
 
 @media (min-width: @tablet-width) {
-.slider__toggles label::after {
-  position: absolute;
-  display: inline-block;
-  content: "";
-  bottom: 0;
-  left: 0;
-  width: 6px;
-  height: 6px;
-  border-radius: 50%;
-  cursor: pointer;
-  vertical-align: middle;
-  background-color: #bec2c7;
+  .slider__toggles label::after {
+    position: absolute;
+    display: inline-block;
+    content: "";
+    bottom: 0;
+    left: 0;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    cursor: pointer;
+    vertical-align: middle;
+    background-color: #bec2c7;
   }
 }
 
+@media (min-width: @desktop-width) {
+  .slider__toggles label {
+    display: none;
+    margin-left: 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .slider__toggles label::after {
+    display: none;
+  }
+}
+
+<<<<<<< HEAD
 @media (min-width: @desktop-width) {
 .slider__toggles label {
   display: none;
@@ -116,19 +158,23 @@
 #review-item-1:checked ~ .reviews__list .slider__no-js--1,
 #review-item-2:checked ~ .reviews__list .slider__no-js--2,
 #review-item-3:checked ~ .reviews__list .slider__no-js--3 {
+=======
+#review-item-1:checked ~ .reviews__list .slider__no-js--order1,
+#review-item-2:checked ~ .reviews__list .slider__no-js--order2,
+#review-item-3:checked ~ .reviews__list .slider__no-js--order3 {
+>>>>>>> cf84181eb617c38c790b6e84adf024d863add7b1
   display: block;
 }
 
-#review-item-1:checked ~ .slider__toggles .slider__item--1::after,
-#review-item-2:checked ~ .slider__toggles .slider__item--2::after,
-#review-item-3:checked ~ .slider__toggles .slider__item--3::after {
+#review-item-1:checked ~ .slider__toggles .slider__item--item1::after,
+#review-item-2:checked ~ .slider__toggles .slider__item--item2::after,
+#review-item-3:checked ~ .slider__toggles .slider__item--item3::after {
   position: absolute;
   content: "";
   bottom: -2px;
   left: -2px;
   width: 6px;
   height: 6px;
-  background-color: inherit;
   border: 2px solid #283645;
   background-color: #ffffff;
   border-radius: 50%;
@@ -136,24 +182,30 @@
 }
 
 @media (min-width: @tablet-width) {
+<<<<<<< HEAD
   #review-item-1:checked ~ .reviews__list .slider__no-js--1,
   #review-item-2:checked ~ .reviews__list .slider__no-js--2,
   #review-item-3:checked ~ .reviews__list .slider__no-js--3 {
   display: block;
+=======
+  #review-item-1:checked ~ .reviews__list .slider__no-js--order1,
+  #review-item-2:checked ~ .reviews__list .slider__no-js--order2,
+  #review-item-3:checked ~ .reviews__list .slider__no-js--order3 {
+    display: block;
+>>>>>>> cf84181eb617c38c790b6e84adf024d863add7b1
   }
 }
 
 @media (min-width: @tablet-width) {
-  #review-item-1:checked ~ .slider__toggles .slider__item--1::after,
-  #review-item-2:checked ~ .slider__toggles .slider__item--2::after,
-  #review-item-3:checked ~ .slider__toggles .slider__item--3::after {
+  #review-item-1:checked ~ .slider__toggles .slider__item--item1::after,
+  #review-item-2:checked ~ .slider__toggles .slider__item--item2::after,
+  #review-item-3:checked ~ .slider__toggles .slider__item--item3::after {
     position: absolute;
     content: "";
     bottom: -2px;
     left: -2px;
     width: 6px;
     height: 6px;
-    background-color: inherit;
     border: 2px solid #283645;
     background-color: #ffffff;
     border-radius: 50%;
@@ -177,11 +229,19 @@
 }
 
 @media (min-width: @desktop-width) {
+<<<<<<< HEAD
   #review-item-1:checked ~ .slider__toggles label:nth-child(2),
   #review-item-2:checked ~ .slider__toggles label:nth-child(3),
   #review-item-3:checked ~ .slider__toggles label:nth-child(1) {
     display: block;
     background-image: url(../img/icon-review-arrow-right.svg);
+=======
+  #review-item-1:checked ~ .slider__toggles label:nth-of-type(2),
+  #review-item-2:checked ~ .slider__toggles label:nth-of-type(3),
+  #review-item-3:checked ~ .slider__toggles label:nth-of-type(1) {
+    display: block;
+    background-image: url("../img/icon-review-arrow-right.svg");
+>>>>>>> cf84181eb617c38c790b6e84adf024d863add7b1
     background-repeat: no-repeat;
     background-color: transparent;
     float: right;
@@ -189,11 +249,19 @@
 }
 
 @media (min-width: @desktop-width) {
+<<<<<<< HEAD
   #review-item-1:checked ~ .slider__toggles label:nth-child(3),
   #review-item-2:checked ~ .slider__toggles label:nth-child(1),
   #review-item-3:checked ~ .slider__toggles label:nth-child(2) {
     display: block;
     background-image: url(../img/icon-review-arrow-left.svg);
+=======
+  #review-item-1:checked ~ .slider__toggles label:nth-of-type(3),
+  #review-item-2:checked ~ .slider__toggles label:nth-of-type(1),
+  #review-item-3:checked ~ .slider__toggles label:nth-of-type(2) {
+    display: block;
+    background-image: url("../img/icon-review-arrow-left.svg");
+>>>>>>> cf84181eb617c38c790b6e84adf024d863add7b1
     background-repeat: no-repeat;
     background-color: transparent;
     float: left;
