@@ -72,12 +72,13 @@
   .main-nav__logo-img {
     width: 147px;
     height: 40px;
-    margin-top: 0;
+    margin: 0;
     margin-right: 173px;
   }
 }
 
 .main-nav__switch {
+  display: block;
   position: absolute;
   font-size: 0;
   top: 21px;
@@ -88,26 +89,18 @@
 }
 
 .main-nav__switch--opened {
-  display: block;
-  position: absolute;
   width: 25px;
   height: 25px;
-  font-size: 0;
   top: 21px;
   background-image: url("../img/icon-menu-cross.svg");
   background-color: transparent;
   background-repeat: no-repeat;
-  border: none;
-  cursor: pointer;
-  margin: 0;
 }
 
 @media (min-width: @tablet-width) {
   .main-nav__switch--opened {
-    position: absolute;
     top: 43px;
     right: calc(50% - 310px);
-    margin: 0;
   }
 }
 
@@ -121,7 +114,7 @@
   display: block;
 }
 
-.main-nav__switch--hide:active ~ .main-nav {
+.main-nav__switch--opened:active ~ .main-nav {
   position: absolute;
   top: 367px;
 }
