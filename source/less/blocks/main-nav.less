@@ -2,7 +2,7 @@
   position: relative;
   width: auto;
   padding-top: 27px;
-  background-color: #283645;
+  background-color: rgba(red, 0.3);
 }
 
 @media (min-width: @desktop-width) {
@@ -83,11 +83,11 @@
 }
 
 .main-nav__switch--closed {
+  width: 50px;
+  height: 24px;
   background-image: url("../img/icon-menu-burger.svg");
   background-color: transparent;
   background-repeat: no-repeat;
-  width: 50px;
-  height: 24px;
 }
 
 .main-nav__switch--opened {
@@ -145,7 +145,7 @@
 }
 
 .main-nav__switch--closed:active ~ .main-nav {
-  background-color: #283645;
+  background-color: green;
 }
 
 .main-nav__switch--opened:active {
