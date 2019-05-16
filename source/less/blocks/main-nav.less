@@ -1,20 +1,14 @@
 .main-nav {
-  position: relative;
-  width: auto;
-  padding-top: 27px;
-  background-color: rgba(red, 0.3);
+  margin-left: 0;
+  margin-right: 0;
 }
 
 @media (min-width: @desktop-width) {
   .main-nav {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 1200px;
-    background-color: transparent;
-    margin: 0 auto;
+
   }
 }
+
 
 .main-nav__logo-link {
   display: block;
@@ -144,7 +138,7 @@
   display: none;
 }
 
-.main-nav__switch--opened:active ~ .main-nav {
+.main-nav__switch--closed:active ~ .main-nav {
   background-color: green;
 }
 
