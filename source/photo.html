@@ -12,14 +12,19 @@
   <body>
     <header class="page-header">
       <div class="page-header__nav page-header__nav--rolled">
-        <nav class="main-nav">
-          <a class="main-nav__logo-link" href="index.html" title="логотип пинк">
+          <a class="page-header__logo-link" href="index.html" title="логотип пинк">
               <picture>
                 <source srcset="img/logo-pink-white-desktop.svg" media="(min-width: 1200px)">
                 <source srcset="img/logo-pink-white-tablet.svg" media="(min-width: 660px)">
-                <img class="main-nav__logo-img" src="img/logo-pink-white-mobile.svg" width="75" height="23" alt="логотип пинк">
+                <img class="page-header__logo-img" src="img/logo-pink-white-mobile.svg" width="75" height="23" alt="логотип пинк">
               </picture>
             </a>
+      </div>
+        <div class="header-back">
+          <h2 class="page-header__title-photo">Фотографии<br> пользователей</h2>
+      </div>
+    </header>
+        <nav class="main-nav">
             <button class="main-nav__toggle main-nav__toggle--opened" type="button" aria-label="Открыть меню"></button>
             <ul class="main-nav__list site-list">
               <li class="site-list__item"><a href="index.html">Главная</a></li>
@@ -28,11 +33,6 @@
               <li class="site-list__item"><a href="htmlacademy.ru">HTML Academy</a></li>
             </ul>
         </nav>
-      </div>
-        <div class="header-back">
-          <h2 class="page-header__title-photo">Фотографии<br> пользователей</h2>
-      </div>
-    </header>
     <main class="page-main">
       <section class="photo-users">
         <h3 class="photo-users__title subtitle">Взгляните на фотографии, которые выкладывают пользователи!<br> Видите, как не хватает ваших?</h3>

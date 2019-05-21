@@ -11,28 +11,21 @@
   <body>
     <header class="page-header">
       <div class="page-header__nav page-header__nav--rolled">
-        <nav class="main-nav">
-          <a class="main-nav__logo-link" href="index.html" title="логотип пинк">
+          <a class="page-header__logo-link" href="index.html" title="логотип пинк">
               <picture>
                 <source srcset="img/logo-pink-white-desktop.svg" media="(min-width: 1200px)">
                 <source srcset="img/logo-pink-white-tablet.svg" media="(min-width: 660px)">
-                <img class="main-nav__logo-img" src="img/logo-pink-white-mobile.svg" width="75" height="23" alt="логотип пинк">
+                <img class="page-header__logo-img" src="img/logo-pink-white-mobile.svg" width="75" height="23" alt="логотип пинк">
               </picture>
             </a>
-            <button class="main-nav__toggle main-nav__toggle--opened" type="button" aria-label="Открыть меню"></button>
-            <ul class="main-nav__list site-list">
-              <li class="site-list__item site-list__item--active"><a>Главная</a></li>
-              <li class="site-list__item"><a href="photo.html">Фотографии</a></li>
-              <li class="site-list__item"><a href="form.html">Конкурс</a></li>
-              <li class="site-list__item"><a href="htmlacademy.ru">HTML Academy</a></li>
-            </ul>
-        </nav>
       </div>
-        <div class="download-app download-app--index">
+    </header>
+      <div class="download-app">
+        <div class="download-app__phone">
           <section class="download-app__wrapper">
             <div>
               <h2 class="download-app__title">Взгляните<br> на жизнь иначе!</h2>
-              <a class="download-app__button button" href="iTunes" title="скачать приложение">Скачать приложение</a>
+              <a class="download-app__button button" href="https://www.apple.com/ru/itunes/" title="скачать приложение">Скачать приложение</a>
               <ul class="download-app__list application">
                 <li class="application__item application__item--apple">
                   <a href="https://www.apple.com" title="приложение apple"></a>
@@ -48,7 +41,16 @@
             </div>
           </section>
         </div>
-    </header>
+      </div>
+        <nav class="main-nav">
+            <button class="main-nav__toggle main-nav__toggle--index main-nav__toggle--opened" type="button" aria-label="Открыть меню"></button>
+            <ul class="main-nav__list site-list">
+              <li class="site-list__item site-list__item--active"><a>Главная</a></li>
+              <li class="site-list__item"><a href="photo.html">Фотографии</a></li>
+              <li class="site-list__item"><a href="form.html">Конкурс</a></li>
+              <li class="site-list__item"><a href="htmlacademy.ru">HTML Academy</a></li>
+            </ul>
+        </nav>
     <main class="page-main">
       <section class="purposes-application">
         <h2 class="purposes-application__title">Устали от серости мегаполиса?</h2>
