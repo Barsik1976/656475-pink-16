@@ -38,13 +38,13 @@
 .tariffs__table {
   display: block;
   position: relative;
-  width: 828px;
+  width: calc(300% - 280px);
   margin-top: 65px;
   background-color: #ffffff;
   border: none;
   padding: 0;
   border-collapse: collapse;
-overflow-x: hidden;
+  overflow-x: hidden;
 
 }
 
@@ -166,7 +166,6 @@ overflow-x: hidden;
 
 .tariffs__name {
   font-size: 0;
-
 }
 
 @media (min-width: @tablet-width) {
@@ -253,14 +252,8 @@ overflow-x: hidden;
 
 @media (min-width: @desktop-width) {
   .tariffs__item {
-    font-size: 0;
-  }
-}
-
-
-@media (min-width: @desktop-width) {
-  .tariffs__item {
     width: 232px;
+    font-size: 0;
     padding: 0;
     padding-left: 24px;
     padding-right: 24px;
@@ -269,6 +262,11 @@ overflow-x: hidden;
     vertical-align: middle;
     border: 2px solid #e5e5e5;
   }
+}
+
+.tariffs__item::after {
+  display: inline;
+  text-align: right;
 }
 
 .tariffs__item--yes::after {
@@ -288,42 +286,10 @@ overflow-x: hidden;
   vertical-align: middle;
 }
 
-@media (min-width: @tablet-width) {
-  .tariffs__item--yes::before {
-    display: inline-block;
-    content: url("../img/icon-yes-green.svg");
-    width: 31px;
-    height: 21px;
-    vertical-align: middle;
-  }
+.tariffs__item--yes::after,
+.tariffs__item--no::after {
+
 }
-
-@media (min-width: @tablet-width) {
-  .tariffs__item--yes::after,
-  .tariffs__item--no::after {
-    display: none;
-  }
-}
-
-
-
-@media (min-width: @tablet-width) {
-  .tariffs__item--no::before {
-    display: inline-block;
-    content: url("../img/icon-no-red.svg");
-    width: 27px;
-    height: 27px;
-    vertical-align: middle;
-  }
-}
-
-@media (min-width: @desktop-width) {
-  .tariffs__item {
-    font-size: 0;
-  }
-}
-
-
 
 .tariffs__header-title:nth-of-type(2) {
   border-right: 2px solid #e5e5e5;
