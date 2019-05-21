@@ -173,6 +173,7 @@
     background-repeat: no-repeat;
     background-color: transparent;
     float: right;
+    opacity: 0.4;
   }
 }
 
@@ -185,5 +186,28 @@
     background-repeat: no-repeat;
     background-color: transparent;
     float: left;
+    opacity: 0.4;
+  }
+}
+
+.slider__item {
+  &:hover {
+   background-color: #7e868f;
+  }
+
+  &:active {
+   background-color: #e9ebec;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  #review-item-1:checked ~ .slider__toggles label {
+    &:hover {
+      opacity: 1.0;
+    }
+
+    &:active {
+      opacity: 0.25;
+    }
   }
 }

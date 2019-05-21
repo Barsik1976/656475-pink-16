@@ -366,3 +366,59 @@
   display: inline-block;
   opacity: 1;
 }
+
+.form-users__wrapper input,
+.form-users__wrapper textarea {
+  &:hover {
+    border-color: #283645;
+  }
+
+  &:active {
+    border-color: #d22856;
+  }
+}
+
+
+
+
+.form-users__wrapper input[type="radio"] + label::before,
+.form-users__wrapper input[type="checkbox"] + label::before {
+  &:hover {
+    border-color: #283645;
+  }
+
+  &:active {
+    border-color: #d22856;
+  }
+}
+
+.form-users__wrapper input[type="radio"] + label:checked::before,
+.form-users__wrapper input[type="checkbox"] + label:checked::before {
+  &:hover {
+    border-color: #283645;
+  }
+
+  &:active {
+    border-color: #d22856;
+  }
+}
+
+
+
+.form-users__form-send input[type="submit"] {
+  &:hover {
+    border-color: #1c9b5e;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+    border-color: #1c9b5e;
+  }
+}
+
+.form-users__form-send input[type="submit"]:disabled {
+  color: rgba(255, 255, 255, 1.0);
+  border-color: #e5e5e5;
+}
+
+
