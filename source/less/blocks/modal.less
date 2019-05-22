@@ -132,3 +132,33 @@
     width: 460px;
   }
 }
+
+
+.modal--js {
+  display: none;
+  animation-name: bounce;
+  animation-duration: 1s;
+}
+
+.modal__error {
+  display: none;
+  animation-name: shake;
+  animation-duration: 0.5s;
+}
+
+
+
+
+@keyframes bounce {
+  0% {transform: translateY(-100%) translateX(-50%);}
+  30% {transform: translateY(5%) translateX(-50%);}
+  60% {transform: translateY(-75%) translateX(-50%);}
+  100% {transform: translateY(-50%) translateX(-50%);}
+}
+
+@keyframes shake {
+  0% {transform: translateY(-50%) translateX(-50%) rotate(3deg);}
+  30% {transform: translateY(-50%) translateX(-50%) rotate(-3deg);}
+  60% {transform: translateY(-50%) translateX(-50%) rotate(3deg);}
+  100% {transform: translateY(-50%) translateX(-50%) rotate(-3deg);}
+}
