@@ -5,6 +5,33 @@
   cursor: pointer;
 }
 
+.button__green {
+  display: block;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  color: #ffffff;
+  background-color: #2aab6d;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  border: none;
+  border-radius: 3px;
+  white-space: normal;
+}
+
+.button__green--send {
+  display: block;
+  width: 280px;
+}
+
+@media (min-width: @desktop-width) {
+  .button__green--send {
+    width: 300px;
+  }
+}
+
 .button__choice {
   display: block;
   font-size: 18px;
@@ -52,6 +79,17 @@
 @media (min-width: @desktop-width) {
   .button__choice--cancel {
     margin-top: 0;
+  }
+}
+
+.button__green {
+  &:hover {
+    border-color: #1c9b5e;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+    border-color: #1c9b5e;
   }
 }
 
