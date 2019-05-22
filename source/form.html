@@ -12,16 +12,20 @@
   <body>
     <header class="page-header">
       <div class="page-header__nav page-header__nav--rolled">
-          <a class="page-header__logo-link" href="index.html" title="логотип пинк">
-              <picture>
-                <source srcset="img/logo-pink-white-desktop.svg" media="(min-width: 1200px)">
-                <source srcset="img/logo-pink-white-tablet.svg" media="(min-width: 660px)">
-                <img class="page-header__logo-img" src="img/logo-pink-white-mobile.svg" width="75" height="23" alt="логотип пинк">
-              </picture>
-            </a>
+        <a class="page-header__logo-link" href="index.html" title="логотип пинк">
+          <svg class="page-header__logo-img page-header__logo-img--modile">
+            <use xlink href="img/symbols.svg#logo-header-mobile"></use>
+          </svg>
+          <svg class="page-header__logo-img page-header__logo-img--tablet">
+            <use xlink href="img/symbols.svg#logo-header-tablet"></use>
+          </svg>
+          <svg class="page-header__logo-img page-header__logo-img--desktop">
+            <use xlink href="img/symbols.svg#logo-header-desktop"></use>
+          </svg>
+        </a>
       </div>
-        <div class="header-back">
-          <h2 class="page-header__title-competition">Конкурс на самое безбашенное<br> путешествие с Пинк </h2>
+      <div class="header-back">
+        <h2 class="page-header__title-competition">Конкурс на самое безбашенное<br> путешествие с Пинк </h2>
       </div>
     </header>
         <nav class="main-nav">

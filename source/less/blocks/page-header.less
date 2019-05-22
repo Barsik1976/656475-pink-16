@@ -114,10 +114,10 @@
   }
 }
 
-
 .page-header__logo-img {
   width: 75px;
   height: 23px;
+  fill: #ffffff;
 }
 
 @media (min-width: @tablet-width) {
@@ -128,50 +128,35 @@
 }
 
 @media (min-width: @desktop-width) {
-  .page-header__logo-img {
-    width: 147px;
-    height: 40px;
+  .page-header__logo-img svg {
     margin: 0;
     margin-right: 173px;
   }
 }
 
+
+.page-header__logo-img--modile {
+  display: block;
+}
+
+.page-header__logo-img--tablet {
+  display: none;
+}
+
+.page-header__logo-img--desktop {
+  display: none;
+}
+
+
+
+
 .page-header__logo-img {
   &:hover {
-    background-image: url("../img/logo-pink-white-mobile-red.svg");
+    fill: rgb(210, 40, 86);
   }
 
   &:active {
-    background-image: url("../img/logo-pink-white-mobile.svg");
     opacity: 0.3;
   }
 }
-
-@media (min-width: @tablet-width) {
-    .page-header__logo-img {
-      &:hover {
-        background-image: url("../img/logo-pink-white-tablet-red.svg");
-        fill: rgb(210, 40, 86);
-      }
-
-      &:active {
-        background-image: url("../img/logo-pink-white-tablet.svg");
-        opacity: 0.3;
-      }
-    }
-  }
-
-@media (min-width: @desktop-width) {
-    .page-header__logo-img {
-      &:hover {
-        background-image: url("../img/logo-pink-white-desktop-red.svg");
-      }
-
-      &:active {
-        background-image: url("../img/logo-pink-white-desktop.svg");
-        opacity: 0.3;
-      }
-    }
-  }
-
 
