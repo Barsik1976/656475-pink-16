@@ -381,28 +381,35 @@
 
 
 
-.form-users__wrapper input[type="radio"] + label::before,
-.form-users__wrapper input[type="checkbox"] + label::before {
-  &:hover {
-    border-color: #283645;
-  }
-
-  &:active {
-    border-color: #d22856;
-  }
+.form-users__wrapper input[type="radio"]:hover + label::before,
+.form-users__wrapper input[type="checkbox"]:hover + label::before {
+   border-color: #283645;
 }
 
-.form-users__wrapper input[type="radio"]:checked + label::before,
-.form-users__wrapper input[type="checkbox"]:checked + label::before {
-  &:hover {
-    border-color: #283645;
-  }
-
-  &:active {
-    border-color: #d22856;
-  }
+.form-users__wrapper input[type="radio"]:active + label::before,
+.form-users__wrapper input[type="checkbox"]:active + label::before {
+   border-color: ##d22856;
 }
 
+.form-users__wrapper input[type="radio"]:checked:hover + label::before,
+.form-users__wrapper input[type="checkbox"]:checked:hover + label::before {
+    border-color: #283645;
+}
+
+.form-users__wrapper input[type="radio"]:checked:active + label::before,
+.form-users__wrapper input[type="checkbox"]:checked:active + label::before {
+    border-color: ##d22856;
+}
+
+.form-users__wrapper input[type="radio"]:focus + label::before,
+.form-users__wrapper input[type="checkbox"]:focus + label::before {
+   outline: 2px solid #283645;
+}
+
+.form-users__wrapper input[type="radio"]:active + label::before,
+.form-users__wrapper input[type="checkbox"]:active + label::before {
+   border-color: ##d22856;
+}
 
 
 .form-users__form-send input[type="submit"] {

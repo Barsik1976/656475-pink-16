@@ -43,7 +43,7 @@
         <picture>
           <source srcset="img/panorama-desktop@1x.jpg" media="(min-width: 1200px)">
           <source srcset="img/panorama-tablet@1x.jpg" media="(min-width: 660px)">
-          <img class="photo-users__photo-day" src="img/panorama-mobile@1x.jpg" alt="панорама дня" width="320">
+          <img class="photo-users__photo-day" src="img/panorama-mobile@1x.jpg" alt="панорама дня" width="320" height="137">
         </picture>
         <article class="photo-users__comment-day comment-day">
           <p class="comment-day__name">Анна <span class="comment-day__data">(5 минут назад)</span> </p>
@@ -66,7 +66,7 @@
               <picture>
                 <source srcset="img/photo-car-desktop@1x.jpg" media="(min-width: 1200px)">
                 <source srcset="img/photo-car-tablet@1x.jpg" media="(min-width: 660px)">
-                <img class="photo-users__img" src="img/photo-car-mobile@1x.jpg" alt="фотография">
+                <img class="photo-users__img" src="img/photo-car-mobile@1x.jpg" alt="фотография" width="280" height="180">
               </picture>
             </a>
             <div class="photo-users__comment comment">
@@ -89,7 +89,7 @@
               <picture>
                 <source srcset="img/photo-drumset-desktop@1x.jpg" media="(min-width: 1200px)">
                 <source srcset="img/photo-drumset-tablet@1x.jpg" media="(min-width: 660px)">
-                <img class="photo-users__img" src="img/photo-drumset-mobile@1x.jpg" alt="фотография">
+                <img class="photo-users__img" src="img/photo-drumset-mobile@1x.jpg" alt="фотография" width="280" height="180">
               </picture>
             </a>
             <div class="photo-users__comment comment">
@@ -112,7 +112,7 @@
               <picture>
                 <source srcset="img/photo-window-desktop@1x.jpg" media="(min-width: 1200px)">
                 <source srcset="img/photo-window-tablet@1x.jpg" media="(min-width: 660px)">
-                <img class="photo-users__img" src="img/photo-window-mobile@1x.jpg" alt="фотография">
+                <img class="photo-users__img" src="img/photo-window-mobile@1x.jpg" alt="фотография" width="280" height="180">
               </picture>
             </a>
             <div class="photo-users__comment comment">
@@ -135,7 +135,7 @@
               <picture>
                 <source srcset="img/photo-fair-desktop@1x.jpg" media="(min-width: 1200px)">
                 <source srcset="img/photo-fair-tablet@1x.jpg" media="(min-width: 660px)">
-                <img class="photo-users__img" src="img/photo-fair-mobile@1x.jpg" alt="фотография">
+                <img class="photo-users__img" src="img/photo-fair-mobile@1x.jpg" alt="фотография" width="280" height="180">
               </picture>
             </a>
             <div class="photo-users__comment comment">
@@ -158,7 +158,7 @@
               <picture>
                 <source srcset="img/photo-pov-desktop@1x.jpg" media="(min-width: 1200px)">
                 <source srcset="img/photo-pov-tablet@1x.jpg" media="(min-width: 660px)">
-                <img class="photo-users__img" src="img/photo-pov-mobile@1x.jpg" alt="фотография">
+                <img class="photo-users__img" src="img/photo-pov-mobile@1x.jpg" alt="фотография" width="280" height="180">
               </picture>
             </a>
             <div class="photo-users__comment comment">
@@ -181,7 +181,7 @@
               <picture>
                 <source srcset="img/photo-wing-desktop@1x.jpg" media="(min-width: 1200px)">
                 <source srcset="img/photo-wing-tablet@1x.jpg" media="(min-width: 660px)">
-                <img class="photo-users__img" src="img/photo-wing-mobile@1x.jpg" alt="фотография">
+                <img class="photo-users__img" src="img/photo-wing-mobile@1x.jpg" alt="фотография" width="280" height="180">
               </picture>
             </a>
             <div class="photo-users__comment comment">
@@ -205,7 +205,13 @@
           <form class="filter__photos choice" action="https://echo.htmlacademy.ru" method="get">
             <fieldset>
               <input class="visually-hidden" type="file" name="file" id="img-photo">
-              <label class="choice__add-img" for="img-photo"></label>
+              <label for="img-photo">
+                <picture>
+                  <source srcset="img/photo-road-desktop@1x.jpg" media="(min-width: 1200px)">
+                  <source srcset="img/photo-road-tablet@1x.jpg" media="(min-width: 660px)">
+                  <img class="choice__add-img" src="img/photo-road-mobile@1x.jpg" alt="фотография" width="280" height="374">
+              </picture>
+              </label>
             </fieldset>
             <ul class="choice__list">
               <li class="choice__item">
