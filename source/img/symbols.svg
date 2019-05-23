@@ -48,3 +48,16 @@
   </g>
 </symbol>
 </svg>
+
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <symbol id="icon-btn-crop" viewBox="0 0 48 48" width="75" height="23">
+    <path fill="none" d="M0,0h48v48H0V0z"/>
+    <path d="M34,30h4V14c0-2.21-1.79-4-4-4H18v4h16V30z M14,34V2h-4v8H2v4h8v20c0,2.21,1.79,4,4,4h20v8h4v-8h8v-4H14z"/>
+  </symbol>
+  <symbol id="icon-btn-fill" viewBox="0 0 48 48" width="75" height="23">
+    <path fill="none" d="M0,0h48v48H0V0z"/>
+    <path d="M34,30h4V14c0-2.21-1.79-4-4-4H18v4h16V30z M14,34V2h-4v8H2v4h8v20c0,2.21,1.79,4,4,4h20v8h4v-8h8v-4H14z"/>
+  </symbol>
+
+
+</svg>
