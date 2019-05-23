@@ -379,10 +379,19 @@
 }
 
 
+.form-users__wrapper {
+    &[radio],
+    &[checkbox] {
+      &:hover + label::before {
+        border: 2px solid green;
+      }
+    }
+  }
 
 
-.form-users__wrapper input[type="radio"]:hover + label::before,
-.form-users__wrapper input[type="checkbox"]:hover + label::before {
+
+.form-users__wrapper input[type="radio"]:hover + label,
+.form-users__wrapper input[type="checkbox"]:hover + label {
    border-color: #283645;
 }
 
