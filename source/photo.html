@@ -225,13 +225,21 @@
                 </div>
               </li>
               <li class="choice__item">
-                <button class="choice__button choice__button--fill" type="button"></button>
+                <button class="choice__button choice__button--fill" type="button">
+                  <svg class="choice__icon-edit" width="48" height="48">
+                    <use xlink href="img/symbols.svg#icon-btn-fill"></use>
+                  </svg>
+                </button>
                 <div class="choice-edit">
                   <button class="choice-edit__button choice-edit__button--fill"></button>
                 </div>
               </li>
               <li class="choice__item">
-                <button class="choice__button choice__button--contrast" type="button"></button>
+                <button class="choice__button choice__button--contrast" type="button">
+                  <svg class="choice__icon-edit" width="32" height="32">
+                    <use xlink href="img/symbols.svg#icon-btn-contrast"></use>
+                  </svg>
+                </button>
                 <div class="choice-edit">
                   <button class="choice-edit__button choice-edit__button--contrast"></button>
                 </div>
@@ -248,11 +256,15 @@
     <footer class="page-footer-photo">
       <div class="page-footer-photo__information social">
         <a class="social__logo-link" href="index.html" title="логотип пинк">
-          <picture>
-            <source srcset="img/logo-pink-blue-desktop.svg" media="(min-width: 1200px)">
-            <source srcset="img/logo-pink-blue-mobile.svg" media="(min-width: 660px)">
-            <img src="img/logo-pink-blue-mobile.svg" width="147" height="40" alt="логотип пинк">
-          </picture>
+          <svg class="social__logo-img--mobile" width="147" height="40">
+            <use xlink href="img/symbols.svg#logo-footer-mobile"></use>
+          </svg>
+          <svg class="social__logo-img--tablet" width="147" height="40">
+            <use xlink href="img/symbols.svg#logo-footer-tablet"></use>
+          </svg>
+          <svg class="social__logo-img--desktop" width="147" height="40">
+            <use xlink href="img/symbols.svg#logo-footer-desktop"></use>
+          </svg>
         </a>
         <ul class="social__list">
           <li class="social__item"><a class="social__link social__link--twitter" href="#twitter" title="twitter"><span class="visually-hidden">Твиттер</span>
