@@ -26,7 +26,18 @@
   }
 }
 
-.social__logo-img--modile {
+.social__logo-img {
+  width: 147px;
+  height: 40px;
+  fill: #000000;
+
+  &:hover,
+  &:active {
+    fill: #d22856;
+  }
+}
+
+.social__logo-img--mobile {
   display: block;
 }
 
@@ -39,7 +50,7 @@
 }
 
 @media (min-width: @tablet-width) {
-  .social__logo-img--modile {
+  .social__logo-img--mobile {
     display: none;
   }
 
@@ -53,7 +64,7 @@
 }
 
 @media (min-width: @desktop-width) {
-  .social__logo-img--modile {
+  .social__logo-img--mobile {
     display: none;
   }
 
@@ -73,17 +84,6 @@
 
   &:active {
     opacity: 0.3;
-  }
-}
-
-.social__logo-img {
-  width: 147px;
-  height: 40px;
-  fill: #ffffff;
-
-  &:hover,
-  &:active {
-    fill: #d22856;
   }
 }
 
