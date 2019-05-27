@@ -7,26 +7,10 @@
   background-repeat: no-repeat;
 }
 
-@media (@retina)
-  (min-resolution: 144dpi),
-  (min-resolution: 1.5dppx) {
-   .map {
-    background-image: url("img/pink-index-mobile-map@2x.jpg");
-  }
-}
-
 @media (min-width: @tablet-width) {
   .map {
     height: 373px;
     background-image: url("../img/pink-index-tablet-map@1x.jpg");
-  }
-
-    @media (@retina)
-    (min-resolution: 144dpi),
-    (min-resolution: 1.5dppx) {
-      .map {
-      background-image: url("img/pink-index-tablet-map@2x.jpg");
-    }
   }
 }
 
@@ -34,14 +18,6 @@
   .map {
     height: 500px;
     background-image: url("../img/pink-index-desktop-map@1x.jpg");
-  }
-
-    @media (@retina)
-    (min-resolution: 144dpi),
-    (min-resolution: 1.5dppx) {
-      .map {
-      background-image: url("img/pink-index-desktop-map@2x.jpg");
-    }
   }
 }
 
@@ -53,14 +29,6 @@
   background-color: transparent;
   border: none;
   outline: none;
-}
-
-@media (min-width: @tablet-width) {
-  .map__map-img {
-    width: 660px;
-    height: 373px;
-    margin: 0 auto;
-  }
 }
 
 @media (min-width: @desktop-width) {
