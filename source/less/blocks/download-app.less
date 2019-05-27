@@ -1,56 +1,74 @@
-
-
-  .download-app {
-    position: relative;
-    width: 100%;
-    min-height: 285px;
-    margin-top: 132px;
-    color: #ffffff;
-    background-image: url("../img/iphone-hand-mobile@1x.png");
-    background-repeat: no-repeat;
-    background-position: 41% 0;
+.download-app {
+  display: block;
+  background-color: #283645;
+  background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  background-size: 320px;
+  margin: 0 auto;
 }
 
 @media (min-width: @tablet-width) {
   .download-app {
-    position: relative;
-    width: 620px;
-    min-height: 545px;
-    padding-left: 20px;
-    padding-right: 20px;
-    margin-top: 116px;
-    color: #ffffff;
-    background-image: url("../img/iphone-hand-tablet@1x.png");
-    background-repeat: no-repeat;
+    background-image: url("../img/bg-back-tablet@1x.jpg");
     background-position: 50% 0;
-    margin-left: calc(50% - 330px);
-
+    background-size: cover;
   }
 }
 
 @media (min-width: @desktop-width) {
   .download-app {
-    position: relative;
+    background-image: url("../img/bg-back-desktop@1x.jpg");
+    background-size: cover;
+  }
+}
+
+.download-app__phone {
+  position: relative;
+  width: 100%;
+  min-height: 285px;
+  padding-top: 176px;
+  color: #ffffff;
+  background-image: url("../img/iphone-hand-mobile@1x.png");
+  background-repeat: no-repeat;
+  background-position: 42% 40%;
+}
+
+@media (min-width: @tablet-width) {
+  .download-app__phone {
+    width: 620px;
+    min-height: 545px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 185px;
+    color: #ffffff;
+    background-image: url("../img/iphone-hand-tablet@1x.png");
+    background-position: 50% 100%;
+    margin-left: calc(50% - 330px);
+    background-color: transparent;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .download-app__phone {
     width: 960px;
     min-height: 645px;
     margin: 0 auto;
     padding-left: 120px;
     padding-right: 120px;
-    margin-top: 141px;
+    padding-top: 209px;
     color: #ffffff;
     background-image: url("../img/iphone-hand-desktop@1x.png");
-    background-repeat: no-repeat;
-    background-position: 100% 0;
+    background-position: 100% 100%;
   }
 }
 
 .download-app__wrapper {
-  position: absolute;
+  position: relative;
   width: 100%;
   background-color: #161e26;
   text-align: center;
-  top: 285px;
-  left: 0;
+  margin-top: 287px;
   padding-top: 28px;
   padding-bottom: 37px;
   padding-left: 0;
@@ -67,14 +85,10 @@
 
 @media (min-width: @desktop-width) {
   .download-app__wrapper {
-    position: static;
-    width: 300px;
     padding-top: 22px;
     transform: translateX(10px);
-    background-color: transparent;
   }
 }
-
 
 .download-app__title {
   font-size: 0;
@@ -82,7 +96,6 @@
 
 @media (min-width: @tablet-width) {
   .download-app__title {
-    font-family: "Open Sans", "Arial", sans-serif;
     font-size: 40px;
     font-weight: 300;
     line-height: 48px;
@@ -95,14 +108,10 @@
 
 @media (min-width: @desktop-width) {
   .download-app__title {
-    font-family: "Open Sans", "Arial", sans-serif;
     font-size: 50px;
-    font-weight: 300;
     line-height: 60px;
-    text-align: center;
     margin: 0;
     margin-bottom: 65px;
-    width: 300px;
   }
 }
 
@@ -122,24 +131,16 @@
 
 @media (min-width: @tablet-width) {
   .download-app__button {
-    display: block;
     width: 300px;
     margin: 0;
-    margin-bottom: 0px;
+    margin-bottom: 0;
   }
 }
 
 @media (min-width: @desktop-width) {
   .download-app__button {
-    display: block;
-    width: 300px;
-    margin: 0;
     margin-bottom: 65px;
   }
-}
-
-.download-app__list {
-
 }
 
 @media (min-width: @tablet-width) {
@@ -147,7 +148,6 @@
     width: 300px;
     margin: 0;
     padding: 0;
-    width: 300px;
   }
 }
 
@@ -160,13 +160,11 @@
     text-align: center;
     margin: 0;
     padding: 0;
-    width: 300px;
     margin-left: 8px;
   }
 }
 
 .download-app__access {
-  font-family: "Open Sans", "Arial", sans-serif;
   font-size: 14px;
   line-height: 24px;
   font-weight: 300;
@@ -215,5 +213,16 @@
     top: 184px;
     left: 579px;
     border: 2px solid #000000;
+  }
+}
+
+.download-app__button {
+  &:hover {
+    color: #d22856;
+    background-color: #ffffff;
+  }
+
+  &:active {
+    color: rgba(210, 40, 86, 0.3);
   }
 }

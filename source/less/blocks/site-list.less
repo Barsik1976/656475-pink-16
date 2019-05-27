@@ -1,80 +1,55 @@
-
-
-.site-list--open {
-  display: none;
+.site-list {
+  display: block;
   width: 320px;
-  font-family: "Open Sans", "Arial", sans-serif;
   font-size: 18px;
   line-height: 32px;
   font-weight: 700;
   text-transform: uppercase;
   text-align: center;
   list-style: none;
-  margin: 0;
   padding: 0;
-  z-index: 5;
-  margin-top: 25px;
-  margin-left: -20px;
-  border-top: 1px solid rgb(0,0,0,0.5);
+  border-top: 1px solid #485461;
   background-color: #283645;
 }
 
 @media (min-width: @tablet-width) {
-  .site-list--open {
-  display: none;
-  width: 660px;
-  font-family: "Open Sans", "Arial", sans-serif;
-  font-size: 18px;
-  line-height: 32px;
-  font-weight: 700;
-  text-transform: uppercase;
-  text-align: center;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  z-index: 5;
-  margin-top: 25px;
-  margin-left: -20px;
-  border-top: 1px solid rgb(0,0,0,0.5);
-  background-color: #283645;
+  .site-list {
+    width: 660px;
   }
 }
 
 @media (min-width: @desktop-width) {
-  .site-list--open {
+  .site-list {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 783px;
+    width: 700px;
     line-height: 18px;
     font-weight: 400;
     text-transform: none;
-    text-align: left;
     list-style: none;
-    padding: 0;
-    margin: 0;
     border: none;
     background-color: transparent;
+    padding-top: 48px;
+    margin: 0 auto;
+    margin-left: calc(50% - 250px);
   }
 }
 
 .site-list__item {
-  width: 320px;
-  border-top: 1px solid rgb(255,255,255,0.2);
-  border-bottom: 1px solid rgb(0,0,0,0.5);
+  border-top: 1px solid #485461;
+  border-bottom: 1px solid #020202;
 }
 
 @media (min-width: @tablet-width) {
   .site-list__item {
-    width: 660px;
-    border-top: 1px solid rgb(255,255,255,0.2);
-    border-bottom: 1px solid rgb(0,0,0,0.5);
+
   }
 }
 
 @media (min-width: @desktop-width) {
   .site-list__item {
-    width: 1200px;
+    display: inline;
     border: none;
   }
 }
@@ -89,12 +64,35 @@
 
 @media (min-width: @desktop-width) {
   .site-list__item a {
-    color: #ffffff;
-    margin-left: px;
-    text-decoration: none;
+   padding: 0;
   }
 }
 
-.site-list__item--active {
+@media (min-width: @desktop-width) {
+  .site-list__item--active {
+    border-bottom: 2px solid #ffffff;
+    padding-bottom: 10px;
+  }
+}
 
+.site-list a[href] {
+  &:hover {
+    color: #d22856;
+  }
+
+  &:active {
+    color: rgba(210, 40, 86, 0.3);
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .site-list a[href] {
+    &:hover {
+      color: #d22856;
+    }
+
+    &:active {
+      color: rgba(255, 255, 255, 0.3);
+    }
+  }
 }

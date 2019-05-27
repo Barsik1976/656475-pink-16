@@ -1,25 +1,34 @@
-
-
-.slider {
-  position: absolute;
-  top: 295px;
-  left: calc(50% - 50px);
-}
-
 @media (min-width: @desktop-width) {
   .slider {
+    position: relative;
     width: 940px;
-    position: absolute;
-    top: 212px;
   }
 }
 
-.slider__list {
-
+.slider__toggles {
+  position: absolute;
+  left: calc(50% - 50px);
+  bottom: -39px;
 }
 
-.slider__item {
+@media (min-width: @tablet-width) {
+  .slider__toggles {
+    bottom: 0;
+  }
+}
 
+@media (min-width: @desktop-width) {
+  .slider__toggles {
+    position: absolute;
+    top: 212px;
+    left: 0;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .slider__item {
+    display: none;
+  }
 }
 
 .slider__toggles label {
@@ -51,52 +60,64 @@
 }
 
 @media (min-width: @tablet-width) {
-.slider__toggles label {
-  position: relative;
-  display: inline-block;
-  width: 6px;
-  height: 6px;
-  border-radius: 50%;
-  cursor: pointer;
-  vertical-align: middle;
-  background-color: #bec2c7;
-  margin-left: 18px;
-  text-align: center;
+  .slider__toggles label {
+    position: relative;
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    cursor: pointer;
+    vertical-align: middle;
+    background-color: #bec2c7;
+    margin-left: 18px;
+    text-align: center;
   }
 }
 
 @media (min-width: @tablet-width) {
-.slider__toggles label::after {
-  position: absolute;
-  display: inline-block;
-  content: "";
-  bottom: 0;
-  left: 0;
-  width: 6px;
-  height: 6px;
-  border-radius: 50%;
-  cursor: pointer;
-  vertical-align: middle;
-  background-color: #bec2c7;
+  .slider__toggles label::after {
+    position: absolute;
+    display: inline-block;
+    content: "";
+    bottom: 0;
+    left: 0;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    cursor: pointer;
+    vertical-align: middle;
+    background-color: #bec2c7;
   }
 }
 
-#review-item-1:checked ~ .reviews__list .reviews__item-1,
-#review-item-2:checked ~ .reviews__list .reviews__item-2,
-#review-item-3:checked ~ .reviews__list .reviews__item-3 {
+@media (min-width: @desktop-width) {
+  .slider__toggles label {
+    display: none;
+    margin-left: 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .slider__toggles label::after {
+    display: none;
+  }
+}
+
+#review-item-1:checked ~ .reviews__list .slider__no-js--order1,
+#review-item-2:checked ~ .reviews__list .slider__no-js--order2,
+#review-item-3:checked ~ .reviews__list .slider__no-js--order3 {
   display: block;
 }
 
-#review-item-1:checked ~ .slider__toggles .slider__item--1::after,
-#review-item-2:checked ~ .slider__toggles .slider__item--2::after,
-#review-item-3:checked ~ .slider__toggles .slider__item--3::after {
+#review-item-1:checked ~ .slider__toggles .slider__item--item1::after,
+#review-item-2:checked ~ .slider__toggles .slider__item--item2::after,
+#review-item-3:checked ~ .slider__toggles .slider__item--item3::after {
   position: absolute;
   content: "";
   bottom: -2px;
   left: -2px;
   width: 6px;
   height: 6px;
-  background-color: inherit;
   border: 2px solid #283645;
   background-color: #ffffff;
   border-radius: 50%;
@@ -104,24 +125,23 @@
 }
 
 @media (min-width: @tablet-width) {
-  #review-item-1:checked ~ .reviews__list .reviews__item-1,
-  #review-item-2:checked ~ .reviews__list .reviews__item-2,
-  #review-item-3:checked ~ .reviews__list .reviews__item-3 {
-  display: block;
+  #review-item-1:checked ~ .reviews__list .slider__no-js--order1,
+  #review-item-2:checked ~ .reviews__list .slider__no-js--order2,
+  #review-item-3:checked ~ .reviews__list .slider__no-js--order3 {
+    display: block;
   }
 }
 
 @media (min-width: @tablet-width) {
-  #review-item-1:checked ~ .slider__toggles .slider__item--1::after,
-  #review-item-2:checked ~ .slider__toggles .slider__item--2::after,
-  #review-item-3:checked ~ .slider__toggles .slider__item--3::after {
+  #review-item-1:checked ~ .slider__toggles .slider__item--item1::after,
+  #review-item-2:checked ~ .slider__toggles .slider__item--item2::after,
+  #review-item-3:checked ~ .slider__toggles .slider__item--item3::after {
     position: absolute;
     content: "";
     bottom: -2px;
     left: -2px;
     width: 6px;
     height: 6px;
-    background-color: inherit;
     border: 2px solid #283645;
     background-color: #ffffff;
     border-radius: 50%;
@@ -130,7 +150,13 @@
 }
 
 @media (min-width: @desktop-width) {
-  .slider label {
+  .slider__toggles {
+    width: 940px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .slider__toggles label {
     width: 23px;
     height: 41px;
     font-size: 0;
@@ -139,23 +165,49 @@
 }
 
 @media (min-width: @desktop-width) {
-  #eview-item-1:checked ~ .slider__toggles label:nth-child(2),
-  #eview-item-2:checked ~ .slider__toggles label:nth-child(3),
-  #eview-item-3:checked ~ .slider__toggles label:nth-child(1) {
-    background-image: url(../img/icon-review-arrow-right.svg);
+  #review-item-1:checked ~ .slider__toggles label:nth-of-type(2),
+  #review-item-2:checked ~ .slider__toggles label:nth-of-type(3),
+  #review-item-3:checked ~ .slider__toggles label:nth-of-type(1) {
+    display: block;
+    background-image: url("../img/icon-review-arrow-right.svg");
     background-repeat: no-repeat;
     background-color: transparent;
     float: right;
+    opacity: 0.4;
   }
 }
 
 @media (min-width: @desktop-width) {
-  #eview-item-1:checked ~ .slider__toggles label:nth-child(3),
-  #eview-item-2:checked ~ .slider__toggles label:nth-child(1),
-  #eview-item-3:checked ~ .slider__toggles label:nth-child(2) {
-    background-image: url(../img/icon-review-arrow-left.svg);
+  #review-item-1:checked ~ .slider__toggles label:nth-of-type(3),
+  #review-item-2:checked ~ .slider__toggles label:nth-of-type(1),
+  #review-item-3:checked ~ .slider__toggles label:nth-of-type(2) {
+    display: block;
+    background-image: url("../img/icon-review-arrow-left.svg");
     background-repeat: no-repeat;
     background-color: transparent;
     float: left;
+    opacity: 0.4;
+  }
+}
+
+.slider__item {
+  &:hover {
+   background-color: #7e868f;
+  }
+
+  &:active {
+   background-color: #e9ebec;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  #review-item-1:checked ~ .slider__toggles label {
+    &:hover {
+      opacity: 1.0;
+    }
+
+    &:active {
+      opacity: 0.25;
+    }
   }
 }
