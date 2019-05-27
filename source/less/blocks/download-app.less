@@ -51,12 +51,13 @@
   color: #ffffff;
   background-image: url("../img/iphone-hand-mobile@1x.png");
   background-repeat: no-repeat;
-  background-position: 40% 40%;
+  background-position: 50% 40%;
 }
 
 @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
   .download-app__phone {
     background-image: url("../img/iphone-hand-mobile@2x.png");
+    background-size: 320px auto;
   }
 }
 
@@ -78,6 +79,7 @@
             (min-width: @tablet-width) and (min-resolution: 1.5dppx) {
     .download-app__phone {
       background-image: url("../img/iphone-hand-tablet@2x.png");
+      background-size: auto 545px;
     }
   }
 }
@@ -99,6 +101,7 @@
             (min-width: @desktop-width) and (min-resolution: 1.5dppx) {
     .download-app__phone {
       background-image: url("../img/iphone-hand-desktop@2x.png");
+      background-size: auto 645px;
     }
   }
 }
