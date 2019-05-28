@@ -1,6 +1,5 @@
 .tariffs {
   display: block;
-  position: relative;
   background-color: #f2f2f2;
   min-height: 470px;
   margin-top: 45px;
@@ -37,21 +36,19 @@
 
 .tariffs__table {
   display: block;
-  position: relative;
-  width: calc(300% - 280px);
+  width: calc(300% - 100px);
+  transform: translateX(calc(30px - 30%));
   margin-top: 65px;
   background-color: #ffffff;
   border: none;
   padding: 0;
   border-collapse: collapse;
-  overflow-x: hidden;
-
 }
 
 @media (min-width: @tablet-width) {
   .tariffs__table {
-    position: static;
     width: 620px;
+    transform: translateX(0);
     margin: auto;
     margin-top: 35px;
     border: none;
@@ -60,10 +57,13 @@
 
 @media (min-width: @desktop-width) {
   .tariffs__table {
-    position: static;
     width: 936px;
     margin-top: 72px;
   }
+}
+
+.tariffs__table td {
+  position: relative;
 }
 
 .tariffs label {
@@ -265,14 +265,15 @@
 
 .tariffs__item::after {
   display: inline-block;
-  transform: translate(100%);
+  position: absolute;
+  right: 15px;
 }
 
 
 @media (min-width: @tablet-width) {
   .tariffs__item::after {
-    transform: translate(0);
     vertical-align: middle;
+    left: 40%;
   }
 }
 
@@ -288,11 +289,6 @@
   content: url("../img/icon-no-red.svg");
   width: 27px;
   height: 27px;
-}
-
-.tariffs__item--yes::after,
-.tariffs__item--no::after {
-
 }
 
 .tariffs__header-title:nth-of-type(2) {
