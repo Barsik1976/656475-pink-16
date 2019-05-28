@@ -82,7 +82,7 @@
   .choice__item {
     width: 410px;
     padding-bottom: 17px;
-    margin-bottom: 15px;
+    margin-bottom: 16px;
   }
 }
 
@@ -95,8 +95,28 @@
   padding: 0;
   margin-left: 16px;
   margin-right: 16px;
+  fill: #8d949b;
   opacity: 0.5;
   cursor: pointer;
+}
+
+  &:hover {
+    fill: #8d949b;
+    opacity: 1.0;
+  }
+
+  &:focus {
+    fill: #8d949b;
+    opacity: 1.0;
+  }
+
+  &:active {
+    fill: #d22856;
+  }
+
+.choice__button--active {
+  fill: #d22856;
+  opacity: 1.0;
 }
 
 @media (min-width: @tablet-width) {
@@ -108,49 +128,82 @@
   }
 }
 
+.choice__button--crop {
+  width: 44px;
+  height: 44px;
+}
+
 @media (min-width: @tablet-width) {
   .choice__button--crop {
+    width: 22px;
+    height: 22px;
     margin-left: 2px;
+  }
+
+  .choice__button--crop svg {
+    width: 100%;
+    height: 100%;
   }
 }
 
 @media (min-width: @desktop-width) {
   .choice__button--crop {
-
+    width: 44px;
+    height: 44px;
   }
 }
 
 .choice__button--fill {
+  width: 48px;
+  height: 44px;
   padding-top: 5px;
 }
 
 @media (min-width: @tablet-width) {
   .choice__button--fill {
+    width: 24px;
+    height: 22px;
     padding-top: 0;
     margin-left: 2px;
+  }
+
+  .choice__button--fill svg {
+    width: 100%;
+    height: 100%;
   }
 }
 
 @media (min-width: @desktop-width) {
   .choice__button--fill {
-
+    width: 48px;
+    height: 44px;
   }
 }
 
 .choice__button--contrast {
+  width: 32px;
+  height: 32px;
   padding-top: 7px;
 }
 
 @media (min-width: @tablet-width) {
   .choice__button--contrast {
+    width: 15px;
+    height: 15px;
     padding-top: 0;
     margin-left: 5px;
+  }
+
+  .choice__button--contrast svg {
+    width: 100%;
+    height: 100%;
   }
 }
 
 @media (min-width: @desktop-width) {
   .choice__button--contrast {
-
+    width: 32px;
+    height: 32px;
   }
 }
 
