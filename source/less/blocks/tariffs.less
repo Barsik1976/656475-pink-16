@@ -36,9 +36,10 @@
 
 .tariffs__table {
   display: block;
-  width: calc(300% - 100px);
-  transform: translateX(calc(60px - 48%));
+  width: calc(300% - 200px);
+  transform: translateX(calc(60px - 45%));
   margin-top: 65px;
+  margin-bottom: 40px;
   background-color: #ffffff;
   border: none;
   padding: 0;
@@ -266,14 +267,17 @@
 .tariffs__item::after {
   display: inline-block;
   position: absolute;
+  top: 50%;
   right: 15px;
+  transform: translateY(-50%);
+  vertical-align: middle;
 }
 
 
 @media (min-width: @tablet-width) {
   .tariffs__item::after {
-    vertical-align: middle;
-    left: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
 }
 

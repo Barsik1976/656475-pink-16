@@ -1,4 +1,5 @@
 .field-profiles {
+  width: 280px;
   border: none;
   margin: 0 auto;
   padding: 0;
@@ -6,6 +7,7 @@
 
 @media (min-width: @tablet-width) {
   .field-profiles {
+    width: auto;
     margin: 0;
   }
 }
@@ -72,4 +74,10 @@
     margin-top: 0;
     margin-left: 23px;
   }
+}
+
+.field-profiles__field-name--last-name:invalid,
+.field-profiles__field-name--first-name:invalid {
+  color: #d22856;
+  border: 2px #d22856 solid;
 }
