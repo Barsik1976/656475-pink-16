@@ -1,0 +1,47 @@
+.slider-tariff {
+  position: relative;
+}
+
+
+.slider-tariff__toggles {
+  position: absolute;
+  left: calc(50% - 50px);
+  bottom: 0;
+  z-index: 5;
+}
+
+@media (min-width: @tablet-width) {
+  .slider-tariff__toggles {
+    display: none;
+  }
+}
+
+.slider-tariff__item label {
+  position: relative;
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  cursor: pointer;
+  vertical-align: middle;
+  background-color: #bec2c7;
+  margin-left: 18px;
+  text-align: center;
+  font-size: 0;
+}
+
+.slider-tariff__item label::after {
+  position: absolute;
+  display: inline-block;
+  content: "";
+  bottom: 0;
+  left: 0;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  cursor: pointer;
+  vertical-align: middle;
+  background-color: #bec2c7;
+}
+
+
