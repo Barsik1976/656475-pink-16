@@ -384,8 +384,8 @@
       border: 2px solid #e5e5e5;
       top: -5px;
       left: -56px;
-
     }
+
     &[type="radio"] + label::before {
       position: absolute;
       display: inline-block;
@@ -399,6 +399,7 @@
       left: -56px;
       border-radius: 50%;
     }
+
     &[type="radio"],
     &[type="checkbox"] {
       &:hover + label::before {
@@ -410,14 +411,16 @@
 
 .form-users__wrapper {
   input {
-      &[type="checkbox"] + label::before {
+    &[type="checkbox"] + label::before {
     }
-      &[type="radio"] + label::before {
+
+    &[type="radio"] + label::before {
     }
-      &[type="radio"],
-      &[type="checkbox"] {
-        &:active + label::before {
-          border-color: #d22856;
+
+    &[type="radio"],
+    &[type="checkbox"] {
+      &:active + label::before {
+        border-color: #d22856;
       }
     }
   }
