@@ -97,21 +97,17 @@
     border-radius: 50%;
   }
 
-    input {
-      &[type="radio"],
-      &[type="checkbox"] {
-        &:hover + label::before {
-          border-color: #283645;
-        }
-      }
+  input [type="radio"],
+  input [type="checkbox"] {
+    &:hover + label::before {
+      border-color: #283645;
+    }
+  }
 
-    input {
-      &[type="radio"],
-      &[type="checkbox"] {
-        &:active + label::before {
-          border-color: #d22856;
-        }
-      }
+  input [type="radio"],
+  input [type="checkbox"] {
+    &:active + label::before {
+      border-color: #d22856;
     }
   }
 }

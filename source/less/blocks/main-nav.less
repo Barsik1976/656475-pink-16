@@ -98,19 +98,15 @@
   }
 
   &:active {
-    background-image: url("../img/icon-menu-cross-red.svg");
+    display: block;
+    right: calc(50% - 140px);
+    background-image: url("../img/icon-menu-burger.svg");
+    background-color: transparent;
+    background-repeat: no-repeat;
+    width: 50px;
+    height: 24px;
     opacity: 0.5;
   }
-}
-
-.main-nav__toggle--opened:active {
-  display: block;
-  right: calc(50% - 140px);
-  background-image: url("../img/icon-menu-burger.svg");
-  background-color: transparent;
-  background-repeat: no-repeat;
-  width: 50px;
-  height: 24px;
 }
 
 @media (min-width: @tablet-width) {
