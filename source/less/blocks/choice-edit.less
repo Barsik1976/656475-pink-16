@@ -39,6 +39,14 @@
   padding: 0;
   top: -7px;
   left: 192px;
+
+  &:hover {
+    background-color: #d22856;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
 }
 
 .choice-edit__button--crop {
@@ -95,16 +103,5 @@
 @media (min-width: @desktop-width) {
   .choice-edit__button--contrast {
     left: 160px;
-  }
-}
-
-
-.choice-edit__button {
-  &:hover {
-    background-color: #d22856;
-  }
-
-  &:active {
-    color: rgba(255, 255, 255, 0.3);
   }
 }

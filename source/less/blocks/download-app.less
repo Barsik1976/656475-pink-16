@@ -21,8 +21,8 @@
     background-size: cover;
   }
 
-  @media  (min-width: @tablet-width) and (min-resolution: 144dpi),
-          (min-width: @tablet-width) and (min-resolution: 1.5dppx) {
+  @media (min-width: @tablet-width) and (min-resolution: 144dpi),
+  (min-width: @tablet-width) and (min-resolution: 1.5dppx) {
     .download-app {
       background-image: url("../img/bg-back-tablet@2x.jpg");
     }
@@ -35,8 +35,8 @@
     background-size: cover;
   }
 
-  @media  (min-width: @desktop-width) and (min-resolution: 144dpi),
-          (min-width: @desktop-width) and (min-resolution: 1.5dppx) {
+  @media (min-width: @desktop-width) and (min-resolution: 144dpi),
+  (min-width: @desktop-width) and (min-resolution: 1.5dppx) {
     .download-app {
       background-image: url("../img/bg-back-desktop@2x.jpg");
     }
@@ -75,8 +75,8 @@
     background-color: transparent;
   }
 
-  @media  (min-width: @tablet-width) and (min-resolution: 144dpi),
-          (min-width: @tablet-width) and (min-resolution: 1.5dppx) {
+  @media (min-width: @tablet-width) and (min-resolution: 144dpi),
+  (min-width: @tablet-width) and (min-resolution: 1.5dppx) {
     .download-app__phone {
       background-image: url("../img/iphone-hand-tablet@2x.png");
       background-size: auto 545px;
@@ -97,8 +97,8 @@
     background-position: 100% 100%;
   }
 
-  @media  (min-width: @desktop-width) and (min-resolution: 144dpi),
-          (min-width: @desktop-width) and (min-resolution: 1.5dppx) {
+  @media (min-width: @desktop-width) and (min-resolution: 144dpi),
+  (min-width: @desktop-width) and (min-resolution: 1.5dppx) {
     .download-app__phone {
       background-image: url("../img/iphone-hand-desktop@2x.png");
       background-size: auto 645px;
@@ -170,6 +170,15 @@
   padding-bottom: 18px;
   margin: 0 auto;
   margin-bottom: 31px;
+
+  &:hover {
+    color: #d22856;
+    background-color: #ffffff;
+  }
+
+  &:active {
+    color: rgba(210, 40, 86, 0.3);
+  }
 }
 
 @media (min-width: @tablet-width) {
@@ -256,16 +265,5 @@
     top: 184px;
     left: 579px;
     border: 2px solid #000000;
-  }
-}
-
-.download-app__button {
-  &:hover {
-    color: #d22856;
-    background-color: #ffffff;
-  }
-
-  &:active {
-    color: rgba(210, 40, 86, 0.3);
   }
 }
