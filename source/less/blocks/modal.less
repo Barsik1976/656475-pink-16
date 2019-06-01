@@ -26,6 +26,8 @@
 .modal__error {
   display: block;
   padding-bottom: 50px;
+  animation-name: shake;
+  animation-duration: 0.5s;
 }
 
 .modal--js {
@@ -34,6 +36,8 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%,-50%);
+  animation-name: bounce;
+  animation-duration: 0.5s;
 }
 
 .modal__error--js {
@@ -129,18 +133,6 @@
   .modal__button--close {
     width: 460px;
   }
-}
-
-.modal--js {
-  display: none;
-  animation-name: bounce;
-  animation-duration: 0.5s;
-}
-
-.modal__error {
-  display: none;
-  animation-name: shake;
-  animation-duration: 0.5s;
 }
 
 @keyframes bounce {
