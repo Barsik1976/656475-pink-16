@@ -104,21 +104,21 @@
 }
 
 
-#review-item-1:checked ~ .reviews__list .slider__no-js--order1 {
+input.visually-hidden:nth-of-type(1):checked ~ .reviews__list .slider__no-js--order1 {
   display: block;
 }
 
-#review-item-2:checked ~ .reviews__list .slider__no-js--order2 {
+input.visually-hidden:nth-of-type(2):checked ~ .reviews__list .slider__no-js--order2 {
   display: block;
 }
 
-#review-item-3:checked ~ .reviews__list .slider__no-js--order3 {
+input.visually-hidden:nth-of-type(3):checked ~ .reviews__list .slider__no-js--order3 {
   display: block;
 }
 
-#review-item-1:checked ~ .slider__toggles .slider__item--item1::after,
-#review-item-2:checked ~ .slider__toggles .slider__item--item2::after,
-#review-item-3:checked ~ .slider__toggles .slider__item--item3::after {
+input.visually-hidden:nth-of-type(1):checked ~ .slider__toggles .slider__item--item1::after,
+input.visually-hidden:nth-of-type(2):checked ~ .slider__toggles .slider__item--item2::after,
+input.visually-hidden:nth-of-type(3):checked ~ .slider__toggles .slider__item--item3::after {
   position: absolute;
   content: "";
   bottom: -2px;
@@ -144,9 +144,9 @@
 }
 
 @media (min-width: @tablet-width) {
-  #review-item-1:checked ~ .reviews__list .slider__no-js--order1,
-  #review-item-2:checked ~ .reviews__list .slider__no-js--order2,
-  #review-item-3:checked ~ .reviews__list .slider__no-js--order3 {
+  input.visually-hidden:nth-of-type(1):checked ~ .reviews__list .slider__no-js--order1,
+  input.visually-hidden:nth-of-type(2):checked ~ .reviews__list .slider__no-js--order2,
+  input.visually-hidden:nth-of-type(3):checked ~ .reviews__list .slider__no-js--order3 {
     display: flex;
     flex-direction: column;
   }
@@ -168,9 +168,9 @@
 }
 
 @media (min-width: @desktop-width) {
-  #review-item-1:checked ~ .slider__toggles label:nth-of-type(2),
-  #review-item-2:checked ~ .slider__toggles label:nth-of-type(3),
-  #review-item-3:checked ~ .slider__toggles label:nth-of-type(1) {
+  input.visually-hidden:nth-of-type(1):checked ~ .slider__toggles label:nth-of-type(2),
+  input.visually-hidden:nth-of-type(2):checked ~ .slider__toggles label:nth-of-type(3),
+  input.visually-hidden:nth-of-type(3):checked ~ .slider__toggles label:nth-of-type(1) {
     display: block;
     background-image: url("../img/icon-review-arrow-right.svg");
     background-repeat: no-repeat;
@@ -181,9 +181,9 @@
 }
 
 @media (min-width: @desktop-width) {
-  #review-item-1:checked ~ .slider__toggles label:nth-of-type(3),
-  #review-item-2:checked ~ .slider__toggles label:nth-of-type(1),
-  #review-item-3:checked ~ .slider__toggles label:nth-of-type(2) {
+  input.visually-hidden:nth-of-type(1):checked ~ .slider__toggles label:nth-of-type(3),
+  input.visually-hidden:nth-of-type(2):checked ~ .slider__toggles label:nth-of-type(1),
+  input.visually-hidden:nth-of-type(3):checked ~ .slider__toggles label:nth-of-type(2) {
     display: block;
     background-image: url("../img/icon-review-arrow-left.svg");
     background-repeat: no-repeat;
@@ -204,7 +204,7 @@
 }
 
 @media (min-width: @desktop-width) {
-  #review-item-1:checked ~ .slider__toggles label {
+  input.visually-hidden:nth-of-type(1):checked ~ .slider__toggles label {
     &:hover {
       opacity: 1;
     }
