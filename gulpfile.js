@@ -1,12 +1,17 @@
 "use strict";
 
 var gulp = require("gulp");
+var posthtml = require("gulp-posthtml");
+var include = require("posthtml-include");
 var del = require("del");
 var plumber = require("gulp-plumber");
 var sourcemap = require("gulp-sourcemaps");
+var rename = require("gulp-rename");
+var svgstore = require("gulp-svgstore");
 var less = require("gulp-less");
 var postcss = require("gulp-postcss");
 var autoprefixer = require("autoprefixer");
+var csso = require("gulp-csso");
 var server = require("browser-sync").create();
 
 gulp.task("copy", function () {
