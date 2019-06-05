@@ -116,6 +116,7 @@
               </div>
             </section>
             <section class="tariffs">
+              <h2 class="visually-hidden">Тарифы</h2>
               <table class="tariffs__table">
                 <tr class="tariffs__header">
                   <th class="tariffs__header-title tariffs__header-title--title1"></th>
@@ -142,16 +143,17 @@
                   <td class="tariffs__item tariffs__item--yes">Комментарии</td>
                 </tr>
               </table>
-          <div class="tariffs__wrapper slider-tariff">
-          <h2 class="visually-hidden">Тарифы</h2>
-          <input class="visually-hidden" type="radio" id="tariff-item-1" name="toggle" checked>
-          <input class="visually-hidden" type="radio" id="tariff-item-2" name="toggle">
-          <input class="visually-hidden" type="radio" id="tariff-item-3" name="toggle">
-          <div class="slider-tariff__toggles">
-            <label class="slider-tariff__item slider-tariff__item--item1" for="tariff-item-1">Первый</label>
-            <label class="slider-tariff__item slider-tariff__item--item2" for="tariff-item-2">Второй</label>
-            <label class="slider-tariff__item slider-tariff__item--item3" for="tariff-item-3">Третий</label>
-          </div>
+            <ul class="slider-tariff ">
+              <li class="slider-tariff__toggles">
+                <button class="slider-tariff__btn"></button>
+              </li>
+              <li class="slider-tariff__toggles">
+                <button class="slider-tariff__btn slider-tariff__btn--active"></button>
+              </li>
+              <li class="slider-tariff__toggles">
+                <button class="slider-tariff__btn button"></button>
+              </li>
+            </ul>
         </section>
           </main>
           <footer class="page-footer">

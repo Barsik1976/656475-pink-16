@@ -113,6 +113,76 @@
   }
 }
 
-.slider__no-js {
+.reviews__item1 ~ .reviews__list .slider__item--order1,
+.reviews__item1 ~ .reviews__list .slider__item--order2,
+.reviews__item1 ~ .reviews__list .slider__item--order3 {
   display: none;
+}
+
+.reviews__item1:checked ~ .reviews__list .slider__item--order1,
+.reviews__item2:checked ~ .reviews__list .slider__item--order2,
+.reviews__item3:checked ~ .reviews__list .slider__item--order3 {
+  display: block;
+}
+
+.reviews__item1:checked ~ .slider__toggles .slider__toggle-item--item1::after,
+.reviews__item2:checked ~ .slider__toggles .slider__toggle-item--item2::after,
+.reviews__item3:checked ~ .slider__toggles .slider__toggle-item--item3::after {
+  position: absolute;
+  content: "";
+  bottom: -2px;
+  left: -2px;
+  width: 6px;
+  height: 6px;
+  border: 2px solid #283645;
+  background-color: #ffffff;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+@media (min-width: @tablet-width) {
+  .reviews__item1:checked ~ .reviews__list .slider__item--order1,
+  .reviews__item2:checked ~ .reviews__list .slider__item--order2,
+  .reviews__item3:checked ~ .reviews__list .slider__item--order3 {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .reviews__item1:checked ~ .slider__toggles label:nth-of-type(2),
+  .reviews__item2:checked ~ .slider__toggles label:nth-of-type(3),
+  .reviews__item3:checked ~ .slider__toggles label:nth-of-type(1) {
+    display: block;
+    background-image: url("../img/icon-review-arrow-right.svg");
+    background-repeat: no-repeat;
+    background-color: transparent;
+    float: right;
+    opacity: 0.4;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .reviews__item1:checked ~ .slider__toggles label:nth-of-type(3),
+  .reviews__item2:checked ~ .slider__toggles label:nth-of-type(1),
+  .reviews__item3:checked ~ .slider__toggles label:nth-of-type(2) {
+    display: block;
+    background-image: url("../img/icon-review-arrow-left.svg");
+    background-repeat: no-repeat;
+    background-color: transparent;
+    float: left;
+    opacity: 0.4;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .reviews__item1:checked ~ .slider__toggles label {
+    &:hover {
+      opacity: 1;
+    }
+
+    &:active {
+      opacity: 0.25;
+    }
+  }
 }
