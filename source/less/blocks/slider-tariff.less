@@ -1,35 +1,14 @@
 .slider-tariff {
   position: relative;
   display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin: 34px 0 0;
-    padding: 0;
-    list-style: none;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  list-style: none;
 }
-
 
 .slider-tariff__toggles {
-  display: block;
-  width: 6px;
-  height: 6px;
-  border-radius: 50%;
-  cursor: pointer;
-  vertical-align: middle;
-  background-color: #bec2c7;
-  margin-left: 18px;
-  text-align: center;
-  font-size: 0;
-}
-
-@media (min-width: @tablet-width) {
-  .slider-tariff__toggles {
-    display: ;
-  }
-}
-
-.slider-tariff__btn {
-  position: relative;
   display: inline-block;
   width: 6px;
   height: 6px;
@@ -39,14 +18,17 @@
   background-color: #bec2c7;
   margin-left: 18px;
   text-align: center;
-  font-size: 0;
+  outline: none;
 }
 
-.slider-tariff__btn--active {
-  position: absolute;
-  content: "";
-  bottom: -2px;
-  left: -2px;
+@media (min-width: @tablet-width) {
+  .slider-tariff__toggles {
+    display: none;
+  }
+}
+
+.slider-tariff__toggles--active {
+  display: inline-block;
   width: 6px;
   height: 6px;
   border: 2px solid #283645;
@@ -55,3 +37,8 @@
   cursor: pointer;
 }
 
+@media (min-width: @tablet-width) {
+  .slider-tariff__toggles--active {
+    display: none;
+  }
+}
