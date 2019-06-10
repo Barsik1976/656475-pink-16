@@ -1,9 +1,9 @@
 .tariffs {
   position: relative;
-  display: block;
   background-color: #f2f2f2;
   min-height: 470px;
   padding-bottom: 47px;
+  border: 2px solid green;
 }
 
 @media (min-width: @tablet-width) {
@@ -36,25 +36,22 @@
 }
 
 .tariffs__table {
-  display: block;
+  display: table;
   position: absolute;
-  width: 840px;
+  width: 836px;
   left: 50%;
   transform: translateX(-50%);
   top: 165px;
   background-color: #ffffff;
-  border: none;
+  border: 2px solid red;
   padding: 0;
   border-collapse: collapse;
 }
 
 @media (min-width: @tablet-width) {
   .tariffs__table {
-    width: 620px;
-    left: 50%;
-    transform: translateX(-50%);
+    width: 616px;
     margin-top: 35px;
-    border: none;
   }
 }
 
@@ -67,6 +64,14 @@
 
 .tariffs__table td {
   position: relative;
+  width: 33.3%;
+}
+
+@media (min-width: @tablet-width) {
+  .tariffs__table td {
+    width: 25%;
+    margin-top: 35px;
+  }
 }
 
 .tariffs label {
@@ -80,7 +85,6 @@
 }
 
 .tariffs__header-title {
-  width: 280px;
   font-size: 16px;
   line-height: 24px;
   font-weight: 700;
@@ -96,7 +100,6 @@
 
 @media (min-width: @tablet-width) {
   .tariffs__header-title {
-    width: 153px;
     border: 2px solid #e5e5e5;
     border-bottom: 2px solid #283645;
     border-left: 2px solid #283645;
@@ -107,7 +110,6 @@
 
 @media (min-width: @desktop-width) {
   .tariffs__header-title {
-    width: 232px;
     font-size: 18px;
     line-height: 30px;
     border: none;
@@ -181,7 +183,6 @@
 
 @media (min-width: @desktop-width) {
   .tariffs__name {
-    width: 232px;
     font-size: 18px;
     padding-left: 24px;
     padding-right: 24px;
@@ -192,7 +193,6 @@
 }
 
 .tariffs__header td {
-  width: 280px;
   padding: 0;
   padding-left: 15px;
   padding-right: 15px;
@@ -205,7 +205,6 @@
 
 @media (min-width: @tablet-width) {
   .tariffs__header td {
-    width: 153px;
     padding-top: 15px;
     padding-bottom: 13px;
   }
@@ -213,7 +212,6 @@
 
 @media (min-width: @desktop-width) {
   .tariffs__header td {
-    width: 232px;
     padding-left: 24px;
     padding-right: 24px;
     padding-top: 22px;
@@ -254,7 +252,6 @@
 
 @media (min-width: @desktop-width) {
   .tariffs__item {
-    width: 232px;
     font-size: 0;
     padding: 0;
     padding-left: 24px;
